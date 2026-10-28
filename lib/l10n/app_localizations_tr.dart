@@ -121,4 +121,129 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get showOnGlobe => 'Kürede göster';
+
+  @override
+  String get practiceContinents => 'Kıtalar';
+
+  @override
+  String get practiceDifficulty => 'Zorluk';
+
+  @override
+  String get difficultyEasy => 'Kolay';
+
+  @override
+  String get difficultyMedium => 'Orta';
+
+  @override
+  String get difficultyHard => 'Zor';
+
+  @override
+  String get difficultyMixed => 'Karışık';
+
+  @override
+  String get practiceSimilar => 'Benzer şıklar';
+
+  @override
+  String get practiceSimilarHint =>
+      'Yanlış şıklar benzer bayraklardan, komşulardan veya aynı kıtadan seçilir';
+
+  @override
+  String practicePoolCount(int count) {
+    return '$count ülke bu filtrelere uyuyor';
+  }
+
+  @override
+  String practiceShortened(int count) {
+    return 'Tur $count soruya kısaltılacak.';
+  }
+
+  @override
+  String practiceShortenedStarted(int count) {
+    return 'Bu filtrelerle yalnızca $count soru var.';
+  }
+
+  @override
+  String get practiceNoCountries => 'Bu filtrelere uyan ülke yok.';
+
+  @override
+  String get practiceStart => 'Başla';
+
+  @override
+  String get mapQuestion => 'Vurgulanan ülke hangisi?';
+
+  @override
+  String get flagQuestion => 'Bu bayrak hangi ülkenin?';
+
+  @override
+  String questionProgress(int index, int total) {
+    return 'Soru $index / $total';
+  }
+
+  @override
+  String scoreLabel(int score) {
+    return 'Puan: $score';
+  }
+
+  @override
+  String get answerCorrect => 'Doğru!';
+
+  @override
+  String answerWrong(String name) {
+    return 'Yanlış. Doğru cevap: $name';
+  }
+
+  @override
+  String get continueButton => 'Devam';
+
+  @override
+  String get seeResults => 'Sonuçları gör';
+
+  @override
+  String get summaryTitle => 'Tur bitti';
+
+  @override
+  String summaryScore(int score, int total) {
+    return '$score / $total';
+  }
+
+  @override
+  String get summaryGreat => 'Harika!';
+
+  @override
+  String get summaryGood => 'İyi iş!';
+
+  @override
+  String get summaryKeepGoing => 'Pratik yapmaya devam!';
+
+  @override
+  String get summaryMistakes => 'Yanlışların';
+
+  @override
+  String get summaryNoMistakes => 'Hiç yanlış yok!';
+
+  @override
+  String summaryYourAnswer(String name) {
+    return 'Senin cevabın: $name';
+  }
+
+  @override
+  String get playAgain => 'Tekrar oyna';
+
+  @override
+  String get mainMenu => 'Ana menü';
+
+  @override
+  String get changeFilters => 'Filtreleri değiştir';
+
+  @override
+  String get quitRoundTitle => 'Turdan çıkılsın mı?';
+
+  @override
+  String get quitRoundBody => 'Bu turdaki ilerlemen kaybolacak.';
+
+  @override
+  String get quitRoundConfirm => 'Çık';
+
+  @override
+  String get cancel => 'Vazgeç';
 }

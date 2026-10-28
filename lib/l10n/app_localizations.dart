@@ -319,6 +319,222 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Kürede göster'**
   String get showOnGlobe;
+
+  /// No description provided for @practiceContinents.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kıtalar'**
+  String get practiceContinents;
+
+  /// No description provided for @practiceDifficulty.
+  ///
+  /// In tr, this message translates to:
+  /// **'Zorluk'**
+  String get practiceDifficulty;
+
+  /// No description provided for @difficultyEasy.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kolay'**
+  String get difficultyEasy;
+
+  /// No description provided for @difficultyMedium.
+  ///
+  /// In tr, this message translates to:
+  /// **'Orta'**
+  String get difficultyMedium;
+
+  /// No description provided for @difficultyHard.
+  ///
+  /// In tr, this message translates to:
+  /// **'Zor'**
+  String get difficultyHard;
+
+  /// No description provided for @difficultyMixed.
+  ///
+  /// In tr, this message translates to:
+  /// **'Karışık'**
+  String get difficultyMixed;
+
+  /// No description provided for @practiceSimilar.
+  ///
+  /// In tr, this message translates to:
+  /// **'Benzer şıklar'**
+  String get practiceSimilar;
+
+  /// No description provided for @practiceSimilarHint.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yanlış şıklar benzer bayraklardan, komşulardan veya aynı kıtadan seçilir'**
+  String get practiceSimilarHint;
+
+  /// No description provided for @practicePoolCount.
+  ///
+  /// In tr, this message translates to:
+  /// **'{count} ülke bu filtrelere uyuyor'**
+  String practicePoolCount(int count);
+
+  /// No description provided for @practiceShortened.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tur {count} soruya kısaltılacak.'**
+  String practiceShortened(int count);
+
+  /// No description provided for @practiceShortenedStarted.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bu filtrelerle yalnızca {count} soru var.'**
+  String practiceShortenedStarted(int count);
+
+  /// No description provided for @practiceNoCountries.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bu filtrelere uyan ülke yok.'**
+  String get practiceNoCountries;
+
+  /// No description provided for @practiceStart.
+  ///
+  /// In tr, this message translates to:
+  /// **'Başla'**
+  String get practiceStart;
+
+  /// No description provided for @mapQuestion.
+  ///
+  /// In tr, this message translates to:
+  /// **'Vurgulanan ülke hangisi?'**
+  String get mapQuestion;
+
+  /// No description provided for @flagQuestion.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bu bayrak hangi ülkenin?'**
+  String get flagQuestion;
+
+  /// No description provided for @questionProgress.
+  ///
+  /// In tr, this message translates to:
+  /// **'Soru {index} / {total}'**
+  String questionProgress(int index, int total);
+
+  /// No description provided for @scoreLabel.
+  ///
+  /// In tr, this message translates to:
+  /// **'Puan: {score}'**
+  String scoreLabel(int score);
+
+  /// No description provided for @answerCorrect.
+  ///
+  /// In tr, this message translates to:
+  /// **'Doğru!'**
+  String get answerCorrect;
+
+  /// No description provided for @answerWrong.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yanlış. Doğru cevap: {name}'**
+  String answerWrong(String name);
+
+  /// No description provided for @continueButton.
+  ///
+  /// In tr, this message translates to:
+  /// **'Devam'**
+  String get continueButton;
+
+  /// No description provided for @seeResults.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sonuçları gör'**
+  String get seeResults;
+
+  /// No description provided for @summaryTitle.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tur bitti'**
+  String get summaryTitle;
+
+  /// No description provided for @summaryScore.
+  ///
+  /// In tr, this message translates to:
+  /// **'{score} / {total}'**
+  String summaryScore(int score, int total);
+
+  /// No description provided for @summaryGreat.
+  ///
+  /// In tr, this message translates to:
+  /// **'Harika!'**
+  String get summaryGreat;
+
+  /// No description provided for @summaryGood.
+  ///
+  /// In tr, this message translates to:
+  /// **'İyi iş!'**
+  String get summaryGood;
+
+  /// No description provided for @summaryKeepGoing.
+  ///
+  /// In tr, this message translates to:
+  /// **'Pratik yapmaya devam!'**
+  String get summaryKeepGoing;
+
+  /// No description provided for @summaryMistakes.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yanlışların'**
+  String get summaryMistakes;
+
+  /// No description provided for @summaryNoMistakes.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hiç yanlış yok!'**
+  String get summaryNoMistakes;
+
+  /// No description provided for @summaryYourAnswer.
+  ///
+  /// In tr, this message translates to:
+  /// **'Senin cevabın: {name}'**
+  String summaryYourAnswer(String name);
+
+  /// No description provided for @playAgain.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tekrar oyna'**
+  String get playAgain;
+
+  /// No description provided for @mainMenu.
+  ///
+  /// In tr, this message translates to:
+  /// **'Ana menü'**
+  String get mainMenu;
+
+  /// No description provided for @changeFilters.
+  ///
+  /// In tr, this message translates to:
+  /// **'Filtreleri değiştir'**
+  String get changeFilters;
+
+  /// No description provided for @quitRoundTitle.
+  ///
+  /// In tr, this message translates to:
+  /// **'Turdan çıkılsın mı?'**
+  String get quitRoundTitle;
+
+  /// No description provided for @quitRoundBody.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bu turdaki ilerlemen kaybolacak.'**
+  String get quitRoundBody;
+
+  /// No description provided for @quitRoundConfirm.
+  ///
+  /// In tr, this message translates to:
+  /// **'Çık'**
+  String get quitRoundConfirm;
+
+  /// No description provided for @cancel.
+  ///
+  /// In tr, this message translates to:
+  /// **'Vazgeç'**
+  String get cancel;
 }
 
 class _AppLocalizationsDelegate

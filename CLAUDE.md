@@ -150,10 +150,12 @@ Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya
   - Kıta: tümü veya bir/birden fazla kıta
   - Zorluk: kolay / orta / zor / karışık
   - Benzer şıklar: açıkken yanlış şıklar aynı kıtadan, komşu ülkelerden veya `similarTo` listesinden seçilir. Kapalıyken havuzdan rastgele seçilir.
+    - Öncelik sırası: bayrak modunda `similarTo` → komşular → aynı kıta; harita modunda komşular → aynı kıta (bayrak benzerliği haritada anlamsız). Havuz 4'ten küçükse şıklar tüm ülkelerden tamamlanır.
 - Bir turda aynı ülke iki kez sorulmaz. Şıklar karıştırılır ve şık listesinde tekrar olmaz.
 - Filtre sonucu havuzda 10'dan az ülke kalırsa tur kısaltılır ve kullanıcıya bildirilir.
 - Cevaptan sonra: doğru şık yeşil, yanlış seçilen kırmızı. "Devam" ile sonraki soruya geçilir (otomatik geçiş yok).
-- Motor saf Dart'tır (`QuestionGenerator`, `RoundState`) ve rastgelelik testlerde sabitlenebilmesi için `Random` enjekte edilir.
+- Motor saf Dart'tır (`QuestionGenerator`, `RoundState`) ve rastgelelik testlerde sabitlenebilmesi için `Random` enjekte edilir. Konum: `lib/features/practice/engine/`.
+- Turdan geri tuşuyla çıkmak onay ister. Özetten "Tekrar oyna" (aynı filtre), "Filtreleri değiştir" ve "Ana menü".
 
 ---
 

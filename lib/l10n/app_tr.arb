@@ -46,5 +46,103 @@
     }
   },
   "tapToReveal": "Ülkeyi görmek için dokun",
-  "showOnGlobe": "Kürede göster"
+  "showOnGlobe": "Kürede göster",
+  "practiceContinents": "Kıtalar",
+  "practiceDifficulty": "Zorluk",
+  "difficultyEasy": "Kolay",
+  "difficultyMedium": "Orta",
+  "difficultyHard": "Zor",
+  "difficultyMixed": "Karışık",
+  "practiceSimilar": "Benzer şıklar",
+  "practiceSimilarHint": "Yanlış şıklar benzer bayraklardan, komşulardan veya aynı kıtadan seçilir",
+  "practicePoolCount": "{count} ülke bu filtrelere uyuyor",
+  "@practicePoolCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "practiceShortened": "Tur {count} soruya kısaltılacak.",
+  "@practiceShortened": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "practiceShortenedStarted": "Bu filtrelerle yalnızca {count} soru var.",
+  "@practiceShortenedStarted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "practiceNoCountries": "Bu filtrelere uyan ülke yok.",
+  "practiceStart": "Başla",
+  "mapQuestion": "Vurgulanan ülke hangisi?",
+  "flagQuestion": "Bu bayrak hangi ülkenin?",
+  "questionProgress": "Soru {index} / {total}",
+  "@questionProgress": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "scoreLabel": "Puan: {score}",
+  "@scoreLabel": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "answerCorrect": "Doğru!",
+  "answerWrong": "Yanlış. Doğru cevap: {name}",
+  "@answerWrong": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "continueButton": "Devam",
+  "seeResults": "Sonuçları gör",
+  "summaryTitle": "Tur bitti",
+  "summaryScore": "{score} / {total}",
+  "@summaryScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryGreat": "Harika!",
+  "summaryGood": "İyi iş!",
+  "summaryKeepGoing": "Pratik yapmaya devam!",
+  "summaryMistakes": "Yanlışların",
+  "summaryNoMistakes": "Hiç yanlış yok!",
+  "summaryYourAnswer": "Senin cevabın: {name}",
+  "@summaryYourAnswer": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "playAgain": "Tekrar oyna",
+  "mainMenu": "Ana menü",
+  "changeFilters": "Filtreleri değiştir",
+  "quitRoundTitle": "Turdan çıkılsın mı?",
+  "quitRoundBody": "Bu turdaki ilerlemen kaybolacak.",
+  "quitRoundConfirm": "Çık",
+  "cancel": "Vazgeç"
 }

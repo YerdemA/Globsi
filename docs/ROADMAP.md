@@ -55,13 +55,13 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 4 — Pratik motoru ve modlar
-- [ ] Saf Dart `QuestionGenerator` + `RoundState` (enjekte edilebilir `Random`)
-- [ ] Filtre ekranı: kıta (çoklu), zorluk, benzer şıklar anahtarı
-- [ ] Bayrak pratiği ekranı
-- [ ] Harita pratiği ekranı (küre widget'ının etkileşimsiz/yarı etkileşimli modu, `focusOn` ile)
-- [ ] Cevap geri bildirimi (renk + ikon), "Devam" butonu
-- [ ] Tur özeti: skor, yanlışlar listesi, "Tekrar oyna" / "Ana menü"
-- [ ] Birim testleri: tekrar yok, doğru şık her zaman var, filtre uyumu, küçük havuz davranışı
+- [x] Saf Dart `QuestionGenerator` + `RoundState` (enjekte edilebilir `Random`)
+- [x] Filtre ekranı: kıta (çoklu), zorluk, benzer şıklar anahtarı
+- [x] Bayrak pratiği ekranı
+- [x] Harita pratiği ekranı (küre widget'ının etkileşimsiz/yarı etkileşimli modu, `focusOn` ile)
+- [x] Cevap geri bildirimi (renk + ikon), "Devam" butonu
+- [x] Tur özeti: skor, yanlışlar listesi, "Tekrar oyna" / "Ana menü"
+- [x] Birim testleri: tekrar yok, doğru şık her zaman var, filtre uyumu, küçük havuz davranışı
 
 **Kabul:** Her filtre kombinasyonunda 10 soruluk tur sorunsuz tamamlanıyor. Motor testleri geçiyor.
 
