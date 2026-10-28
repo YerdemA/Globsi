@@ -12,7 +12,10 @@ import 'package:globsi/l10n/app_localizations.dart';
 
 /// Explore: free globe with an info card for the tapped country.
 class GlobeScreen extends ConsumerStatefulWidget {
-  const new({super.key});
+  const new({this.focusId, super.key});
+
+  /// Country to select and turn to when the screen opens.
+  final String? focusId;
 
   @override
   ConsumerState<GlobeScreen> createState() => _GlobeScreenState();
@@ -22,6 +25,7 @@ class _GlobeScreenState extends ConsumerState<GlobeScreen>
     with SingleTickerProviderStateMixin {
   late final GlobeController _controller = GlobeController(vsync: this);
   String? _selectedId;
+  bool _focusedInitially = false;
 
   @override
   void dispose() {
@@ -66,6 +70,15 @@ class _GlobeScreenState extends ConsumerState<GlobeScreen>
 
   Widget _buildGlobe(CountryCatalog catalog, GlobeGeometry geometry) {
     final l10n = AppLocalizations.of(context);
+    if (!_focusedInitially) {
+      _focusedInitially = true;
+      final id = widget.focusId;
+      if (id != null) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _select(id, catalog, geometry);
+        });
+      }
+    }
     final selected = _selectedId == null ? null : catalog[_selectedId!];
     return Stack(
       children: [

@@ -33,11 +33,11 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_riverpod: ^3.4.3
-  flutter_svg: ^2.3.0
   go_router: ^18.1.1
   google_mobile_ads: ^9.2.0
   intl: ^0.20.3
   shared_preferences: ^2.5.6
+  vector_graphics: ^1.2.4
 
 dev_dependencies:
   flutter_test:
@@ -65,7 +65,11 @@ flutter:
   assets:
     - assets/data/
     - assets/geo/
-    - assets/flags/
+    # Flags are compiled to vector_graphics binaries at build time; load them
+    # with AssetBytesLoader (see lib/core/ui/flag_image.dart).
+    - path: assets/flags/
+      transformers:
+        - package: vector_graphics_compiler
 
   # To add assets to your application, add an assets section, like this:
   # assets:

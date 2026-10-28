@@ -92,4 +92,33 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get retry => 'Tekrar dene';
+
+  @override
+  String get flagsTabList => 'Liste';
+
+  @override
+  String get flagsTabCards => 'Kartlar';
+
+  @override
+  String get filterAll => 'Tümü';
+
+  @override
+  String get shuffle => 'Karıştır';
+
+  @override
+  String get previous => 'Önceki';
+
+  @override
+  String get next => 'Sonraki';
+
+  @override
+  String cardPosition(int index, int total) {
+    return '$index / $total';
+  }
+
+  @override
+  String get tapToReveal => 'Ülkeyi görmek için dokun';
+
+  @override
+  String get showOnGlobe => 'Kürede göster';
 }

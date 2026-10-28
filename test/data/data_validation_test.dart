@@ -85,6 +85,12 @@ void main() {
   });
 
   group('flags', () {
+    test('each flag file is named after its country code', () {
+      for (final c in countries) {
+        expect(c.flag, '${c.id.toLowerCase()}.svg', reason: c.id);
+      }
+    });
+
     test('every country has a parseable flag and no flag is unused', () {
       final files = {
         for (final f in Directory('assets/flags').listSync().whereType<File>())

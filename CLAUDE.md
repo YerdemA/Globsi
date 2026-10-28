@@ -32,7 +32,7 @@ Bu dosya projenin kalıcı kararlarını içerir. Aşamalı iş planı `docs/ROA
 | Framework | Flutter (en güncel stable), Dart null-safety |
 | Durum yönetimi | `flutter_riverpod` |
 | Yönlendirme | `go_router` |
-| Bayrak çizimi | `flutter_svg` |
+| Bayrak çizimi | `vector_graphics` (SVG'ler derlemede `vector_graphics_compiler` asset transformer'ı ile ikili formata çevrilir; çalışma anında SVG ayrıştırıcı yok) |
 | Yerel kayıt | `shared_preferences` (istatistik JSON olarak). İhtiyaç büyürse Hive'a geçilebilir. |
 | Yerelleştirme | `flutter_localizations` + `intl`, ARB dosyaları (`lib/l10n/app_tr.arb`, `app_en.arb`) |
 | Reklam | `google_mobile_ads` + Google UMP onay akışı |
@@ -53,6 +53,7 @@ lib/
     data/              # varlık yükleme, modeller, repository'ler
     stats/             # yerel istatistik servisi
     ads/               # reklam servisi ve sıklık kontrolü
+    ui/                # birden çok özellikte kullanılan küçük widget'lar (ör. FlagImage)
   features/
     globe/             # küre ekranı, GlobePainter, bilgi kartı
     flags_learn/       # liste/ızgara + kart çevirme
@@ -185,7 +186,7 @@ Amaç: gelir elde ederken kullanıcıyı kaçırmamak.
 - Material 3, açık ve koyu tema. Ana renk okyanus mavisi tonlarında.
 - Ana menü: 4 büyük kart (Keşfet, Bayrakları Öğren, Harita Pratiği, Bayrak Pratiği) + ayarlar ikonu.
 - Tüm metinler ARB dosyalarından gelir. Koda sabit Türkçe/İngilizce metin yazılmaz.
-- Ülke adı sıralaması dile göre yapılır (Türkçe sıralamada Ç, Ğ, İ, Ö, Ş, Ü doğru konumda olmalı).
+- Ülke adı sıralaması dile göre yapılır (Türkçe sıralamada Ç, Ğ, İ, Ö, Ş, Ü doğru konumda olmalı). Dart'ta yerel collation olmadığı için `core/data/name_collation.dart` kullanılır.
 - Erişilebilirlik: dokunma hedefleri en az 48dp. Doğru/yanlış sadece renkle değil ikonla da belirtilir.
 
 ---

@@ -92,4 +92,33 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get retry => 'Retry';
+
+  @override
+  String get flagsTabList => 'List';
+
+  @override
+  String get flagsTabCards => 'Cards';
+
+  @override
+  String get filterAll => 'All';
+
+  @override
+  String get shuffle => 'Shuffle';
+
+  @override
+  String get previous => 'Previous';
+
+  @override
+  String get next => 'Next';
+
+  @override
+  String cardPosition(int index, int total) {
+    return '$index / $total';
+  }
+
+  @override
+  String get tapToReveal => 'Tap to reveal the country';
+
+  @override
+  String get showOnGlobe => 'Show on globe';
 }

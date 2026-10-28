@@ -45,10 +45,10 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 3 — Bayrak öğrenme modu
-- [ ] Kıtaya göre gruplu ızgara, dile göre doğru alfabetik sıralama
-- [ ] Bayrak detay ekranı/kartı
-- [ ] Kart çevirme görünümü: çevirme animasyonu, kaydırarak geçiş, kıta seçimi, karıştır
-- [ ] Detaydan "Kürede göster" → Keşfet ekranında `focusOn`
+- [x] Kıtaya göre gruplu ızgara, dile göre doğru alfabetik sıralama
+- [x] Bayrak detay ekranı/kartı
+- [x] Kart çevirme görünümü: çevirme animasyonu, kaydırarak geçiş, kıta seçimi, karıştır
+- [x] Detaydan "Kürede göster" → Keşfet ekranında `focusOn`
 
 **Kabul:** Tüm bayraklar doğru ülkeyle eşleşiyor, liste kaydırması takılmıyor (SVG önbellek), kart modu tek elle rahat kullanılıyor.
 

@@ -27,5 +27,14 @@
   "zoomIn": "Zoom in",
   "zoomOut": "Zoom out",
   "loadError": "Couldn't load the data.",
-  "retry": "Retry"
+  "retry": "Retry",
+  "flagsTabList": "List",
+  "flagsTabCards": "Cards",
+  "filterAll": "All",
+  "shuffle": "Shuffle",
+  "previous": "Previous",
+  "next": "Next",
+  "cardPosition": "{index} / {total}",
+  "tapToReveal": "Tap to reveal the country",
+  "showOnGlobe": "Show on globe"
 }

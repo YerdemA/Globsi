@@ -14,6 +14,10 @@ abstract final class Routes {
   static const mapPractice = '/practice/map';
   static const flagPractice = '/practice/flags';
   static const settings = '/settings';
+
+  /// Explore, focused on country [id].
+  static String exploreCountry(String id) =>
+      Uri(path: explore, queryParameters: {'focus': id}).toString();
 }
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -25,7 +29,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         routes: [
           GoRoute(
             path: 'explore',
-            builder: (context, state) => const GlobeScreen(),
+            builder: (context, state) =>
+                GlobeScreen(focusId: state.uri.queryParameters['focus']),
           ),
           GoRoute(
             path: 'flags',

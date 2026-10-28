@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:globsi/app/localized_names.dart';
 import 'package:globsi/core/data/country.dart';
+import 'package:globsi/core/ui/flag_image.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 
 /// Bottom card with a country's flag, name, capital and continent.
@@ -28,17 +28,7 @@ class CountryInfoCard extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 4),
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  border: Border.all(color: theme.colorScheme.outlineVariant),
-                ),
-                child: SvgPicture.asset(
-                  country.flagAsset,
-                  width: 72,
-                  height: 54,
-                  semanticsLabel: country.name.resolve(language),
-                ),
-              ),
+              child: FlagImage(country: country, width: 72, height: 54),
             ),
             Expanded(
               child: Column(

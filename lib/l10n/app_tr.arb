@@ -27,5 +27,24 @@
   "zoomIn": "Yakınlaştır",
   "zoomOut": "Uzaklaştır",
   "loadError": "Veriler yüklenemedi.",
-  "retry": "Tekrar dene"
+  "retry": "Tekrar dene",
+  "flagsTabList": "Liste",
+  "flagsTabCards": "Kartlar",
+  "filterAll": "Tümü",
+  "shuffle": "Karıştır",
+  "previous": "Önceki",
+  "next": "Sonraki",
+  "cardPosition": "{index} / {total}",
+  "@cardPosition": {
+    "placeholders": {
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tapToReveal": "Ülkeyi görmek için dokun",
+  "showOnGlobe": "Kürede göster"
 }

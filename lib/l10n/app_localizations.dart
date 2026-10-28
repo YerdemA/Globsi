@@ -265,6 +265,60 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Tekrar dene'**
   String get retry;
+
+  /// No description provided for @flagsTabList.
+  ///
+  /// In tr, this message translates to:
+  /// **'Liste'**
+  String get flagsTabList;
+
+  /// No description provided for @flagsTabCards.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kartlar'**
+  String get flagsTabCards;
+
+  /// No description provided for @filterAll.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tümü'**
+  String get filterAll;
+
+  /// No description provided for @shuffle.
+  ///
+  /// In tr, this message translates to:
+  /// **'Karıştır'**
+  String get shuffle;
+
+  /// No description provided for @previous.
+  ///
+  /// In tr, this message translates to:
+  /// **'Önceki'**
+  String get previous;
+
+  /// No description provided for @next.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sonraki'**
+  String get next;
+
+  /// No description provided for @cardPosition.
+  ///
+  /// In tr, this message translates to:
+  /// **'{index} / {total}'**
+  String cardPosition(int index, int total);
+
+  /// No description provided for @tapToReveal.
+  ///
+  /// In tr, this message translates to:
+  /// **'Ülkeyi görmek için dokun'**
+  String get tapToReveal;
+
+  /// No description provided for @showOnGlobe.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kürede göster'**
+  String get showOnGlobe;
 }
 
 class _AppLocalizationsDelegate
