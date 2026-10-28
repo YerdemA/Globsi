@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:globsi/core/ads/ad_service.dart';
 import 'package:globsi/core/stats/stats_service.dart';
 import 'package:globsi/features/settings/locale_provider.dart';
 import 'package:globsi/l10n/app_localizations.dart';
@@ -37,6 +38,20 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ),
           const Divider(),
+          ValueListenableBuilder(
+            valueListenable: ref
+                .watch(adServiceProvider)
+                .privacyOptionsRequired,
+            builder: (context, required, _) => required
+                ? ListTile(
+                    leading: const Icon(Icons.privacy_tip_outlined),
+                    title: Text(l10n.settingsPrivacy),
+                    subtitle: Text(l10n.settingsPrivacyHint),
+                    onTap: () =>
+                        ref.read(adServiceProvider).showPrivacyOptions(),
+                  )
+                : const SizedBox.shrink(),
+          ),
           ListTile(
             leading: const Icon(Icons.restart_alt),
             title: Text(l10n.settingsResetStats),

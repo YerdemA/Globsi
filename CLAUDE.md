@@ -176,12 +176,13 @@ Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya
 Amaç: gelir elde ederken kullanıcıyı kaçırmamak.
 
 1. **Soru ekranlarında ve küre etkileşimi sırasında hiçbir reklam gösterilmez.**
-2. **Banner:** Ana menü, bayrak listesi ve tur özeti ekranlarının altında tek adaptive banner. Küre ve pratik ekranlarında banner yok.
-3. **Interstitial (tam ekran):** Yalnızca tur özeti ekranından çıkarken, **en fazla her 3 tamamlanmış turda bir**, ayrıca en az 3 dakika aralıkla. İlk oturumda hiç gösterilmez.
+2. **Banner:** Ana menü, bayrak listesi ve tur özeti ekranlarının altında tek adaptive banner (en fazla 60 dp yükseklik; büyük "large anchored" boyut kullanılmaz). Küre, kart çevirme ve pratik soru ekranlarında banner yok.
+3. **Interstitial (tam ekran):** Çok nadir (karar 2026-10-29). Yalnızca tur özeti ekranından çıkarken, **en az 5 tamamlanmış turda bir**, en az **10 dakika** aralıkla, **oturum başına en fazla 1**. İlk oturumda hiç gösterilmez. Değerler `core/ads/interstitial_policy.dart` içinde.
 4. Reklam yüklenemezse akış asla bekletilmez veya bozulmaz.
-5. Debug derlemelerde her zaman Google test reklam ID'leri kullanılır. Gerçek ID'ler `--dart-define` veya derleme yapılandırmasıyla verilir, koda yazılmaz.
+5. Debug derlemelerde her zaman Google test reklam ID'leri kullanılır. Gerçek ID'ler `--dart-define` veya derleme yapılandırmasıyla verilir, koda yazılmaz. Release derlemede birim ID'leri verilmezse reklamlar tamamen kapalıdır (bkz. README).
 6. AB/İngiltere kullanıcıları için uygulama açılışında UMP onay formu. Ayarlar'da "Gizlilik seçenekleri" butonu.
-7. Çocuklara yönelik içerik olarak işaretlenecekse (Families politikası) reklam yapılandırması buna göre değişir. Hedef yaş kitlesi Play Console'da belirlenmeden önce bu konu netleştirilmeli.
+7. **Karar (2026-10-29): Uygulama çocuklara yönelik olarak işaretlenmez** (Families politikası dışı). Eğitim içeriği olduğu için reklam içerik derecesi yine de **PG** ile sınırlanır (`maxAdContentRating`).
+8. Manuel test listesi: `docs/ADS_TEST_CHECKLIST.md`.
 
 ---
 

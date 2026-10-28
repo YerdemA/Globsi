@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:globsi/app/router.dart';
+import 'package:globsi/core/ads/ad_banner.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 
@@ -10,6 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return Scaffold(
+      bottomNavigationBar: const AdBanner(),
       appBar: AppBar(
         title: Text(l10n.appTitle),
         actions: [

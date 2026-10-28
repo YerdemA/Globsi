@@ -181,5 +181,7 @@
   "resetStatsTitle": "İstatistikler sıfırlansın mı?",
   "resetStatsBody": "Tüm pratik geçmişin silinecek. Bu işlem geri alınamaz.",
   "resetStatsConfirm": "Sıfırla",
-  "statsResetDone": "İstatistikler sıfırlandı."
+  "statsResetDone": "İstatistikler sıfırlandı.",
+  "settingsPrivacy": "Gizlilik seçenekleri",
+  "settingsPrivacyHint": "Reklam ve veri onayı tercihlerini değiştir"
 }

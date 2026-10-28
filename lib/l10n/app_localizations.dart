@@ -637,6 +637,18 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'İstatistikler sıfırlandı.'**
   String get statsResetDone;
+
+  /// No description provided for @settingsPrivacy.
+  ///
+  /// In tr, this message translates to:
+  /// **'Gizlilik seçenekleri'**
+  String get settingsPrivacy;
+
+  /// No description provided for @settingsPrivacyHint.
+  ///
+  /// In tr, this message translates to:
+  /// **'Reklam ve veri onayı tercihlerini değiştir'**
+  String get settingsPrivacyHint;
 }
 
 class _AppLocalizationsDelegate

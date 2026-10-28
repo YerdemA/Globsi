@@ -322,4 +322,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get statsResetDone => 'Statistics reset.';
+
+  @override
+  String get settingsPrivacy => 'Privacy options';
+
+  @override
+  String get settingsPrivacyHint => 'Change your ad and data consent choices';
 }

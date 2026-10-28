@@ -304,4 +304,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get statsResetDone => 'İstatistikler sıfırlandı.';
+
+  @override
+  String get settingsPrivacy => 'Gizlilik seçenekleri';
+
+  @override
+  String get settingsPrivacyHint =>
+      'Reklam ve veri onayı tercihlerini değiştir';
 }

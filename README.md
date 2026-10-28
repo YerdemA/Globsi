@@ -14,6 +14,30 @@ flutter test
 flutter run
 ```
 
+## Reklamlar
+
+Debug ve profile derlemeleri her zaman Google'ın test reklamlarını kullanır.
+Gerçek AdMob kimlikleri koda yazılmaz; release derlemesinde verilir:
+
+```bash
+flutter build appbundle --release \
+  -P ADMOB_APP_ID=ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY \
+  --dart-define=ADMOB_BANNER_ID=ca-app-pub-XXXXXXXXXXXXXXXX/ZZZZZZZZZZ \
+  --dart-define=ADMOB_INTERSTITIAL_ID=ca-app-pub-XXXXXXXXXXXXXXXX/WWWWWWWWWW
+```
+
+Birim kimlikleri verilmezse release derlemesinde reklam gösterilmez.
+`ADMOB_APP_ID` ortam değişkeni olarak da verilebilir.
+
+Elle test için (yalnızca debug):
+
+- `--dart-define=ADS_DEBUG_FREQUENT=true` — tam ekran reklamın tur/süre
+  sınırlarını kaldırır.
+- `--dart-define=UMP_DEBUG_EEA=true` — onay formunu AB'deymiş gibi açar
+  (AdMob'da gizlilik mesajı yayınlanmış olmalı).
+
+Kurallar ve test listesi: `CLAUDE.md` §8, [`docs/ADS_TEST_CHECKLIST.md`](docs/ADS_TEST_CHECKLIST.md).
+
 ## Veri hattı
 
 Uygulamanın kullandığı işlenmiş veriler repoda hazırdır:

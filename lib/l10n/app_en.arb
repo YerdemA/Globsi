@@ -89,5 +89,7 @@
   "resetStatsTitle": "Reset statistics?",
   "resetStatsBody": "Your whole practice history will be deleted. This can't be undone.",
   "resetStatsConfirm": "Reset",
-  "statsResetDone": "Statistics reset."
+  "statsResetDone": "Statistics reset.",
+  "settingsPrivacy": "Privacy options",
+  "settingsPrivacyHint": "Change your ad and data consent choices"
 }

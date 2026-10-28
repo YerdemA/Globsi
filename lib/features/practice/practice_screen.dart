@@ -4,6 +4,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:globsi/app/router.dart';
+import 'package:globsi/core/ads/ad_banner.dart';
+import 'package:globsi/core/ads/ad_service.dart';
 import 'package:globsi/core/data/country_repository.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
 import 'package:globsi/core/stats/practice_stats.dart';
@@ -96,10 +98,30 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
               ),
           ],
         );
+    if (!mounted) return;
+    // Preload a full-screen ad now, in case leaving the summary may show one.
+    _ads(
+      (ads) => ads.prepareInterstitial(ref.read(statsProvider).roundsCompleted),
+    );
     // A first round on a filter is not a "new best".
-    if (mounted && previous != null && score.isBetterThan(previous)) {
+    if (previous != null && score.isBetterThan(previous)) {
       setState(() => _newBest = true);
     }
+  }
+
+  /// Runs an ad call; ad problems must never break the round flow (§8).
+  void _ads(void Function(AdService ads) call) {
+    try {
+      call(ref.read(adServiceProvider));
+    } on Object catch (e) {
+      debugPrint('Ad call failed: $e');
+    }
+  }
+
+  /// Leaving the summary is the only place a full-screen ad may appear.
+  void _leaveSummary(VoidCallback then) {
+    _ads((ads) => ads.onLeaveSummary(ref.read(statsProvider).roundsCompleted));
+    then();
   }
 
   Future<void> _confirmQuit() async {
@@ -155,11 +177,19 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
     return PopScope(
       canPop: !_playing,
       onPopInvokedWithResult: (didPop, _) {
-        if (!didPop) unawaited(_confirmQuit());
+        if (!didPop) {
+          unawaited(_confirmQuit());
+        } else if (_round?.isFinished ?? false) {
+          _leaveSummary(() {});
+        }
       },
       child: Scaffold(
         appBar: AppBar(title: Text(title)),
         body: body,
+        // Banner only on the summary; never during questions (§8).
+        bottomNavigationBar: (_round?.isFinished ?? false)
+            ? const AdBanner()
+            : null,
       ),
     );
   }
@@ -178,9 +208,10 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
       return RoundSummaryView(
         state: round,
         isNewBest: _newBest,
-        onPlayAgain: () => _start(catalog),
-        onChangeFilters: () => setState(() => _round = null),
-        onMainMenu: () => context.go(Routes.home),
+        onPlayAgain: () => _leaveSummary(() => _start(catalog)),
+        onChangeFilters: () =>
+            _leaveSummary(() => setState(() => _round = null)),
+        onMainMenu: () => _leaveSummary(() => context.go(Routes.home)),
       );
     }
     return QuestionView(

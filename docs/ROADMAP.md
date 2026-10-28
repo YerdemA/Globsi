@@ -78,11 +78,11 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 6 — Reklamlar
-- [ ] AdMob uygulama kaydı (Erdem yapacak), ID'lerin `--dart-define` ile verilmesi
-- [ ] UMP onay akışı + Ayarlar'da "Gizlilik seçenekleri"
-- [ ] `AdService`: banner yerleşimleri ve interstitial sıklık kuralları (`CLAUDE.md` §8)
-- [ ] Debug'da test ID'leri
-- [ ] Reklam yüklenemediğinde akışın bozulmadığının testi
+- [ ] AdMob uygulama kaydı (Erdem yapacak) — kod tarafı hazır: ID'ler `--dart-define` ve `-PADMOB_APP_ID` ile veriliyor
+- [x] UMP onay akışı + Ayarlar'da "Gizlilik seçenekleri"
+- [x] `AdService`: banner yerleşimleri ve interstitial sıklık kuralları (`CLAUDE.md` §8)
+- [x] Debug'da test ID'leri
+- [x] Reklam yüklenemediğinde akışın bozulmadığının testi
 
 **Kabul:** §8'deki tüm kurallar manuel test listesinde tek tek doğrulanmış.
 
