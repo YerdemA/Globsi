@@ -6,6 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:globsi/app/router.dart';
 import 'package:globsi/core/data/country_repository.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
+import 'package:globsi/core/stats/practice_stats.dart';
+import 'package:globsi/core/stats/stats_service.dart';
 import 'package:globsi/features/globe/globe_providers.dart';
 import 'package:globsi/features/practice/engine/practice_filter.dart';
 import 'package:globsi/features/practice/engine/question_generator.dart';
@@ -32,6 +34,9 @@ class PracticeScreen extends ConsumerStatefulWidget {
 class _PracticeScreenState extends ConsumerState<PracticeScreen> {
   late final Random _random = widget.random ?? Random();
   PracticeFilter _filter = const PracticeFilter();
+
+  /// Whether the finished round beat the previous best for its filter.
+  bool _newBest = false;
 
   /// `null` while choosing filters.
   RoundState? _round;
@@ -65,6 +70,36 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
         round.current.options.firstWhere((o) => o.id == id),
       ),
     );
+  }
+
+  void _continue(RoundState round) {
+    final next = round.next();
+    setState(() {
+      _round = next;
+      _newBest = false;
+    });
+    if (next.isFinished) unawaited(_record(next));
+  }
+
+  Future<void> _record(RoundState round) async {
+    final score = BestScore(round.score, round.length);
+    final previous = await ref
+        .read(statsProvider.notifier)
+        .recordRound(
+          mode: widget.mode.name,
+          filterKey: _filter.key,
+          results: [
+            for (final (i, q) in round.questions.indexed)
+              (
+                countryId: q.answer.id,
+                correct: round.choices[i].id == q.answer.id,
+              ),
+          ],
+        );
+    // A first round on a filter is not a "new best".
+    if (mounted && previous != null && score.isBetterThan(previous)) {
+      setState(() => _newBest = true);
+    }
   }
 
   Future<void> _confirmQuit() async {
@@ -142,6 +177,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
     if (round.isFinished) {
       return RoundSummaryView(
         state: round,
+        isNewBest: _newBest,
         onPlayAgain: () => _start(catalog),
         onChangeFilters: () => setState(() => _round = null),
         onMainMenu: () => context.go(Routes.home),
@@ -152,7 +188,7 @@ class _PracticeScreenState extends ConsumerState<PracticeScreen> {
       state: round,
       geometry: geometry,
       onAnswer: _answer,
-      onContinue: () => setState(() => _round = round.next()),
+      onContinue: () => _continue(round),
     );
   }
 }

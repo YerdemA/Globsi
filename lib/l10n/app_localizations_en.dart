@@ -264,4 +264,62 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cancel => 'Cancel';
+
+  @override
+  String get summaryNewBest => 'New best score!';
+
+  @override
+  String get statsTitle => 'Statistics';
+
+  @override
+  String get statsEmpty =>
+      'No rounds completed yet. Finish a practice round to see your stats here.';
+
+  @override
+  String get statsRounds => 'Rounds completed';
+
+  @override
+  String get statsAccuracy => 'Accuracy';
+
+  @override
+  String statsAnswers(int correct, int total) {
+    return '$correct correct of $total';
+  }
+
+  @override
+  String get statsMostMissed => 'Most confused';
+
+  @override
+  String statsMissedCount(int wrong, int correct) {
+    return '$wrong wrong, $correct correct';
+  }
+
+  @override
+  String get statsBestScores => 'Best scores';
+
+  @override
+  String get filterSimilarShort => 'similar choices';
+
+  @override
+  String get filterRandomShort => 'random choices';
+
+  @override
+  String get settingsResetStats => 'Reset statistics';
+
+  @override
+  String get settingsResetStatsHint =>
+      'Deletes all answer counts and best scores';
+
+  @override
+  String get resetStatsTitle => 'Reset statistics?';
+
+  @override
+  String get resetStatsBody =>
+      'Your whole practice history will be deleted. This can\'t be undone.';
+
+  @override
+  String get resetStatsConfirm => 'Reset';
+
+  @override
+  String get statsResetDone => 'Statistics reset.';
 }

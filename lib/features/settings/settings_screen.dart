@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:globsi/core/stats/stats_service.dart';
 import 'package:globsi/features/settings/locale_provider.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 
@@ -35,8 +36,41 @@ class SettingsScreen extends ConsumerWidget {
               ],
             ),
           ),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.restart_alt),
+            title: Text(l10n.settingsResetStats),
+            subtitle: Text(l10n.settingsResetStatsHint),
+            onTap: () => _confirmReset(context, ref),
+          ),
         ],
       ),
     );
+  }
+
+  Future<void> _confirmReset(BuildContext context, WidgetRef ref) async {
+    final l10n = AppLocalizations.of(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(l10n.resetStatsTitle),
+        content: Text(l10n.resetStatsBody),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: Text(l10n.cancel),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: Text(l10n.resetStatsConfirm),
+          ),
+        ],
+      ),
+    );
+    if (!(confirmed ?? false)) return;
+    await ref.read(statsProvider.notifier).reset();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context)
+        .showSnackBar(SnackBar(content: Text(l10n.statsResetDone)));
   }
 }

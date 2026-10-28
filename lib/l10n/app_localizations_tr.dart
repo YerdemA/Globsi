@@ -246,4 +246,62 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get cancel => 'Vazgeç';
+
+  @override
+  String get summaryNewBest => 'Yeni en iyi skor!';
+
+  @override
+  String get statsTitle => 'İstatistikler';
+
+  @override
+  String get statsEmpty =>
+      'Henüz tamamlanmış tur yok. Bir pratik turunu bitirdiğinde istatistiklerin burada görünür.';
+
+  @override
+  String get statsRounds => 'Tamamlanan tur';
+
+  @override
+  String get statsAccuracy => 'Doğruluk';
+
+  @override
+  String statsAnswers(int correct, int total) {
+    return '$total sorudan $correct doğru';
+  }
+
+  @override
+  String get statsMostMissed => 'En çok karıştırılanlar';
+
+  @override
+  String statsMissedCount(int wrong, int correct) {
+    return '$wrong yanlış, $correct doğru';
+  }
+
+  @override
+  String get statsBestScores => 'En iyi skorlar';
+
+  @override
+  String get filterSimilarShort => 'benzer şıklar';
+
+  @override
+  String get filterRandomShort => 'rastgele şıklar';
+
+  @override
+  String get settingsResetStats => 'İstatistikleri sıfırla';
+
+  @override
+  String get settingsResetStatsHint =>
+      'Tüm doğru/yanlış sayıları ve en iyi skorlar silinir';
+
+  @override
+  String get resetStatsTitle => 'İstatistikler sıfırlansın mı?';
+
+  @override
+  String get resetStatsBody =>
+      'Tüm pratik geçmişin silinecek. Bu işlem geri alınamaz.';
+
+  @override
+  String get resetStatsConfirm => 'Sıfırla';
+
+  @override
+  String get statsResetDone => 'İstatistikler sıfırlandı.';
 }

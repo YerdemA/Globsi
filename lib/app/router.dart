@@ -5,6 +5,7 @@ import 'package:globsi/features/home/home_screen.dart';
 import 'package:globsi/features/practice/flag_practice_screen.dart';
 import 'package:globsi/features/practice/map_practice_screen.dart';
 import 'package:globsi/features/settings/settings_screen.dart';
+import 'package:globsi/features/stats/stats_screen.dart';
 import 'package:go_router/go_router.dart';
 
 abstract final class Routes {
@@ -14,6 +15,7 @@ abstract final class Routes {
   static const mapPractice = '/practice/map';
   static const flagPractice = '/practice/flags';
   static const settings = '/settings';
+  static const stats = '/stats';
 
   /// Explore, focused on country [id].
   static String exploreCountry(String id) =>
@@ -43,6 +45,10 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'practice/flags',
             builder: (context, state) => const FlagPracticeScreen(),
+          ),
+          GoRoute(
+            path: 'stats',
+            builder: (context, state) => const StatsScreen(),
           ),
           GoRoute(
             path: 'settings',

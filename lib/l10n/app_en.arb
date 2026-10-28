@@ -72,5 +72,22 @@
   "quitRoundTitle": "Leave this round?",
   "quitRoundBody": "Your progress in this round will be lost.",
   "quitRoundConfirm": "Leave",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+  "summaryNewBest": "New best score!",
+  "statsTitle": "Statistics",
+  "statsEmpty": "No rounds completed yet. Finish a practice round to see your stats here.",
+  "statsRounds": "Rounds completed",
+  "statsAccuracy": "Accuracy",
+  "statsAnswers": "{correct} correct of {total}",
+  "statsMostMissed": "Most confused",
+  "statsMissedCount": "{wrong} wrong, {correct} correct",
+  "statsBestScores": "Best scores",
+  "filterSimilarShort": "similar choices",
+  "filterRandomShort": "random choices",
+  "settingsResetStats": "Reset statistics",
+  "settingsResetStatsHint": "Deletes all answer counts and best scores",
+  "resetStatsTitle": "Reset statistics?",
+  "resetStatsBody": "Your whole practice history will be deleted. This can't be undone.",
+  "resetStatsConfirm": "Reset",
+  "statsResetDone": "Statistics reset."
 }

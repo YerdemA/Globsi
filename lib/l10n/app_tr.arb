@@ -144,5 +144,42 @@
   "quitRoundTitle": "Turdan çıkılsın mı?",
   "quitRoundBody": "Bu turdaki ilerlemen kaybolacak.",
   "quitRoundConfirm": "Çık",
-  "cancel": "Vazgeç"
+  "cancel": "Vazgeç",
+  "summaryNewBest": "Yeni en iyi skor!",
+  "statsTitle": "İstatistikler",
+  "statsEmpty": "Henüz tamamlanmış tur yok. Bir pratik turunu bitirdiğinde istatistiklerin burada görünür.",
+  "statsRounds": "Tamamlanan tur",
+  "statsAccuracy": "Doğruluk",
+  "statsAnswers": "{total} sorudan {correct} doğru",
+  "@statsAnswers": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statsMostMissed": "En çok karıştırılanlar",
+  "statsMissedCount": "{wrong} yanlış, {correct} doğru",
+  "@statsMissedCount": {
+    "placeholders": {
+      "wrong": {
+        "type": "int"
+      },
+      "correct": {
+        "type": "int"
+      }
+    }
+  },
+  "statsBestScores": "En iyi skorlar",
+  "filterSimilarShort": "benzer şıklar",
+  "filterRandomShort": "rastgele şıklar",
+  "settingsResetStats": "İstatistikleri sıfırla",
+  "settingsResetStatsHint": "Tüm doğru/yanlış sayıları ve en iyi skorlar silinir",
+  "resetStatsTitle": "İstatistikler sıfırlansın mı?",
+  "resetStatsBody": "Tüm pratik geçmişin silinecek. Bu işlem geri alınamaz.",
+  "resetStatsConfirm": "Sıfırla",
+  "statsResetDone": "İstatistikler sıfırlandı."
 }

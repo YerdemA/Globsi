@@ -11,6 +11,7 @@ class RoundSummaryView extends StatelessWidget {
     required this.onPlayAgain,
     required this.onChangeFilters,
     required this.onMainMenu,
+    this.isNewBest = false,
     super.key,
   });
 
@@ -18,6 +19,9 @@ class RoundSummaryView extends StatelessWidget {
   final VoidCallback onPlayAgain;
   final VoidCallback onChangeFilters;
   final VoidCallback onMainMenu;
+
+  /// Beat the previous best score for this mode and filter.
+  final bool isNewBest;
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +52,26 @@ class RoundSummaryView extends StatelessWidget {
                 style: theme.textTheme.titleLarge,
                 textAlign: TextAlign.center,
               ),
+              if (isNewBest)
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    spacing: 8,
+                    children: [
+                      Icon(
+                        Icons.emoji_events,
+                        color: theme.colorScheme.tertiary,
+                      ),
+                      Text(
+                        l10n.summaryNewBest,
+                        style: theme.textTheme.titleMedium?.copyWith(
+                          color: theme.colorScheme.tertiary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               const SizedBox(height: 24),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),

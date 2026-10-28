@@ -22,6 +22,30 @@ class PracticeFilter {
     this.similarChoices = true,
   });
 
+  /// Parses [key]; unknown parts fall back to the defaults.
+  factory fromKey(String key) {
+    final parts = {
+      for (final p in key.split(';'))
+        if (p.indexOf('=') case final i when i > 0)
+          p.substring(0, i): p.substring(i + 1),
+    };
+    final c = parts['c'];
+    return PracticeFilter(
+      continents: c == null || c == 'all'
+          ? const {}
+          : {
+              for (final json in c.split('+'))
+                ?Continent.values.where((v) => v.json == json).firstOrNull,
+            },
+      difficulty:
+          DifficultyFilter.values
+              .where((d) => d.name == parts['d'])
+              .firstOrNull ??
+          DifficultyFilter.mixed,
+      similarChoices: parts['s'] != '0',
+    );
+  }
+
   /// Selected continents; empty means all.
   final Set<Continent> continents;
   final DifficultyFilter difficulty;

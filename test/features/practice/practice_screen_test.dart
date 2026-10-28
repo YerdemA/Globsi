@@ -6,16 +6,20 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:globsi/core/data/country_repository.dart';
+import 'package:globsi/core/data/preferences.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
+import 'package:globsi/core/stats/stats_service.dart';
 import 'package:globsi/features/globe/globe_providers.dart';
 import 'package:globsi/features/practice/engine/practice_filter.dart';
 import 'package:globsi/features/practice/option_button.dart';
 import 'package:globsi/features/practice/practice_screen.dart';
 import 'package:globsi/l10n/app_localizations.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   late CountryCatalog catalog;
   late GlobeGeometry geometry;
+  late ProviderContainer container;
 
   setUpAll(() async {
     final repository = CountryRepository(rootBundle);
@@ -27,12 +31,19 @@ void main() {
     tester.view.physicalSize = const Size(1080, 2400);
     tester.view.devicePixelRatio = 2.625;
     addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    container = ProviderContainer(
+      overrides: [
+        sharedPreferencesProvider.overrideWithValue(prefs),
+        countryCatalogProvider.overrideWith((ref) => catalog),
+        globeGeometryProvider.overrideWith((ref) => geometry),
+      ],
+    );
+    addTearDown(container.dispose);
     await tester.pumpWidget(
-      ProviderScope(
-        overrides: [
-          countryCatalogProvider.overrideWith((ref) => catalog),
-          globeGeometryProvider.overrideWith((ref) => geometry),
-        ],
+      UncontrolledProviderScope(
+        container: container,
         child: MaterialApp(
           locale: const Locale('en'),
           localizationsDelegates: const [
@@ -96,6 +107,11 @@ void main() {
 
     expect(find.textContaining(' / 10'), findsOneWidget);
     expect(find.text('Play again'), findsOneWidget);
+    final stats = container.read(statsProvider);
+    expect(stats.roundsCompleted, 1);
+    expect(stats.totals(mode: 'flag').total, 10);
+    // The first round on a filter sets, but does not beat, a best score.
+    expect(find.text('New best score!'), findsNothing);
     expect(find.text('Main menu'), findsOneWidget);
 
     await tester.tap(find.text('Play again'));

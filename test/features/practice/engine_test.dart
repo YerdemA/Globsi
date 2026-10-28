@@ -274,6 +274,24 @@ void main() {
     });
   });
 
+  test('every filter survives a key round trip', () {
+    for (var mask = 0; mask < 1 << Continent.values.length; mask++) {
+      for (final d in DifficultyFilter.values) {
+        for (final s in [true, false]) {
+          final filter = PracticeFilter(
+            continents: {
+              for (final (i, c) in Continent.values.indexed)
+                if (mask & (1 << i) != 0) c,
+            },
+            difficulty: d,
+            similarChoices: s,
+          );
+          expect(PracticeFilter.fromKey(filter.key).key, filter.key);
+        }
+      }
+    }
+  });
+
   test('filter keys are stable regardless of continent order', () {
     const a = PracticeFilter(continents: {Continent.asia, Continent.europe});
     const b = PracticeFilter(continents: {Continent.europe, Continent.asia});

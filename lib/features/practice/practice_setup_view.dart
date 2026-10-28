@@ -4,6 +4,7 @@ import 'package:globsi/core/data/country.dart';
 import 'package:globsi/features/flags_learn/flashcard_deck.dart';
 import 'package:globsi/features/practice/engine/practice_filter.dart';
 import 'package:globsi/features/practice/engine/question_generator.dart';
+import 'package:globsi/features/practice/practice_labels.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 
 /// Filter choices shown before a round.
@@ -73,10 +74,7 @@ class PracticeSetupView extends StatelessWidget {
                 showSelectedIcon: false,
                 segments: [
                   for (final d in DifficultyFilter.values)
-                    ButtonSegment(
-                      value: d,
-                      label: Text(_difficultyLabel(l10n, d)),
-                    ),
+                    ButtonSegment(value: d, label: Text(d.label(l10n))),
                 ],
                 selected: {filter.difficulty},
                 onSelectionChanged: (s) =>
@@ -130,11 +128,3 @@ class PracticeSetupView extends StatelessWidget {
     );
   }
 }
-
-String _difficultyLabel(AppLocalizations l10n, DifficultyFilter d) =>
-    switch (d) {
-      DifficultyFilter.easy => l10n.difficultyEasy,
-      DifficultyFilter.medium => l10n.difficultyMedium,
-      DifficultyFilter.hard => l10n.difficultyHard,
-      DifficultyFilter.mixed => l10n.difficultyMixed,
-    };

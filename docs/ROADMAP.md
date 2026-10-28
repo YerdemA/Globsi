@@ -68,10 +68,10 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 5 — Yerel istatistik
-- [ ] `StatsService`: ülke × mod doğru/yanlış, en iyi skorlar, toplam tur
-- [ ] Tur sonunda kayıt
-- [ ] Basit istatistik ekranı (genel doğruluk oranı, en çok karıştırılan ülkeler)
-- [ ] Ayarlar: istatistikleri sıfırla (onaylı)
+- [x] `StatsService`: ülke × mod doğru/yanlış, en iyi skorlar, toplam tur
+- [x] Tur sonunda kayıt
+- [x] Basit istatistik ekranı (genel doğruluk oranı, en çok karıştırılan ülkeler)
+- [x] Ayarlar: istatistikleri sıfırla (onaylı)
 
 **Kabul:** Uygulama kapanıp açılınca veriler korunuyor, sıfırlama çalışıyor.
 

@@ -51,7 +51,7 @@ lib/
   core/
     geo/               # projeksiyon matematiği, rotasyon, hit-test (saf Dart, Flutter'a bağımsız)
     data/              # varlık yükleme, modeller, repository'ler
-    stats/             # yerel istatistik servisi
+    stats/             # yerel istatistik modeli ve servisi
     ads/               # reklam servisi ve sıklık kontrolü
     ui/                # birden çok özellikte kullanılan küçük widget'lar (ör. FlagImage)
   features/
@@ -59,6 +59,7 @@ lib/
     flags_learn/       # liste/ızgara + kart çevirme
     practice/          # ortak pratik motoru + harita/bayrak modları + tur özeti
     settings/          # dil, istatistik sıfırlama, gizlilik/onay
+    stats/             # istatistik ekranı
   l10n/
 assets/
   geo/countries.geo.bin   # (veya .json) sadeleştirilmiş sınır verisi
@@ -166,6 +167,7 @@ Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya
 - Toplam tamamlanan tur sayısı (reklam sıklığı da bunu kullanır)
 - Ayarlar'dan "İstatistikleri sıfırla" seçeneği
 - Hesap yok, veri cihazdan çıkmaz
+- Uygulama: `core/stats/practice_stats.dart` (saf model) + `StatsService` (Riverpod Notifier). Tüm veri `shared_preferences` içinde tek bir JSON değeri (`stats`, `version: 1`); bozuk/eski veri boş istatistikle açılır. Tur, son sorudan "Sonuçları gör"e basılınca kaydedilir. Ekran: ana menüdeki grafik ikonu → `/stats`.
 
 ---
 

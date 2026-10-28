@@ -535,6 +535,108 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Vazgeç'**
   String get cancel;
+
+  /// No description provided for @summaryNewBest.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yeni en iyi skor!'**
+  String get summaryNewBest;
+
+  /// No description provided for @statsTitle.
+  ///
+  /// In tr, this message translates to:
+  /// **'İstatistikler'**
+  String get statsTitle;
+
+  /// No description provided for @statsEmpty.
+  ///
+  /// In tr, this message translates to:
+  /// **'Henüz tamamlanmış tur yok. Bir pratik turunu bitirdiğinde istatistiklerin burada görünür.'**
+  String get statsEmpty;
+
+  /// No description provided for @statsRounds.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tamamlanan tur'**
+  String get statsRounds;
+
+  /// No description provided for @statsAccuracy.
+  ///
+  /// In tr, this message translates to:
+  /// **'Doğruluk'**
+  String get statsAccuracy;
+
+  /// No description provided for @statsAnswers.
+  ///
+  /// In tr, this message translates to:
+  /// **'{total} sorudan {correct} doğru'**
+  String statsAnswers(int correct, int total);
+
+  /// No description provided for @statsMostMissed.
+  ///
+  /// In tr, this message translates to:
+  /// **'En çok karıştırılanlar'**
+  String get statsMostMissed;
+
+  /// No description provided for @statsMissedCount.
+  ///
+  /// In tr, this message translates to:
+  /// **'{wrong} yanlış, {correct} doğru'**
+  String statsMissedCount(int wrong, int correct);
+
+  /// No description provided for @statsBestScores.
+  ///
+  /// In tr, this message translates to:
+  /// **'En iyi skorlar'**
+  String get statsBestScores;
+
+  /// No description provided for @filterSimilarShort.
+  ///
+  /// In tr, this message translates to:
+  /// **'benzer şıklar'**
+  String get filterSimilarShort;
+
+  /// No description provided for @filterRandomShort.
+  ///
+  /// In tr, this message translates to:
+  /// **'rastgele şıklar'**
+  String get filterRandomShort;
+
+  /// No description provided for @settingsResetStats.
+  ///
+  /// In tr, this message translates to:
+  /// **'İstatistikleri sıfırla'**
+  String get settingsResetStats;
+
+  /// No description provided for @settingsResetStatsHint.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tüm doğru/yanlış sayıları ve en iyi skorlar silinir'**
+  String get settingsResetStatsHint;
+
+  /// No description provided for @resetStatsTitle.
+  ///
+  /// In tr, this message translates to:
+  /// **'İstatistikler sıfırlansın mı?'**
+  String get resetStatsTitle;
+
+  /// No description provided for @resetStatsBody.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tüm pratik geçmişin silinecek. Bu işlem geri alınamaz.'**
+  String get resetStatsBody;
+
+  /// No description provided for @resetStatsConfirm.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sıfırla'**
+  String get resetStatsConfirm;
+
+  /// No description provided for @statsResetDone.
+  ///
+  /// In tr, this message translates to:
+  /// **'İstatistikler sıfırlandı.'**
+  String get statsResetDone;
 }
 
 class _AppLocalizationsDelegate
