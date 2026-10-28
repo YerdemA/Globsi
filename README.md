@@ -1,17 +1,78 @@
-# globsi
+# Globsi
 
-A new Flutter project.
+Android için çevrimdışı çalışan coğrafya öğrenme uygulaması: döndürülebilir
+küre, bayrak öğrenme, harita ve bayrak pratiği. Proje kararları
+[`CLAUDE.md`](CLAUDE.md), aşamalı plan [`docs/ROADMAP.md`](docs/ROADMAP.md)
+içindedir.
 
-## Getting Started
+## Geliştirme
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter analyze
+flutter test
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Veri hattı
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Uygulamanın kullandığı işlenmiş veriler repoda hazırdır:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Dosya | İçerik | Üreten |
+|---|---|---|
+| `assets/data/countries.json` | Ülke meta verisi (ad, başkent, kıta, …) | Elle düzenlenir; `centroid`, `isTiny`, `neighbors` alanlarını araç günceller |
+| `assets/geo/countries.geo.bin` | Sadeleştirilmiş sınırlar (ikili format) | `tool/build_geo_data.dart` |
+| `assets/flags/*.svg` | Bayraklar | `tool/copy_flags.dart` |
+
+Ham kaynaklar repoya eklenmez (`tool/raw/` `.gitignore` içindedir). Veriyi
+yeniden üretmek için:
+
+### 1. Natural Earth sınırlarını indir (1:50m, kamu malı)
+
+GeoJSON sürümleri [nvkelso/natural-earth-vector](https://github.com/nvkelso/natural-earth-vector)
+deposundan alınır:
+
+```bash
+mkdir -p tool/raw
+base=https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson
+for f in ne_50m_admin_0_map_subunits \
+         ne_50m_admin_0_breakaway_disputed_areas \
+         ne_50m_admin_0_countries; do
+  curl -L -o tool/raw/$f.geojson $base/$f.geojson
+done
+```
+
+- `map_subunits`: geometri kaynağı (Kırım ayrı bir alt birim olduğu için).
+- `breakaway_disputed_areas`: Golan, Abhazya ve Güney Osetya'nın iç sınır hatları.
+- `countries`: yalnızca etiket noktaları (`LABEL_X`/`LABEL_Y`).
+
+### 2. Sınır verisini üret
+
+```bash
+dart run tool/build_geo_data.dart            # varsayılan tolerans 0.01°
+dart run tool/build_geo_data.dart --tolerance=0.02 --raw=tool/raw
+```
+
+Araç sınır kararlarını (`CLAUDE.md` §4.2) uygular, paylaşılan sınırları
+topolojiye duyarlı Douglas–Peucker ile sadeleştirir, `countries.geo.bin`
+dosyasını yazar ve `countries.json` içindeki üretilen alanları günceller.
+
+### 3. Bayrakları kopyala
+
+```bash
+mkdir -p tool/raw/flag-icons
+curl -L https://registry.npmjs.org/flag-icons/-/flag-icons-7.6.0.tgz \
+  | tar xz -C tool/raw/flag-icons
+dart run tool/copy_flags.dart
+```
+
+flag-icons'ta olmayan bayraklar (KKTC, Somaliland, Abhazya, Güney Osetya)
+`tool/flags_extra/` klasöründen alınır.
+
+### 4. Doğrula
+
+```bash
+flutter test test/data/data_validation_test.dart
+```
+
+Lisanslar: [`docs/ATTRIBUTIONS.md`](docs/ATTRIBUTIONS.md).

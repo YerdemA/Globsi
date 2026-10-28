@@ -1,0 +1,4042 @@
+[
+  {
+    "id": "ABH",
+    "iso3": "ABH",
+    "name": {
+      "tr": "Abhazya",
+      "en": "Abkhazia"
+    },
+    "capital": {
+      "tr": "Sohum",
+      "en": "Sukhumi"
+    },
+    "continent": "asia",
+    "status": "partially_recognized",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [43.058, 41.279],
+    "flag": "abh.svg",
+    "similarTo": [],
+    "neighbors": ["GE", "RU"]
+  },
+  {
+    "id": "AD",
+    "iso3": "AND",
+    "name": {
+      "tr": "Andorra",
+      "en": "Andorra"
+    },
+    "capital": {
+      "tr": "Andorra la Vella",
+      "en": "Andorra la Vella"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [42.548, 1.539],
+    "flag": "ad.svg",
+    "similarTo": ["MD", "RO"],
+    "neighbors": ["ES", "FR"]
+  },
+  {
+    "id": "AE",
+    "iso3": "ARE",
+    "name": {
+      "tr": "Birleşik Arap Emirlikleri",
+      "en": "United Arab Emirates"
+    },
+    "capital": {
+      "tr": "Abu Dabi",
+      "en": "Abu Dhabi"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [23.466, 54.547],
+    "flag": "ae.svg",
+    "similarTo": ["KW", "PS"],
+    "neighbors": ["OM", "SA"]
+  },
+  {
+    "id": "AF",
+    "iso3": "AFG",
+    "name": {
+      "tr": "Afganistan",
+      "en": "Afghanistan"
+    },
+    "capital": {
+      "tr": "Kâbil",
+      "en": "Kabul"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [34.164, 66.497],
+    "flag": "af.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "IR", "PK", "TJ", "TM", "UZ"]
+  },
+  {
+    "id": "AG",
+    "iso3": "ATG",
+    "name": {
+      "tr": "Antigua ve Barbuda",
+      "en": "Antigua and Barbuda"
+    },
+    "capital": {
+      "tr": "Saint John's",
+      "en": "St. John's"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [17.078, -61.789],
+    "flag": "ag.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "AL",
+    "iso3": "ALB",
+    "name": {
+      "tr": "Arnavutluk",
+      "en": "Albania"
+    },
+    "capital": {
+      "tr": "Tiran",
+      "en": "Tirana"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [40.655, 20.114],
+    "flag": "al.svg",
+    "similarTo": [],
+    "neighbors": ["GR", "ME", "MK", "XK"]
+  },
+  {
+    "id": "AM",
+    "iso3": "ARM",
+    "name": {
+      "tr": "Ermenistan",
+      "en": "Armenia"
+    },
+    "capital": {
+      "tr": "Erivan",
+      "en": "Yerevan"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [40.459, 44.801],
+    "flag": "am.svg",
+    "similarTo": [],
+    "neighbors": ["AZ", "GE", "IR", "TR"]
+  },
+  {
+    "id": "AO",
+    "iso3": "AGO",
+    "name": {
+      "tr": "Angola",
+      "en": "Angola"
+    },
+    "capital": {
+      "tr": "Luanda",
+      "en": "Luanda"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-12.183, 17.984],
+    "flag": "ao.svg",
+    "similarTo": [],
+    "neighbors": ["CD", "CG", "NA", "ZM"]
+  },
+  {
+    "id": "AR",
+    "iso3": "ARG",
+    "name": {
+      "tr": "Arjantin",
+      "en": "Argentina"
+    },
+    "capital": {
+      "tr": "Buenos Aires",
+      "en": "Buenos Aires"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-33.501, -64.173],
+    "flag": "ar.svg",
+    "similarTo": ["UY"],
+    "neighbors": ["BO", "BR", "CL", "PY", "UY"]
+  },
+  {
+    "id": "AT",
+    "iso3": "AUT",
+    "name": {
+      "tr": "Avusturya",
+      "en": "Austria"
+    },
+    "capital": {
+      "tr": "Viyana",
+      "en": "Vienna"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [47.519, 14.131],
+    "flag": "at.svg",
+    "similarTo": ["LV"],
+    "neighbors": ["CH", "CZ", "DE", "HU", "IT", "LI", "SI", "SK"]
+  },
+  {
+    "id": "AU",
+    "iso3": "AUS",
+    "name": {
+      "tr": "Avustralya",
+      "en": "Australia"
+    },
+    "capital": {
+      "tr": "Kanberra",
+      "en": "Canberra"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-24.13, 134.05],
+    "flag": "au.svg",
+    "similarTo": ["NZ", "GB"],
+    "neighbors": []
+  },
+  {
+    "id": "AZ",
+    "iso3": "AZE",
+    "name": {
+      "tr": "Azerbaycan",
+      "en": "Azerbaijan"
+    },
+    "capital": {
+      "tr": "Bakü",
+      "en": "Baku"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [40.402, 47.211],
+    "flag": "az.svg",
+    "similarTo": [],
+    "neighbors": ["AM", "GE", "IR", "RU", "TR"]
+  },
+  {
+    "id": "BA",
+    "iso3": "BIH",
+    "name": {
+      "tr": "Bosna-Hersek",
+      "en": "Bosnia and Herzegovina"
+    },
+    "capital": {
+      "tr": "Saraybosna",
+      "en": "Sarajevo"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [44.091, 18.068],
+    "flag": "ba.svg",
+    "similarTo": ["XK"],
+    "neighbors": ["HR", "ME", "RS"]
+  },
+  {
+    "id": "BB",
+    "iso3": "BRB",
+    "name": {
+      "tr": "Barbados",
+      "en": "Barbados"
+    },
+    "capital": {
+      "tr": "Bridgetown",
+      "en": "Bridgetown"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [13.164, -59.569],
+    "flag": "bb.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "BD",
+    "iso3": "BGD",
+    "name": {
+      "tr": "Bangladeş",
+      "en": "Bangladesh"
+    },
+    "capital": {
+      "tr": "Dakka",
+      "en": "Dhaka"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [24.215, 89.685],
+    "flag": "bd.svg",
+    "similarTo": ["JP", "PW"],
+    "neighbors": ["IN", "MM"]
+  },
+  {
+    "id": "BE",
+    "iso3": "BEL",
+    "name": {
+      "tr": "Belçika",
+      "en": "Belgium"
+    },
+    "capital": {
+      "tr": "Brüksel",
+      "en": "Brussels"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [50.785, 4.8],
+    "flag": "be.svg",
+    "similarTo": ["DE"],
+    "neighbors": ["DE", "FR", "LU", "NL"]
+  },
+  {
+    "id": "BF",
+    "iso3": "BFA",
+    "name": {
+      "tr": "Burkina Faso",
+      "en": "Burkina Faso"
+    },
+    "capital": {
+      "tr": "Vagadugu",
+      "en": "Ouagadougou"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [12.673, -1.364],
+    "flag": "bf.svg",
+    "similarTo": [],
+    "neighbors": ["BJ", "CI", "GH", "ML", "NE", "TG"]
+  },
+  {
+    "id": "BG",
+    "iso3": "BGR",
+    "name": {
+      "tr": "Bulgaristan",
+      "en": "Bulgaria"
+    },
+    "capital": {
+      "tr": "Sofya",
+      "en": "Sofia"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [42.509, 25.157],
+    "flag": "bg.svg",
+    "similarTo": [],
+    "neighbors": ["GR", "MK", "RO", "RS", "TR"]
+  },
+  {
+    "id": "BH",
+    "iso3": "BHR",
+    "name": {
+      "tr": "Bahreyn",
+      "en": "Bahrain"
+    },
+    "capital": {
+      "tr": "Manama",
+      "en": "Manama"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [26.056, 50.555],
+    "flag": "bh.svg",
+    "similarTo": ["QA"],
+    "neighbors": []
+  },
+  {
+    "id": "BI",
+    "iso3": "BDI",
+    "name": {
+      "tr": "Burundi",
+      "en": "Burundi"
+    },
+    "capital": {
+      "tr": "Gitega",
+      "en": "Gitega"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-3.333, 29.917],
+    "flag": "bi.svg",
+    "similarTo": [],
+    "neighbors": ["CD", "RW", "TZ"]
+  },
+  {
+    "id": "BJ",
+    "iso3": "BEN",
+    "name": {
+      "tr": "Benin",
+      "en": "Benin"
+    },
+    "capital": {
+      "tr": "Porto-Novo",
+      "en": "Porto-Novo"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [10.325, 2.352],
+    "flag": "bj.svg",
+    "similarTo": [],
+    "neighbors": ["BF", "NE", "NG", "TG"]
+  },
+  {
+    "id": "BN",
+    "iso3": "BRN",
+    "name": {
+      "tr": "Brunei",
+      "en": "Brunei"
+    },
+    "capital": {
+      "tr": "Bandar Seri Begawan",
+      "en": "Bandar Seri Begawan"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [4.448, 114.552],
+    "flag": "bn.svg",
+    "similarTo": [],
+    "neighbors": ["MY"]
+  },
+  {
+    "id": "BO",
+    "iso3": "BOL",
+    "name": {
+      "tr": "Bolivya",
+      "en": "Bolivia"
+    },
+    "capital": {
+      "tr": "Sucre",
+      "en": "Sucre"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-16.666, -64.593],
+    "flag": "bo.svg",
+    "similarTo": ["GH", "LT"],
+    "neighbors": ["AR", "BR", "CL", "PE", "PY"]
+  },
+  {
+    "id": "BR",
+    "iso3": "BRA",
+    "name": {
+      "tr": "Brezilya",
+      "en": "Brazil"
+    },
+    "capital": {
+      "tr": "Brasília",
+      "en": "Brasília"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-12.099, -49.559],
+    "flag": "br.svg",
+    "similarTo": [],
+    "neighbors": ["AR", "BO", "CO", "FR", "GY", "PE", "PY", "SR", "UY", "VE"]
+  },
+  {
+    "id": "BS",
+    "iso3": "BHS",
+    "name": {
+      "tr": "Bahamalar",
+      "en": "Bahamas"
+    },
+    "capital": {
+      "tr": "Nassau",
+      "en": "Nassau"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [26.402, -77.147],
+    "flag": "bs.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "BT",
+    "iso3": "BTN",
+    "name": {
+      "tr": "Butan",
+      "en": "Bhutan"
+    },
+    "capital": {
+      "tr": "Thimphu",
+      "en": "Thimphu"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [27.537, 90.04],
+    "flag": "bt.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "IN"]
+  },
+  {
+    "id": "BW",
+    "iso3": "BWA",
+    "name": {
+      "tr": "Botsvana",
+      "en": "Botswana"
+    },
+    "capital": {
+      "tr": "Gaborone",
+      "en": "Gaborone"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-22.103, 24.179],
+    "flag": "bw.svg",
+    "similarTo": [],
+    "neighbors": ["NA", "ZA", "ZW"]
+  },
+  {
+    "id": "BY",
+    "iso3": "BLR",
+    "name": {
+      "tr": "Belarus",
+      "en": "Belarus"
+    },
+    "capital": {
+      "tr": "Minsk",
+      "en": "Minsk"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [53.822, 28.418],
+    "flag": "by.svg",
+    "similarTo": [],
+    "neighbors": ["LT", "LV", "PL", "RU", "UA"]
+  },
+  {
+    "id": "BZ",
+    "iso3": "BLZ",
+    "name": {
+      "tr": "Belize",
+      "en": "Belize"
+    },
+    "capital": {
+      "tr": "Belmopan",
+      "en": "Belmopan"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [17.202, -88.713],
+    "flag": "bz.svg",
+    "similarTo": [],
+    "neighbors": ["GT", "MX"]
+  },
+  {
+    "id": "CA",
+    "iso3": "CAN",
+    "name": {
+      "tr": "Kanada",
+      "en": "Canada"
+    },
+    "capital": {
+      "tr": "Ottava",
+      "en": "Ottawa"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [60.324, -101.911],
+    "flag": "ca.svg",
+    "similarTo": [],
+    "neighbors": ["US"]
+  },
+  {
+    "id": "CD",
+    "iso3": "COD",
+    "name": {
+      "tr": "Kongo Demokratik Cumhuriyeti",
+      "en": "DR Congo"
+    },
+    "capital": {
+      "tr": "Kinşasa",
+      "en": "Kinshasa"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-1.858, 23.459],
+    "flag": "cd.svg",
+    "similarTo": [],
+    "neighbors": ["AO", "BI", "CF", "CG", "RW", "SS", "TZ", "UG", "ZM"]
+  },
+  {
+    "id": "CF",
+    "iso3": "CAF",
+    "name": {
+      "tr": "Orta Afrika Cumhuriyeti",
+      "en": "Central African Republic"
+    },
+    "capital": {
+      "tr": "Bangui",
+      "en": "Bangui"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [6.99, 20.907],
+    "flag": "cf.svg",
+    "similarTo": [],
+    "neighbors": ["CD", "CG", "CM", "SD", "SS", "TD"]
+  },
+  {
+    "id": "CG",
+    "iso3": "COG",
+    "name": {
+      "tr": "Kongo Cumhuriyeti",
+      "en": "Republic of the Congo"
+    },
+    "capital": {
+      "tr": "Brazzaville",
+      "en": "Brazzaville"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [0.142, 15.901],
+    "flag": "cg.svg",
+    "similarTo": [],
+    "neighbors": ["AO", "CD", "CF", "CM", "GA"]
+  },
+  {
+    "id": "CH",
+    "iso3": "CHE",
+    "name": {
+      "tr": "İsviçre",
+      "en": "Switzerland"
+    },
+    "capital": {
+      "tr": "Bern",
+      "en": "Bern"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [46.719, 7.464],
+    "flag": "ch.svg",
+    "similarTo": [],
+    "neighbors": ["AT", "DE", "FR", "IT", "LI"]
+  },
+  {
+    "id": "CI",
+    "iso3": "CIV",
+    "name": {
+      "tr": "Fildişi Sahili",
+      "en": "Côte d'Ivoire"
+    },
+    "capital": {
+      "tr": "Yamoussoukro",
+      "en": "Yamoussoukro"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [7.491, -5.569],
+    "flag": "ci.svg",
+    "similarTo": ["IE", "IT", "NE"],
+    "neighbors": ["BF", "GH", "GN", "LR", "ML"]
+  },
+  {
+    "id": "CL",
+    "iso3": "CHL",
+    "name": {
+      "tr": "Şili",
+      "en": "Chile"
+    },
+    "capital": {
+      "tr": "Santiago",
+      "en": "Santiago"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-38.152, -72.319],
+    "flag": "cl.svg",
+    "similarTo": [],
+    "neighbors": ["AR", "BO", "PE"]
+  },
+  {
+    "id": "CM",
+    "iso3": "CMR",
+    "name": {
+      "tr": "Kamerun",
+      "en": "Cameroon"
+    },
+    "capital": {
+      "tr": "Yaunde",
+      "en": "Yaoundé"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [4.585, 12.473],
+    "flag": "cm.svg",
+    "similarTo": [],
+    "neighbors": ["CF", "CG", "GA", "GQ", "NG", "TD"]
+  },
+  {
+    "id": "CN",
+    "iso3": "CHN",
+    "name": {
+      "tr": "Çin",
+      "en": "China"
+    },
+    "capital": {
+      "tr": "Pekin",
+      "en": "Beijing"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [32.498, 106.337],
+    "flag": "cn.svg",
+    "similarTo": ["VN"],
+    "neighbors": ["AF", "BT", "IN", "KG", "KP", "KZ", "LA", "MM", "MN", "NP", "PK", "RU", "TJ", "VN"]
+  },
+  {
+    "id": "CO",
+    "iso3": "COL",
+    "name": {
+      "tr": "Kolombiya",
+      "en": "Colombia"
+    },
+    "capital": {
+      "tr": "Bogota",
+      "en": "Bogotá"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [3.373, -73.174],
+    "flag": "co.svg",
+    "similarTo": ["EC", "VE"],
+    "neighbors": ["BR", "EC", "PA", "PE", "VE"]
+  },
+  {
+    "id": "CR",
+    "iso3": "CRI",
+    "name": {
+      "tr": "Kosta Rika",
+      "en": "Costa Rica"
+    },
+    "capital": {
+      "tr": "San José",
+      "en": "San José"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [10.065, -84.078],
+    "flag": "cr.svg",
+    "similarTo": ["TH"],
+    "neighbors": ["NI", "PA"]
+  },
+  {
+    "id": "CU",
+    "iso3": "CUB",
+    "name": {
+      "tr": "Küba",
+      "en": "Cuba"
+    },
+    "capital": {
+      "tr": "Havana",
+      "en": "Havana"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [21.334, -77.976],
+    "flag": "cu.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "CV",
+    "iso3": "CPV",
+    "name": {
+      "tr": "Yeşil Burun Adaları",
+      "en": "Cape Verde"
+    },
+    "capital": {
+      "tr": "Praia",
+      "en": "Praia"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [15.075, -23.639],
+    "flag": "cv.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "CY",
+    "iso3": "CYP",
+    "name": {
+      "tr": "Kıbrıs",
+      "en": "Cyprus"
+    },
+    "capital": {
+      "tr": "Lefkoşa",
+      "en": "Nicosia"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [34.913, 33.084],
+    "flag": "cy.svg",
+    "similarTo": ["NCY", "XK"],
+    "neighbors": ["NCY"]
+  },
+  {
+    "id": "CZ",
+    "iso3": "CZE",
+    "name": {
+      "tr": "Çekya",
+      "en": "Czechia"
+    },
+    "capital": {
+      "tr": "Prag",
+      "en": "Prague"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [49.882, 15.378],
+    "flag": "cz.svg",
+    "similarTo": ["PH"],
+    "neighbors": ["AT", "DE", "PL", "SK"]
+  },
+  {
+    "id": "DE",
+    "iso3": "DEU",
+    "name": {
+      "tr": "Almanya",
+      "en": "Germany"
+    },
+    "capital": {
+      "tr": "Berlin",
+      "en": "Berlin"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [50.962, 9.678],
+    "flag": "de.svg",
+    "similarTo": ["BE"],
+    "neighbors": ["AT", "BE", "CH", "CZ", "DK", "FR", "LU", "NL", "PL"]
+  },
+  {
+    "id": "DJ",
+    "iso3": "DJI",
+    "name": {
+      "tr": "Cibuti",
+      "en": "Djibouti"
+    },
+    "capital": {
+      "tr": "Cibuti",
+      "en": "Djibouti"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [11.976, 42.499],
+    "flag": "dj.svg",
+    "similarTo": [],
+    "neighbors": ["ER", "ET", "SML"]
+  },
+  {
+    "id": "DK",
+    "iso3": "DNK",
+    "name": {
+      "tr": "Danimarka",
+      "en": "Denmark"
+    },
+    "capital": {
+      "tr": "Kopenhag",
+      "en": "Copenhagen"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [55.967, 9.018],
+    "flag": "dk.svg",
+    "similarTo": ["NO", "SE"],
+    "neighbors": ["DE"]
+  },
+  {
+    "id": "DM",
+    "iso3": "DMA",
+    "name": {
+      "tr": "Dominika",
+      "en": "Dominica"
+    },
+    "capital": {
+      "tr": "Roseau",
+      "en": "Roseau"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [15.459, -61.345],
+    "flag": "dm.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "DO",
+    "iso3": "DOM",
+    "name": {
+      "tr": "Dominik Cumhuriyeti",
+      "en": "Dominican Republic"
+    },
+    "capital": {
+      "tr": "Santo Domingo",
+      "en": "Santo Domingo"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [19.104, -70.654],
+    "flag": "do.svg",
+    "similarTo": [],
+    "neighbors": ["HT"]
+  },
+  {
+    "id": "DZ",
+    "iso3": "DZA",
+    "name": {
+      "tr": "Cezayir",
+      "en": "Algeria"
+    },
+    "capital": {
+      "tr": "Cezayir",
+      "en": "Algiers"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [27.397, 2.808],
+    "flag": "dz.svg",
+    "similarTo": [],
+    "neighbors": ["EH", "LY", "MA", "ML", "MR", "NE", "TN"]
+  },
+  {
+    "id": "EC",
+    "iso3": "ECU",
+    "name": {
+      "tr": "Ekvador",
+      "en": "Ecuador"
+    },
+    "capital": {
+      "tr": "Quito",
+      "en": "Quito"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-1.259, -78.188],
+    "flag": "ec.svg",
+    "similarTo": ["CO", "VE"],
+    "neighbors": ["CO", "PE"]
+  },
+  {
+    "id": "EE",
+    "iso3": "EST",
+    "name": {
+      "tr": "Estonya",
+      "en": "Estonia"
+    },
+    "capital": {
+      "tr": "Tallinn",
+      "en": "Tallinn"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [58.725, 25.867],
+    "flag": "ee.svg",
+    "similarTo": [],
+    "neighbors": ["LV", "RU"]
+  },
+  {
+    "id": "EG",
+    "iso3": "EGY",
+    "name": {
+      "tr": "Mısır",
+      "en": "Egypt"
+    },
+    "capital": {
+      "tr": "Kahire",
+      "en": "Cairo"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [26.186, 29.446],
+    "flag": "eg.svg",
+    "similarTo": ["SY", "IQ", "YE"],
+    "neighbors": ["IL", "LY", "PS", "SD"]
+  },
+  {
+    "id": "EH",
+    "iso3": "ESH",
+    "name": {
+      "tr": "Batı Sahra",
+      "en": "Western Sahara"
+    },
+    "capital": {
+      "tr": "Layun",
+      "en": "Laayoune"
+    },
+    "continent": "africa",
+    "status": "partially_recognized",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [23.968, -12.63],
+    "flag": "eh.svg",
+    "similarTo": [],
+    "neighbors": ["DZ", "MA", "MR"]
+  },
+  {
+    "id": "ER",
+    "iso3": "ERI",
+    "name": {
+      "tr": "Eritre",
+      "en": "Eritrea"
+    },
+    "capital": {
+      "tr": "Asmara",
+      "en": "Asmara"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [15.787, 38.286],
+    "flag": "er.svg",
+    "similarTo": [],
+    "neighbors": ["DJ", "ET", "SD"]
+  },
+  {
+    "id": "ES",
+    "iso3": "ESP",
+    "name": {
+      "tr": "İspanya",
+      "en": "Spain"
+    },
+    "capital": {
+      "tr": "Madrid",
+      "en": "Madrid"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [40.091, -3.465],
+    "flag": "es.svg",
+    "similarTo": [],
+    "neighbors": ["AD", "FR", "PT"]
+  },
+  {
+    "id": "ET",
+    "iso3": "ETH",
+    "name": {
+      "tr": "Etiyopya",
+      "en": "Ethiopia"
+    },
+    "capital": {
+      "tr": "Addis Ababa",
+      "en": "Addis Ababa"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [8.033, 39.089],
+    "flag": "et.svg",
+    "similarTo": ["BO", "GH"],
+    "neighbors": ["DJ", "ER", "KE", "SD", "SML", "SO", "SS"]
+  },
+  {
+    "id": "FI",
+    "iso3": "FIN",
+    "name": {
+      "tr": "Finlandiya",
+      "en": "Finland"
+    },
+    "capital": {
+      "tr": "Helsinki",
+      "en": "Helsinki"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [63.252, 27.276],
+    "flag": "fi.svg",
+    "similarTo": ["SE", "IS"],
+    "neighbors": ["NO", "RU", "SE"]
+  },
+  {
+    "id": "FJ",
+    "iso3": "FJI",
+    "name": {
+      "tr": "Fiji",
+      "en": "Fiji"
+    },
+    "capital": {
+      "tr": "Suva",
+      "en": "Suva"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-17.826, 177.975],
+    "flag": "fj.svg",
+    "similarTo": ["TV"],
+    "neighbors": []
+  },
+  {
+    "id": "FM",
+    "iso3": "FSM",
+    "name": {
+      "tr": "Mikronezya",
+      "en": "Micronesia"
+    },
+    "capital": {
+      "tr": "Palikir",
+      "en": "Palikir"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [6.888, 158.234],
+    "flag": "fm.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "FR",
+    "iso3": "FRA",
+    "name": {
+      "tr": "Fransa",
+      "en": "France"
+    },
+    "capital": {
+      "tr": "Paris",
+      "en": "Paris"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [46.696, 2.552],
+    "flag": "fr.svg",
+    "similarTo": ["NL", "IT"],
+    "neighbors": ["AD", "BE", "BR", "CH", "DE", "ES", "IT", "LU", "MC", "SR"]
+  },
+  {
+    "id": "GA",
+    "iso3": "GAB",
+    "name": {
+      "tr": "Gabon",
+      "en": "Gabon"
+    },
+    "capital": {
+      "tr": "Libreville",
+      "en": "Libreville"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-0.438, 11.836],
+    "flag": "ga.svg",
+    "similarTo": [],
+    "neighbors": ["CG", "CM", "GQ"]
+  },
+  {
+    "id": "GB",
+    "iso3": "GBR",
+    "name": {
+      "tr": "Birleşik Krallık",
+      "en": "United Kingdom"
+    },
+    "capital": {
+      "tr": "Londra",
+      "en": "London"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [54.403, -2.116],
+    "flag": "gb.svg",
+    "similarTo": ["AU", "NZ"],
+    "neighbors": ["IE"]
+  },
+  {
+    "id": "GD",
+    "iso3": "GRD",
+    "name": {
+      "tr": "Grenada",
+      "en": "Grenada"
+    },
+    "capital": {
+      "tr": "Saint George's",
+      "en": "St. George's"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [12.113, -61.68],
+    "flag": "gd.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "GE",
+    "iso3": "GEO",
+    "name": {
+      "tr": "Gürcistan",
+      "en": "Georgia"
+    },
+    "capital": {
+      "tr": "Tiflis",
+      "en": "Tbilisi"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [41.87, 43.736],
+    "flag": "ge.svg",
+    "similarTo": [],
+    "neighbors": ["ABH", "AM", "AZ", "OST", "RU", "TR"]
+  },
+  {
+    "id": "GH",
+    "iso3": "GHA",
+    "name": {
+      "tr": "Gana",
+      "en": "Ghana"
+    },
+    "capital": {
+      "tr": "Akra",
+      "en": "Accra"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [7.718, -1.037],
+    "flag": "gh.svg",
+    "similarTo": ["BO", "ET"],
+    "neighbors": ["BF", "CI", "TG"]
+  },
+  {
+    "id": "GM",
+    "iso3": "GMB",
+    "name": {
+      "tr": "Gambiya",
+      "en": "Gambia"
+    },
+    "capital": {
+      "tr": "Banjul",
+      "en": "Banjul"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [13.642, -14.998],
+    "flag": "gm.svg",
+    "similarTo": [],
+    "neighbors": ["SN"]
+  },
+  {
+    "id": "GN",
+    "iso3": "GIN",
+    "name": {
+      "tr": "Gine",
+      "en": "Guinea"
+    },
+    "capital": {
+      "tr": "Konakri",
+      "en": "Conakry"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [10.619, -10.016],
+    "flag": "gn.svg",
+    "similarTo": ["ML", "SN"],
+    "neighbors": ["CI", "GW", "LR", "ML", "SL", "SN"]
+  },
+  {
+    "id": "GQ",
+    "iso3": "GNQ",
+    "name": {
+      "tr": "Ekvator Ginesi",
+      "en": "Equatorial Guinea"
+    },
+    "capital": {
+      "tr": "Malabo",
+      "en": "Malabo"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [1.565, 10.472],
+    "flag": "gq.svg",
+    "similarTo": [],
+    "neighbors": ["CM", "GA"]
+  },
+  {
+    "id": "GR",
+    "iso3": "GRC",
+    "name": {
+      "tr": "Yunanistan",
+      "en": "Greece"
+    },
+    "capital": {
+      "tr": "Atina",
+      "en": "Athens"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [39.493, 21.726],
+    "flag": "gr.svg",
+    "similarTo": ["UY"],
+    "neighbors": ["AL", "BG", "MK", "TR"]
+  },
+  {
+    "id": "GT",
+    "iso3": "GTM",
+    "name": {
+      "tr": "Guatemala",
+      "en": "Guatemala"
+    },
+    "capital": {
+      "tr": "Guatemala",
+      "en": "Guatemala City"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [14.982, -90.497],
+    "flag": "gt.svg",
+    "similarTo": [],
+    "neighbors": ["BZ", "HN", "MX", "SV"]
+  },
+  {
+    "id": "GW",
+    "iso3": "GNB",
+    "name": {
+      "tr": "Gine-Bissau",
+      "en": "Guinea-Bissau"
+    },
+    "capital": {
+      "tr": "Bissau",
+      "en": "Bissau"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [12.164, -14.524],
+    "flag": "gw.svg",
+    "similarTo": [],
+    "neighbors": ["GN", "SN"]
+  },
+  {
+    "id": "GY",
+    "iso3": "GUY",
+    "name": {
+      "tr": "Guyana",
+      "en": "Guyana"
+    },
+    "capital": {
+      "tr": "Georgetown",
+      "en": "Georgetown"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [5.124, -58.943],
+    "flag": "gy.svg",
+    "similarTo": [],
+    "neighbors": ["BR", "SR", "VE"]
+  },
+  {
+    "id": "HN",
+    "iso3": "HND",
+    "name": {
+      "tr": "Honduras",
+      "en": "Honduras"
+    },
+    "capital": {
+      "tr": "Tegucigalpa",
+      "en": "Tegucigalpa"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [14.795, -86.888],
+    "flag": "hn.svg",
+    "similarTo": ["NI", "SV"],
+    "neighbors": ["GT", "NI", "SV"]
+  },
+  {
+    "id": "HR",
+    "iso3": "HRV",
+    "name": {
+      "tr": "Hırvatistan",
+      "en": "Croatia"
+    },
+    "capital": {
+      "tr": "Zagreb",
+      "en": "Zagreb"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [45.806, 16.372],
+    "flag": "hr.svg",
+    "similarTo": ["SK", "SI", "RS"],
+    "neighbors": ["BA", "HU", "ME", "RS", "SI"]
+  },
+  {
+    "id": "HT",
+    "iso3": "HTI",
+    "name": {
+      "tr": "Haiti",
+      "en": "Haiti"
+    },
+    "capital": {
+      "tr": "Port-au-Prince",
+      "en": "Port-au-Prince"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [19.264, -72.224],
+    "flag": "ht.svg",
+    "similarTo": ["LI"],
+    "neighbors": ["DO"]
+  },
+  {
+    "id": "HU",
+    "iso3": "HUN",
+    "name": {
+      "tr": "Macaristan",
+      "en": "Hungary"
+    },
+    "capital": {
+      "tr": "Budapeşte",
+      "en": "Budapest"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [47.087, 19.448],
+    "flag": "hu.svg",
+    "similarTo": [],
+    "neighbors": ["AT", "HR", "RO", "RS", "SI", "SK", "UA"]
+  },
+  {
+    "id": "ID",
+    "iso3": "IDN",
+    "name": {
+      "tr": "Endonezya",
+      "en": "Indonesia"
+    },
+    "capital": {
+      "tr": "Cakarta",
+      "en": "Jakarta"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-0.954, 101.893],
+    "flag": "id.svg",
+    "similarTo": ["MC", "PL"],
+    "neighbors": ["MY", "PG", "TL"]
+  },
+  {
+    "id": "IE",
+    "iso3": "IRL",
+    "name": {
+      "tr": "İrlanda",
+      "en": "Ireland"
+    },
+    "capital": {
+      "tr": "Dublin",
+      "en": "Dublin"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [53.079, -7.799],
+    "flag": "ie.svg",
+    "similarTo": ["CI", "IT"],
+    "neighbors": ["GB"]
+  },
+  {
+    "id": "IL",
+    "iso3": "ISR",
+    "name": {
+      "tr": "İsrail",
+      "en": "Israel"
+    },
+    "capital": {
+      "tr": "Kudüs",
+      "en": "Jerusalem"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [30.911, 34.848],
+    "flag": "il.svg",
+    "similarTo": [],
+    "neighbors": ["EG", "JO", "LB", "PS", "SY"]
+  },
+  {
+    "id": "IN",
+    "iso3": "IND",
+    "name": {
+      "tr": "Hindistan",
+      "en": "India"
+    },
+    "capital": {
+      "tr": "Yeni Delhi",
+      "en": "New Delhi"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [22.687, 79.358],
+    "flag": "in.svg",
+    "similarTo": ["NE"],
+    "neighbors": ["BD", "BT", "CN", "MM", "NP", "PK"]
+  },
+  {
+    "id": "IQ",
+    "iso3": "IRQ",
+    "name": {
+      "tr": "Irak",
+      "en": "Iraq"
+    },
+    "capital": {
+      "tr": "Bağdat",
+      "en": "Baghdad"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [33.094, 43.262],
+    "flag": "iq.svg",
+    "similarTo": ["SY", "EG"],
+    "neighbors": ["IR", "JO", "KW", "SA", "SY", "TR"]
+  },
+  {
+    "id": "IR",
+    "iso3": "IRN",
+    "name": {
+      "tr": "İran",
+      "en": "Iran"
+    },
+    "capital": {
+      "tr": "Tahran",
+      "en": "Tehran"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [32.166, 54.931],
+    "flag": "ir.svg",
+    "similarTo": [],
+    "neighbors": ["AF", "AM", "AZ", "IQ", "PK", "TM", "TR"]
+  },
+  {
+    "id": "IS",
+    "iso3": "ISL",
+    "name": {
+      "tr": "İzlanda",
+      "en": "Iceland"
+    },
+    "capital": {
+      "tr": "Reykjavik",
+      "en": "Reykjavík"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [64.779, -18.674],
+    "flag": "is.svg",
+    "similarTo": ["NO", "FI"],
+    "neighbors": []
+  },
+  {
+    "id": "IT",
+    "iso3": "ITA",
+    "name": {
+      "tr": "İtalya",
+      "en": "Italy"
+    },
+    "capital": {
+      "tr": "Roma",
+      "en": "Rome"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [44.732, 11.077],
+    "flag": "it.svg",
+    "similarTo": ["IE", "MX"],
+    "neighbors": ["AT", "CH", "FR", "SI", "SM", "VA"]
+  },
+  {
+    "id": "JM",
+    "iso3": "JAM",
+    "name": {
+      "tr": "Jamaika",
+      "en": "Jamaica"
+    },
+    "capital": {
+      "tr": "Kingston",
+      "en": "Kingston"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [18.137, -77.319],
+    "flag": "jm.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "JO",
+    "iso3": "JOR",
+    "name": {
+      "tr": "Ürdün",
+      "en": "Jordan"
+    },
+    "capital": {
+      "tr": "Amman",
+      "en": "Amman"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [30.805, 36.376],
+    "flag": "jo.svg",
+    "similarTo": ["PS", "SD"],
+    "neighbors": ["IL", "IQ", "PS", "SA", "SY"]
+  },
+  {
+    "id": "JP",
+    "iso3": "JPN",
+    "name": {
+      "tr": "Japonya",
+      "en": "Japan"
+    },
+    "capital": {
+      "tr": "Tokyo",
+      "en": "Tokyo"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [36.143, 138.442],
+    "flag": "jp.svg",
+    "similarTo": ["BD", "PW"],
+    "neighbors": []
+  },
+  {
+    "id": "KE",
+    "iso3": "KEN",
+    "name": {
+      "tr": "Kenya",
+      "en": "Kenya"
+    },
+    "capital": {
+      "tr": "Nairobi",
+      "en": "Nairobi"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [0.549, 37.908],
+    "flag": "ke.svg",
+    "similarTo": [],
+    "neighbors": ["ET", "SO", "SS", "TZ", "UG"]
+  },
+  {
+    "id": "KG",
+    "iso3": "KGZ",
+    "name": {
+      "tr": "Kırgızistan",
+      "en": "Kyrgyzstan"
+    },
+    "capital": {
+      "tr": "Bişkek",
+      "en": "Bishkek"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [41.669, 74.533],
+    "flag": "kg.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "KZ", "TJ", "UZ"]
+  },
+  {
+    "id": "KH",
+    "iso3": "KHM",
+    "name": {
+      "tr": "Kamboçya",
+      "en": "Cambodia"
+    },
+    "capital": {
+      "tr": "Phnom Penh",
+      "en": "Phnom Penh"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [12.648, 104.505],
+    "flag": "kh.svg",
+    "similarTo": [],
+    "neighbors": ["LA", "TH", "VN"]
+  },
+  {
+    "id": "KI",
+    "iso3": "KIR",
+    "name": {
+      "tr": "Kiribati",
+      "en": "Kiribati"
+    },
+    "capital": {
+      "tr": "Güney Tarawa",
+      "en": "South Tarawa"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [1.82, -157.385],
+    "flag": "ki.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "KM",
+    "iso3": "COM",
+    "name": {
+      "tr": "Komorlar",
+      "en": "Comoros"
+    },
+    "capital": {
+      "tr": "Moroni",
+      "en": "Moroni"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-11.728, 43.318],
+    "flag": "km.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "KN",
+    "iso3": "KNA",
+    "name": {
+      "tr": "Saint Kitts ve Nevis",
+      "en": "Saint Kitts and Nevis"
+    },
+    "capital": {
+      "tr": "Basseterre",
+      "en": "Basseterre"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [17.337, -62.758],
+    "flag": "kn.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "KP",
+    "iso3": "PRK",
+    "name": {
+      "tr": "Kuzey Kore",
+      "en": "North Korea"
+    },
+    "capital": {
+      "tr": "Pyongyang",
+      "en": "Pyongyang"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [39.885, 126.445],
+    "flag": "kp.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "KR", "RU"]
+  },
+  {
+    "id": "KR",
+    "iso3": "KOR",
+    "name": {
+      "tr": "Güney Kore",
+      "en": "South Korea"
+    },
+    "capital": {
+      "tr": "Seul",
+      "en": "Seoul"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [36.385, 128.13],
+    "flag": "kr.svg",
+    "similarTo": [],
+    "neighbors": ["KP"]
+  },
+  {
+    "id": "KW",
+    "iso3": "KWT",
+    "name": {
+      "tr": "Kuveyt",
+      "en": "Kuwait"
+    },
+    "capital": {
+      "tr": "Kuveyt",
+      "en": "Kuwait City"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [29.414, 47.314],
+    "flag": "kw.svg",
+    "similarTo": ["AE", "PS"],
+    "neighbors": ["IQ", "SA"]
+  },
+  {
+    "id": "KZ",
+    "iso3": "KAZ",
+    "name": {
+      "tr": "Kazakistan",
+      "en": "Kazakhstan"
+    },
+    "capital": {
+      "tr": "Astana",
+      "en": "Astana"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [49.054, 68.686],
+    "flag": "kz.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "KG", "RU", "TM", "UZ"]
+  },
+  {
+    "id": "LA",
+    "iso3": "LAO",
+    "name": {
+      "tr": "Laos",
+      "en": "Laos"
+    },
+    "capital": {
+      "tr": "Vientiane",
+      "en": "Vientiane"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [19.432, 102.534],
+    "flag": "la.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "KH", "MM", "TH", "VN"]
+  },
+  {
+    "id": "LB",
+    "iso3": "LBN",
+    "name": {
+      "tr": "Lübnan",
+      "en": "Lebanon"
+    },
+    "capital": {
+      "tr": "Beyrut",
+      "en": "Beirut"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [34.133, 35.993],
+    "flag": "lb.svg",
+    "similarTo": [],
+    "neighbors": ["IL", "SY"]
+  },
+  {
+    "id": "LC",
+    "iso3": "LCA",
+    "name": {
+      "tr": "Saint Lucia",
+      "en": "Saint Lucia"
+    },
+    "capital": {
+      "tr": "Castries",
+      "en": "Castries"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [13.892, -60.98],
+    "flag": "lc.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "LI",
+    "iso3": "LIE",
+    "name": {
+      "tr": "Lihtenştayn",
+      "en": "Liechtenstein"
+    },
+    "capital": {
+      "tr": "Vaduz",
+      "en": "Vaduz"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [47.111, 9.559],
+    "flag": "li.svg",
+    "similarTo": ["HT"],
+    "neighbors": ["AT", "CH"]
+  },
+  {
+    "id": "LK",
+    "iso3": "LKA",
+    "name": {
+      "tr": "Sri Lanka",
+      "en": "Sri Lanka"
+    },
+    "capital": {
+      "tr": "Sri Jayewardenepura Kotte",
+      "en": "Sri Jayawardenepura Kotte"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [7.581, 80.705],
+    "flag": "lk.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "LR",
+    "iso3": "LBR",
+    "name": {
+      "tr": "Liberya",
+      "en": "Liberia"
+    },
+    "capital": {
+      "tr": "Monrovia",
+      "en": "Monrovia"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [6.447, -9.46],
+    "flag": "lr.svg",
+    "similarTo": ["US", "MY"],
+    "neighbors": ["CI", "GN", "SL"]
+  },
+  {
+    "id": "LS",
+    "iso3": "LSO",
+    "name": {
+      "tr": "Lesotho",
+      "en": "Lesotho"
+    },
+    "capital": {
+      "tr": "Maseru",
+      "en": "Maseru"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-29.48, 28.247],
+    "flag": "ls.svg",
+    "similarTo": [],
+    "neighbors": ["ZA"]
+  },
+  {
+    "id": "LT",
+    "iso3": "LTU",
+    "name": {
+      "tr": "Litvanya",
+      "en": "Lithuania"
+    },
+    "capital": {
+      "tr": "Vilnius",
+      "en": "Vilnius"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [55.104, 24.09],
+    "flag": "lt.svg",
+    "similarTo": ["BO"],
+    "neighbors": ["BY", "LV", "PL", "RU"]
+  },
+  {
+    "id": "LU",
+    "iso3": "LUX",
+    "name": {
+      "tr": "Lüksemburg",
+      "en": "Luxembourg"
+    },
+    "capital": {
+      "tr": "Lüksemburg",
+      "en": "Luxembourg"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": true,
+    "centroid": [49.734, 6.078],
+    "flag": "lu.svg",
+    "similarTo": ["NL"],
+    "neighbors": ["BE", "DE", "FR"]
+  },
+  {
+    "id": "LV",
+    "iso3": "LVA",
+    "name": {
+      "tr": "Letonya",
+      "en": "Latvia"
+    },
+    "capital": {
+      "tr": "Riga",
+      "en": "Riga"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [57.067, 25.459],
+    "flag": "lv.svg",
+    "similarTo": ["AT"],
+    "neighbors": ["BY", "EE", "LT", "RU"]
+  },
+  {
+    "id": "LY",
+    "iso3": "LBY",
+    "name": {
+      "tr": "Libya",
+      "en": "Libya"
+    },
+    "capital": {
+      "tr": "Trablus",
+      "en": "Tripoli"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [26.639, 18.011],
+    "flag": "ly.svg",
+    "similarTo": [],
+    "neighbors": ["DZ", "EG", "NE", "SD", "TD", "TN"]
+  },
+  {
+    "id": "MA",
+    "iso3": "MAR",
+    "name": {
+      "tr": "Fas",
+      "en": "Morocco"
+    },
+    "capital": {
+      "tr": "Rabat",
+      "en": "Rabat"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [31.651, -7.187],
+    "flag": "ma.svg",
+    "similarTo": [],
+    "neighbors": ["DZ", "EH"]
+  },
+  {
+    "id": "MC",
+    "iso3": "MCO",
+    "name": {
+      "tr": "Monako",
+      "en": "Monaco"
+    },
+    "capital": {
+      "tr": "Monako",
+      "en": "Monaco"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [43.74, 7.398],
+    "flag": "mc.svg",
+    "similarTo": ["ID", "PL"],
+    "neighbors": ["FR"]
+  },
+  {
+    "id": "MD",
+    "iso3": "MDA",
+    "name": {
+      "tr": "Moldova",
+      "en": "Moldova"
+    },
+    "capital": {
+      "tr": "Kişinev",
+      "en": "Chișinău"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [47.435, 28.488],
+    "flag": "md.svg",
+    "similarTo": ["AD", "RO"],
+    "neighbors": ["RO", "UA"]
+  },
+  {
+    "id": "ME",
+    "iso3": "MNE",
+    "name": {
+      "tr": "Karadağ",
+      "en": "Montenegro"
+    },
+    "capital": {
+      "tr": "Podgorica",
+      "en": "Podgorica"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [42.803, 19.144],
+    "flag": "me.svg",
+    "similarTo": [],
+    "neighbors": ["AL", "BA", "HR", "RS", "XK"]
+  },
+  {
+    "id": "MG",
+    "iso3": "MDG",
+    "name": {
+      "tr": "Madagaskar",
+      "en": "Madagascar"
+    },
+    "capital": {
+      "tr": "Antananarivo",
+      "en": "Antananarivo"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-18.628, 46.704],
+    "flag": "mg.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "MH",
+    "iso3": "MHL",
+    "name": {
+      "tr": "Marshall Adaları",
+      "en": "Marshall Islands"
+    },
+    "capital": {
+      "tr": "Majuro",
+      "en": "Majuro"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [7.083, 171.194],
+    "flag": "mh.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "MK",
+    "iso3": "MKD",
+    "name": {
+      "tr": "Kuzey Makedonya",
+      "en": "North Macedonia"
+    },
+    "capital": {
+      "tr": "Üsküp",
+      "en": "Skopje"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [41.558, 21.556],
+    "flag": "mk.svg",
+    "similarTo": [],
+    "neighbors": ["AL", "BG", "GR", "RS", "XK"]
+  },
+  {
+    "id": "ML",
+    "iso3": "MLI",
+    "name": {
+      "tr": "Mali",
+      "en": "Mali"
+    },
+    "capital": {
+      "tr": "Bamako",
+      "en": "Bamako"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [18.693, -2.038],
+    "flag": "ml.svg",
+    "similarTo": ["GN", "SN"],
+    "neighbors": ["BF", "CI", "DZ", "GN", "MR", "NE", "SN"]
+  },
+  {
+    "id": "MM",
+    "iso3": "MMR",
+    "name": {
+      "tr": "Myanmar",
+      "en": "Myanmar"
+    },
+    "capital": {
+      "tr": "Naypyidaw",
+      "en": "Naypyidaw"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [21.574, 95.804],
+    "flag": "mm.svg",
+    "similarTo": [],
+    "neighbors": ["BD", "CN", "IN", "LA", "TH"]
+  },
+  {
+    "id": "MN",
+    "iso3": "MNG",
+    "name": {
+      "tr": "Moğolistan",
+      "en": "Mongolia"
+    },
+    "capital": {
+      "tr": "Ulan Batur",
+      "en": "Ulaanbaatar"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [45.997, 104.15],
+    "flag": "mn.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "RU"]
+  },
+  {
+    "id": "MR",
+    "iso3": "MRT",
+    "name": {
+      "tr": "Moritanya",
+      "en": "Mauritania"
+    },
+    "capital": {
+      "tr": "Nuakşot",
+      "en": "Nouakchott"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [19.587, -9.74],
+    "flag": "mr.svg",
+    "similarTo": [],
+    "neighbors": ["DZ", "EH", "ML", "SN"]
+  },
+  {
+    "id": "MT",
+    "iso3": "MLT",
+    "name": {
+      "tr": "Malta",
+      "en": "Malta"
+    },
+    "capital": {
+      "tr": "Valletta",
+      "en": "Valletta"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": true,
+    "centroid": [35.893, 14.433],
+    "flag": "mt.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "MU",
+    "iso3": "MUS",
+    "name": {
+      "tr": "Mauritius",
+      "en": "Mauritius"
+    },
+    "capital": {
+      "tr": "Port Louis",
+      "en": "Port Louis"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-20.3, 57.566],
+    "flag": "mu.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "MV",
+    "iso3": "MDV",
+    "name": {
+      "tr": "Maldivler",
+      "en": "Maldives"
+    },
+    "capital": {
+      "tr": "Male",
+      "en": "Malé"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [4.174, 73.508],
+    "flag": "mv.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "MW",
+    "iso3": "MWI",
+    "name": {
+      "tr": "Malavi",
+      "en": "Malawi"
+    },
+    "capital": {
+      "tr": "Lilongwe",
+      "en": "Lilongwe"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-13.387, 33.608],
+    "flag": "mw.svg",
+    "similarTo": [],
+    "neighbors": ["MZ", "TZ", "ZM"]
+  },
+  {
+    "id": "MX",
+    "iso3": "MEX",
+    "name": {
+      "tr": "Meksika",
+      "en": "Mexico"
+    },
+    "capital": {
+      "tr": "Meksiko",
+      "en": "Mexico City"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [23.92, -102.289],
+    "flag": "mx.svg",
+    "similarTo": ["IT"],
+    "neighbors": ["BZ", "GT", "US"]
+  },
+  {
+    "id": "MY",
+    "iso3": "MYS",
+    "name": {
+      "tr": "Malezya",
+      "en": "Malaysia"
+    },
+    "capital": {
+      "tr": "Kuala Lumpur",
+      "en": "Kuala Lumpur"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [2.529, 113.837],
+    "flag": "my.svg",
+    "similarTo": ["US", "LR"],
+    "neighbors": ["BN", "ID", "TH"]
+  },
+  {
+    "id": "MZ",
+    "iso3": "MOZ",
+    "name": {
+      "tr": "Mozambik",
+      "en": "Mozambique"
+    },
+    "capital": {
+      "tr": "Maputo",
+      "en": "Maputo"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-13.943, 37.838],
+    "flag": "mz.svg",
+    "similarTo": [],
+    "neighbors": ["MW", "SZ", "TZ", "ZA", "ZM", "ZW"]
+  },
+  {
+    "id": "NA",
+    "iso3": "NAM",
+    "name": {
+      "tr": "Namibya",
+      "en": "Namibia"
+    },
+    "capital": {
+      "tr": "Windhoek",
+      "en": "Windhoek"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-20.575, 17.108],
+    "flag": "na.svg",
+    "similarTo": [],
+    "neighbors": ["AO", "BW", "ZA", "ZM"]
+  },
+  {
+    "id": "NCY",
+    "iso3": "NCY",
+    "name": {
+      "tr": "Kuzey Kıbrıs",
+      "en": "Northern Cyprus"
+    },
+    "capital": {
+      "tr": "Lefkoşa",
+      "en": "North Nicosia"
+    },
+    "continent": "europe",
+    "status": "partially_recognized",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [35.216, 33.692],
+    "flag": "ncy.svg",
+    "similarTo": ["TR", "CY"],
+    "neighbors": ["CY"]
+  },
+  {
+    "id": "NE",
+    "iso3": "NER",
+    "name": {
+      "tr": "Nijer",
+      "en": "Niger"
+    },
+    "capital": {
+      "tr": "Niamey",
+      "en": "Niamey"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [17.446, 9.504],
+    "flag": "ne.svg",
+    "similarTo": ["IN", "CI"],
+    "neighbors": ["BF", "BJ", "DZ", "LY", "ML", "NG", "TD"]
+  },
+  {
+    "id": "NG",
+    "iso3": "NGA",
+    "name": {
+      "tr": "Nijerya",
+      "en": "Nigeria"
+    },
+    "capital": {
+      "tr": "Abuja",
+      "en": "Abuja"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [9.44, 7.503],
+    "flag": "ng.svg",
+    "similarTo": [],
+    "neighbors": ["BJ", "CM", "NE", "TD"]
+  },
+  {
+    "id": "NI",
+    "iso3": "NIC",
+    "name": {
+      "tr": "Nikaragua",
+      "en": "Nicaragua"
+    },
+    "capital": {
+      "tr": "Managua",
+      "en": "Managua"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [12.671, -85.069],
+    "flag": "ni.svg",
+    "similarTo": ["SV", "HN"],
+    "neighbors": ["CR", "HN"]
+  },
+  {
+    "id": "NL",
+    "iso3": "NLD",
+    "name": {
+      "tr": "Hollanda",
+      "en": "Netherlands"
+    },
+    "capital": {
+      "tr": "Amsterdam",
+      "en": "Amsterdam"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [52.422, 5.611],
+    "flag": "nl.svg",
+    "similarTo": ["LU", "FR"],
+    "neighbors": ["BE", "DE"]
+  },
+  {
+    "id": "NO",
+    "iso3": "NOR",
+    "name": {
+      "tr": "Norveç",
+      "en": "Norway"
+    },
+    "capital": {
+      "tr": "Oslo",
+      "en": "Oslo"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [61.357, 9.68],
+    "flag": "no.svg",
+    "similarTo": ["IS", "DK"],
+    "neighbors": ["FI", "RU", "SE"]
+  },
+  {
+    "id": "NP",
+    "iso3": "NPL",
+    "name": {
+      "tr": "Nepal",
+      "en": "Nepal"
+    },
+    "capital": {
+      "tr": "Katmandu",
+      "en": "Kathmandu"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [28.298, 83.64],
+    "flag": "np.svg",
+    "similarTo": [],
+    "neighbors": ["CN", "IN"]
+  },
+  {
+    "id": "NR",
+    "iso3": "NRU",
+    "name": {
+      "tr": "Nauru",
+      "en": "Nauru"
+    },
+    "capital": {
+      "tr": "Yaren",
+      "en": "Yaren"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-0.52, 166.933],
+    "flag": "nr.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "NZ",
+    "iso3": "NZL",
+    "name": {
+      "tr": "Yeni Zelanda",
+      "en": "New Zealand"
+    },
+    "capital": {
+      "tr": "Wellington",
+      "en": "Wellington"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-43.973, 170.529],
+    "flag": "nz.svg",
+    "similarTo": ["AU", "GB"],
+    "neighbors": []
+  },
+  {
+    "id": "OM",
+    "iso3": "OMN",
+    "name": {
+      "tr": "Umman",
+      "en": "Oman"
+    },
+    "capital": {
+      "tr": "Maskat",
+      "en": "Muscat"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [22.12, 57.337],
+    "flag": "om.svg",
+    "similarTo": [],
+    "neighbors": ["AE", "SA", "YE"]
+  },
+  {
+    "id": "OST",
+    "iso3": "OST",
+    "name": {
+      "tr": "Güney Osetya",
+      "en": "South Ossetia"
+    },
+    "capital": {
+      "tr": "Tshinvali",
+      "en": "Tskhinvali"
+    },
+    "continent": "asia",
+    "status": "partially_recognized",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [42.391, 44.131],
+    "flag": "ost.svg",
+    "similarTo": [],
+    "neighbors": ["GE", "RU"]
+  },
+  {
+    "id": "PA",
+    "iso3": "PAN",
+    "name": {
+      "tr": "Panama",
+      "en": "Panama"
+    },
+    "capital": {
+      "tr": "Panama",
+      "en": "Panama City"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [8.722, -80.352],
+    "flag": "pa.svg",
+    "similarTo": [],
+    "neighbors": ["CO", "CR"]
+  },
+  {
+    "id": "PE",
+    "iso3": "PER",
+    "name": {
+      "tr": "Peru",
+      "en": "Peru"
+    },
+    "capital": {
+      "tr": "Lima",
+      "en": "Lima"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-12.977, -72.9],
+    "flag": "pe.svg",
+    "similarTo": [],
+    "neighbors": ["BO", "BR", "CL", "CO", "EC"]
+  },
+  {
+    "id": "PG",
+    "iso3": "PNG",
+    "name": {
+      "tr": "Papua Yeni Gine",
+      "en": "Papua New Guinea"
+    },
+    "capital": {
+      "tr": "Port Moresby",
+      "en": "Port Moresby"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-5.695, 143.91],
+    "flag": "pg.svg",
+    "similarTo": [],
+    "neighbors": ["ID"]
+  },
+  {
+    "id": "PH",
+    "iso3": "PHL",
+    "name": {
+      "tr": "Filipinler",
+      "en": "Philippines"
+    },
+    "capital": {
+      "tr": "Manila",
+      "en": "Manila"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [11.198, 122.465],
+    "flag": "ph.svg",
+    "similarTo": ["CZ"],
+    "neighbors": []
+  },
+  {
+    "id": "PK",
+    "iso3": "PAK",
+    "name": {
+      "tr": "Pakistan",
+      "en": "Pakistan"
+    },
+    "capital": {
+      "tr": "İslamabad",
+      "en": "Islamabad"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [29.328, 68.546],
+    "flag": "pk.svg",
+    "similarTo": [],
+    "neighbors": ["AF", "CN", "IN", "IR"]
+  },
+  {
+    "id": "PL",
+    "iso3": "POL",
+    "name": {
+      "tr": "Polonya",
+      "en": "Poland"
+    },
+    "capital": {
+      "tr": "Varşova",
+      "en": "Warsaw"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [51.99, 19.49],
+    "flag": "pl.svg",
+    "similarTo": ["ID", "MC"],
+    "neighbors": ["BY", "CZ", "DE", "LT", "RU", "SK", "UA"]
+  },
+  {
+    "id": "PS",
+    "iso3": "PSE",
+    "name": {
+      "tr": "Filistin",
+      "en": "Palestine"
+    },
+    "capital": {
+      "tr": "Doğu Kudüs",
+      "en": "East Jerusalem"
+    },
+    "continent": "asia",
+    "status": "observer",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [32.047, 35.291],
+    "flag": "ps.svg",
+    "similarTo": ["JO", "SD"],
+    "neighbors": ["EG", "IL", "JO"]
+  },
+  {
+    "id": "PT",
+    "iso3": "PRT",
+    "name": {
+      "tr": "Portekiz",
+      "en": "Portugal"
+    },
+    "capital": {
+      "tr": "Lizbon",
+      "en": "Lisbon"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [39.607, -8.272],
+    "flag": "pt.svg",
+    "similarTo": [],
+    "neighbors": ["ES"]
+  },
+  {
+    "id": "PW",
+    "iso3": "PLW",
+    "name": {
+      "tr": "Palau",
+      "en": "Palau"
+    },
+    "capital": {
+      "tr": "Ngerulmud",
+      "en": "Ngerulmud"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [7.518, 134.58],
+    "flag": "pw.svg",
+    "similarTo": ["BD", "JP"],
+    "neighbors": []
+  },
+  {
+    "id": "PY",
+    "iso3": "PRY",
+    "name": {
+      "tr": "Paraguay",
+      "en": "Paraguay"
+    },
+    "capital": {
+      "tr": "Asunción",
+      "en": "Asunción"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-21.675, -60.146],
+    "flag": "py.svg",
+    "similarTo": [],
+    "neighbors": ["AR", "BO", "BR"]
+  },
+  {
+    "id": "QA",
+    "iso3": "QAT",
+    "name": {
+      "tr": "Katar",
+      "en": "Qatar"
+    },
+    "capital": {
+      "tr": "Doha",
+      "en": "Doha"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [25.237, 51.144],
+    "flag": "qa.svg",
+    "similarTo": ["BH"],
+    "neighbors": ["SA"]
+  },
+  {
+    "id": "RO",
+    "iso3": "ROU",
+    "name": {
+      "tr": "Romanya",
+      "en": "Romania"
+    },
+    "capital": {
+      "tr": "Bükreş",
+      "en": "Bucharest"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [45.733, 24.973],
+    "flag": "ro.svg",
+    "similarTo": ["TD", "AD", "MD"],
+    "neighbors": ["BG", "HU", "MD", "RS", "UA"]
+  },
+  {
+    "id": "RS",
+    "iso3": "SRB",
+    "name": {
+      "tr": "Sırbistan",
+      "en": "Serbia"
+    },
+    "capital": {
+      "tr": "Belgrad",
+      "en": "Belgrade"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [44.19, 20.788],
+    "flag": "rs.svg",
+    "similarTo": ["RU"],
+    "neighbors": ["BA", "BG", "HR", "HU", "ME", "MK", "RO", "XK"]
+  },
+  {
+    "id": "RU",
+    "iso3": "RUS",
+    "name": {
+      "tr": "Rusya",
+      "en": "Russia"
+    },
+    "capital": {
+      "tr": "Moskova",
+      "en": "Moscow"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [58.249, 44.686],
+    "flag": "ru.svg",
+    "similarTo": ["SK", "SI", "RS"],
+    "neighbors": ["ABH", "AZ", "BY", "CN", "EE", "FI", "GE", "KP", "KZ", "LT", "LV", "MN", "NO", "OST", "PL", "UA"]
+  },
+  {
+    "id": "RW",
+    "iso3": "RWA",
+    "name": {
+      "tr": "Ruanda",
+      "en": "Rwanda"
+    },
+    "capital": {
+      "tr": "Kigali",
+      "en": "Kigali"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-1.897, 30.104],
+    "flag": "rw.svg",
+    "similarTo": [],
+    "neighbors": ["BI", "CD", "TZ", "UG"]
+  },
+  {
+    "id": "SA",
+    "iso3": "SAU",
+    "name": {
+      "tr": "Suudi Arabistan",
+      "en": "Saudi Arabia"
+    },
+    "capital": {
+      "tr": "Riyad",
+      "en": "Riyadh"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [23.807, 44.7],
+    "flag": "sa.svg",
+    "similarTo": [],
+    "neighbors": ["AE", "IQ", "JO", "KW", "OM", "QA", "YE"]
+  },
+  {
+    "id": "SB",
+    "iso3": "SLB",
+    "name": {
+      "tr": "Solomon Adaları",
+      "en": "Solomon Islands"
+    },
+    "capital": {
+      "tr": "Honiara",
+      "en": "Honiara"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-8.03, 159.17],
+    "flag": "sb.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "SC",
+    "iso3": "SYC",
+    "name": {
+      "tr": "Seyşeller",
+      "en": "Seychelles"
+    },
+    "capital": {
+      "tr": "Victoria",
+      "en": "Victoria"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-4.677, 55.48],
+    "flag": "sc.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "SD",
+    "iso3": "SDN",
+    "name": {
+      "tr": "Sudan",
+      "en": "Sudan"
+    },
+    "capital": {
+      "tr": "Hartum",
+      "en": "Khartoum"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [16.331, 29.261],
+    "flag": "sd.svg",
+    "similarTo": ["JO", "PS"],
+    "neighbors": ["CF", "EG", "ER", "ET", "LY", "SS", "TD"]
+  },
+  {
+    "id": "SE",
+    "iso3": "SWE",
+    "name": {
+      "tr": "İsveç",
+      "en": "Sweden"
+    },
+    "capital": {
+      "tr": "Stockholm",
+      "en": "Stockholm"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [65.859, 19.017],
+    "flag": "se.svg",
+    "similarTo": ["FI", "DK"],
+    "neighbors": ["FI", "NO"]
+  },
+  {
+    "id": "SG",
+    "iso3": "SGP",
+    "name": {
+      "tr": "Singapur",
+      "en": "Singapore"
+    },
+    "capital": {
+      "tr": "Singapur",
+      "en": "Singapore"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": true,
+    "centroid": [1.367, 103.817],
+    "flag": "sg.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "SI",
+    "iso3": "SVN",
+    "name": {
+      "tr": "Slovenya",
+      "en": "Slovenia"
+    },
+    "capital": {
+      "tr": "Ljubljana",
+      "en": "Ljubljana"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [46.061, 14.915],
+    "flag": "si.svg",
+    "similarTo": ["SK", "RU"],
+    "neighbors": ["AT", "HR", "HU", "IT"]
+  },
+  {
+    "id": "SK",
+    "iso3": "SVK",
+    "name": {
+      "tr": "Slovakya",
+      "en": "Slovakia"
+    },
+    "capital": {
+      "tr": "Bratislava",
+      "en": "Bratislava"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [48.734, 19.05],
+    "flag": "sk.svg",
+    "similarTo": ["SI", "RU"],
+    "neighbors": ["AT", "CZ", "HU", "PL", "UA"]
+  },
+  {
+    "id": "SL",
+    "iso3": "SLE",
+    "name": {
+      "tr": "Sierra Leone",
+      "en": "Sierra Leone"
+    },
+    "capital": {
+      "tr": "Freetown",
+      "en": "Freetown"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [8.617, -11.764],
+    "flag": "sl.svg",
+    "similarTo": [],
+    "neighbors": ["GN", "LR"]
+  },
+  {
+    "id": "SM",
+    "iso3": "SMR",
+    "name": {
+      "tr": "San Marino",
+      "en": "San Marino"
+    },
+    "capital": {
+      "tr": "San Marino",
+      "en": "San Marino"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [43.934, 12.441],
+    "flag": "sm.svg",
+    "similarTo": [],
+    "neighbors": ["IT"]
+  },
+  {
+    "id": "SML",
+    "iso3": "SML",
+    "name": {
+      "tr": "Somaliland",
+      "en": "Somaliland"
+    },
+    "capital": {
+      "tr": "Hargeysa",
+      "en": "Hargeisa"
+    },
+    "continent": "africa",
+    "status": "partially_recognized",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [9.444, 46.732],
+    "flag": "sml.svg",
+    "similarTo": [],
+    "neighbors": ["DJ", "ET", "SO"]
+  },
+  {
+    "id": "SN",
+    "iso3": "SEN",
+    "name": {
+      "tr": "Senegal",
+      "en": "Senegal"
+    },
+    "capital": {
+      "tr": "Dakar",
+      "en": "Dakar"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [15.138, -14.779],
+    "flag": "sn.svg",
+    "similarTo": ["ML", "GN"],
+    "neighbors": ["GM", "GN", "GW", "ML", "MR"]
+  },
+  {
+    "id": "SO",
+    "iso3": "SOM",
+    "name": {
+      "tr": "Somali",
+      "en": "Somalia"
+    },
+    "capital": {
+      "tr": "Mogadişu",
+      "en": "Mogadishu"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [3.569, 45.192],
+    "flag": "so.svg",
+    "similarTo": [],
+    "neighbors": ["ET", "KE", "SML"]
+  },
+  {
+    "id": "SR",
+    "iso3": "SUR",
+    "name": {
+      "tr": "Surinam",
+      "en": "Suriname"
+    },
+    "capital": {
+      "tr": "Paramaribo",
+      "en": "Paramaribo"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [4.144, -55.911],
+    "flag": "sr.svg",
+    "similarTo": [],
+    "neighbors": ["BR", "FR", "GY"]
+  },
+  {
+    "id": "SS",
+    "iso3": "SSD",
+    "name": {
+      "tr": "Güney Sudan",
+      "en": "South Sudan"
+    },
+    "capital": {
+      "tr": "Cuba",
+      "en": "Juba"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [7.23, 30.39],
+    "flag": "ss.svg",
+    "similarTo": [],
+    "neighbors": ["CD", "CF", "ET", "KE", "SD", "UG"]
+  },
+  {
+    "id": "ST",
+    "iso3": "STP",
+    "name": {
+      "tr": "São Tomé ve Príncipe",
+      "en": "São Tomé and Príncipe"
+    },
+    "capital": {
+      "tr": "São Tomé",
+      "en": "São Tomé"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [0.239, 6.607],
+    "flag": "st.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "SV",
+    "iso3": "SLV",
+    "name": {
+      "tr": "El Salvador",
+      "en": "El Salvador"
+    },
+    "capital": {
+      "tr": "San Salvador",
+      "en": "San Salvador"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [13.685, -88.89],
+    "flag": "sv.svg",
+    "similarTo": ["NI", "HN"],
+    "neighbors": ["GT", "HN"]
+  },
+  {
+    "id": "SY",
+    "iso3": "SYR",
+    "name": {
+      "tr": "Suriye",
+      "en": "Syria"
+    },
+    "capital": {
+      "tr": "Şam",
+      "en": "Damascus"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [35.007, 38.278],
+    "flag": "sy.svg",
+    "similarTo": ["EG", "IQ", "YE"],
+    "neighbors": ["IL", "IQ", "JO", "LB", "TR"]
+  },
+  {
+    "id": "SZ",
+    "iso3": "SWZ",
+    "name": {
+      "tr": "Esvatini",
+      "en": "Eswatini"
+    },
+    "capital": {
+      "tr": "Mbabane",
+      "en": "Mbabane"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-26.534, 31.467],
+    "flag": "sz.svg",
+    "similarTo": [],
+    "neighbors": ["MZ", "ZA"]
+  },
+  {
+    "id": "TD",
+    "iso3": "TCD",
+    "name": {
+      "tr": "Çad",
+      "en": "Chad"
+    },
+    "capital": {
+      "tr": "Encamena",
+      "en": "N'Djamena"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [15.143, 18.645],
+    "flag": "td.svg",
+    "similarTo": ["RO", "AD"],
+    "neighbors": ["CF", "CM", "LY", "NE", "NG", "SD"]
+  },
+  {
+    "id": "TG",
+    "iso3": "TGO",
+    "name": {
+      "tr": "Togo",
+      "en": "Togo"
+    },
+    "capital": {
+      "tr": "Lome",
+      "en": "Lomé"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [8.807, 1.058],
+    "flag": "tg.svg",
+    "similarTo": [],
+    "neighbors": ["BF", "BJ", "GH"]
+  },
+  {
+    "id": "TH",
+    "iso3": "THA",
+    "name": {
+      "tr": "Tayland",
+      "en": "Thailand"
+    },
+    "capital": {
+      "tr": "Bangkok",
+      "en": "Bangkok"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [15.46, 101.073],
+    "flag": "th.svg",
+    "similarTo": ["CR"],
+    "neighbors": ["KH", "LA", "MM", "MY"]
+  },
+  {
+    "id": "TJ",
+    "iso3": "TJK",
+    "name": {
+      "tr": "Tacikistan",
+      "en": "Tajikistan"
+    },
+    "capital": {
+      "tr": "Duşanbe",
+      "en": "Dushanbe"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [38.2, 72.587],
+    "flag": "tj.svg",
+    "similarTo": [],
+    "neighbors": ["AF", "CN", "KG", "UZ"]
+  },
+  {
+    "id": "TL",
+    "iso3": "TLS",
+    "name": {
+      "tr": "Doğu Timor",
+      "en": "Timor-Leste"
+    },
+    "capital": {
+      "tr": "Dili",
+      "en": "Dili"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-8.804, 125.855],
+    "flag": "tl.svg",
+    "similarTo": [],
+    "neighbors": ["ID"]
+  },
+  {
+    "id": "TM",
+    "iso3": "TKM",
+    "name": {
+      "tr": "Türkmenistan",
+      "en": "Turkmenistan"
+    },
+    "capital": {
+      "tr": "Aşkabat",
+      "en": "Ashgabat"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [39.855, 58.677],
+    "flag": "tm.svg",
+    "similarTo": [],
+    "neighbors": ["AF", "IR", "KZ", "UZ"]
+  },
+  {
+    "id": "TN",
+    "iso3": "TUN",
+    "name": {
+      "tr": "Tunus",
+      "en": "Tunisia"
+    },
+    "capital": {
+      "tr": "Tunus",
+      "en": "Tunis"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [33.687, 9.008],
+    "flag": "tn.svg",
+    "similarTo": ["TR"],
+    "neighbors": ["DZ", "LY"]
+  },
+  {
+    "id": "TO",
+    "iso3": "TON",
+    "name": {
+      "tr": "Tonga",
+      "en": "Tonga"
+    },
+    "capital": {
+      "tr": "Nukualofa",
+      "en": "Nukuʻalofa"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-21.21, -175.163],
+    "flag": "to.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "TR",
+    "iso3": "TUR",
+    "name": {
+      "tr": "Türkiye",
+      "en": "Türkiye"
+    },
+    "capital": {
+      "tr": "Ankara",
+      "en": "Ankara"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [39.345, 34.508],
+    "flag": "tr.svg",
+    "similarTo": ["TN", "NCY"],
+    "neighbors": ["AM", "AZ", "BG", "GE", "GR", "IQ", "IR", "SY"]
+  },
+  {
+    "id": "TT",
+    "iso3": "TTO",
+    "name": {
+      "tr": "Trinidad ve Tobago",
+      "en": "Trinidad and Tobago"
+    },
+    "capital": {
+      "tr": "Port of Spain",
+      "en": "Port of Spain"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [10.42, -61.294],
+    "flag": "tt.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "TV",
+    "iso3": "TUV",
+    "name": {
+      "tr": "Tuvalu",
+      "en": "Tuvalu"
+    },
+    "capital": {
+      "tr": "Funafuti",
+      "en": "Funafuti"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-8.514, 179.21],
+    "flag": "tv.svg",
+    "similarTo": ["FJ"],
+    "neighbors": []
+  },
+  {
+    "id": "TW",
+    "iso3": "TWN",
+    "name": {
+      "tr": "Tayvan",
+      "en": "Taiwan"
+    },
+    "capital": {
+      "tr": "Taipei",
+      "en": "Taipei"
+    },
+    "continent": "asia",
+    "status": "partially_recognized",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [23.652, 120.868],
+    "flag": "tw.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "TZ",
+    "iso3": "TZA",
+    "name": {
+      "tr": "Tanzanya",
+      "en": "Tanzania"
+    },
+    "capital": {
+      "tr": "Dodoma",
+      "en": "Dodoma"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-6.052, 34.959],
+    "flag": "tz.svg",
+    "similarTo": [],
+    "neighbors": ["BI", "CD", "KE", "MW", "MZ", "RW", "UG", "ZM"]
+  },
+  {
+    "id": "UA",
+    "iso3": "UKR",
+    "name": {
+      "tr": "Ukrayna",
+      "en": "Ukraine"
+    },
+    "capital": {
+      "tr": "Kiev",
+      "en": "Kyiv"
+    },
+    "continent": "europe",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [49.725, 32.141],
+    "flag": "ua.svg",
+    "similarTo": [],
+    "neighbors": ["BY", "HU", "MD", "PL", "RO", "RU", "SK"]
+  },
+  {
+    "id": "UG",
+    "iso3": "UGA",
+    "name": {
+      "tr": "Uganda",
+      "en": "Uganda"
+    },
+    "capital": {
+      "tr": "Kampala",
+      "en": "Kampala"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [1.973, 32.949],
+    "flag": "ug.svg",
+    "similarTo": [],
+    "neighbors": ["CD", "KE", "RW", "SS", "TZ"]
+  },
+  {
+    "id": "US",
+    "iso3": "USA",
+    "name": {
+      "tr": "Amerika Birleşik Devletleri",
+      "en": "United States"
+    },
+    "capital": {
+      "tr": "Washington",
+      "en": "Washington, D.C."
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [39.538, -97.483],
+    "flag": "us.svg",
+    "similarTo": ["LR", "MY"],
+    "neighbors": ["CA", "MX"]
+  },
+  {
+    "id": "UY",
+    "iso3": "URY",
+    "name": {
+      "tr": "Uruguay",
+      "en": "Uruguay"
+    },
+    "capital": {
+      "tr": "Montevideo",
+      "en": "Montevideo"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [-32.961, -55.967],
+    "flag": "uy.svg",
+    "similarTo": ["AR", "GR"],
+    "neighbors": ["AR", "BR"]
+  },
+  {
+    "id": "UZ",
+    "iso3": "UZB",
+    "name": {
+      "tr": "Özbekistan",
+      "en": "Uzbekistan"
+    },
+    "capital": {
+      "tr": "Taşkent",
+      "en": "Tashkent"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [41.694, 64.005],
+    "flag": "uz.svg",
+    "similarTo": [],
+    "neighbors": ["AF", "KG", "KZ", "TJ", "TM"]
+  },
+  {
+    "id": "VA",
+    "iso3": "VAT",
+    "name": {
+      "tr": "Vatikan",
+      "en": "Vatican City"
+    },
+    "capital": {
+      "tr": "Vatikan",
+      "en": "Vatican City"
+    },
+    "continent": "europe",
+    "status": "observer",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [41.902, 12.434],
+    "flag": "va.svg",
+    "similarTo": [],
+    "neighbors": ["IT"]
+  },
+  {
+    "id": "VC",
+    "iso3": "VCT",
+    "name": {
+      "tr": "Saint Vincent ve Grenadinler",
+      "en": "Saint Vincent and the Grenadines"
+    },
+    "capital": {
+      "tr": "Kingstown",
+      "en": "Kingstown"
+    },
+    "continent": "north_america",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [13.253, -61.195],
+    "flag": "vc.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "VE",
+    "iso3": "VEN",
+    "name": {
+      "tr": "Venezuela",
+      "en": "Venezuela"
+    },
+    "capital": {
+      "tr": "Karakas",
+      "en": "Caracas"
+    },
+    "continent": "south_america",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [7.182, -64.599],
+    "flag": "ve.svg",
+    "similarTo": ["CO", "EC"],
+    "neighbors": ["BR", "CO", "GY"]
+  },
+  {
+    "id": "VN",
+    "iso3": "VNM",
+    "name": {
+      "tr": "Vietnam",
+      "en": "Vietnam"
+    },
+    "capital": {
+      "tr": "Hanoi",
+      "en": "Hanoi"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [21.715, 105.387],
+    "flag": "vn.svg",
+    "similarTo": ["CN"],
+    "neighbors": ["CN", "KH", "LA"]
+  },
+  {
+    "id": "VU",
+    "iso3": "VUT",
+    "name": {
+      "tr": "Vanuatu",
+      "en": "Vanuatu"
+    },
+    "capital": {
+      "tr": "Port Vila",
+      "en": "Port Vila"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-15.372, 166.909],
+    "flag": "vu.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "WS",
+    "iso3": "WSM",
+    "name": {
+      "tr": "Samoa",
+      "en": "Samoa"
+    },
+    "capital": {
+      "tr": "Apia",
+      "en": "Apia"
+    },
+    "continent": "oceania",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": true,
+    "centroid": [-13.639, -172.438],
+    "flag": "ws.svg",
+    "similarTo": [],
+    "neighbors": []
+  },
+  {
+    "id": "XK",
+    "iso3": "XKX",
+    "name": {
+      "tr": "Kosova",
+      "en": "Kosovo"
+    },
+    "capital": {
+      "tr": "Priştine",
+      "en": "Pristina"
+    },
+    "continent": "europe",
+    "status": "partially_recognized",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [42.594, 20.861],
+    "flag": "xk.svg",
+    "similarTo": ["BA", "CY"],
+    "neighbors": ["AL", "ME", "MK", "RS"]
+  },
+  {
+    "id": "YE",
+    "iso3": "YEM",
+    "name": {
+      "tr": "Yemen",
+      "en": "Yemen"
+    },
+    "capital": {
+      "tr": "Sana",
+      "en": "Sanaa"
+    },
+    "continent": "asia",
+    "status": "un_member",
+    "difficulty": 2,
+    "isTiny": false,
+    "centroid": [15.328, 45.874],
+    "flag": "ye.svg",
+    "similarTo": ["EG", "SY"],
+    "neighbors": ["OM", "SA"]
+  },
+  {
+    "id": "ZA",
+    "iso3": "ZAF",
+    "name": {
+      "tr": "Güney Afrika",
+      "en": "South Africa"
+    },
+    "capital": {
+      "tr": "Pretoria",
+      "en": "Pretoria"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 1,
+    "isTiny": false,
+    "centroid": [-29.709, 23.666],
+    "flag": "za.svg",
+    "similarTo": [],
+    "neighbors": ["BW", "LS", "MZ", "NA", "SZ", "ZW"]
+  },
+  {
+    "id": "ZM",
+    "iso3": "ZMB",
+    "name": {
+      "tr": "Zambiya",
+      "en": "Zambia"
+    },
+    "capital": {
+      "tr": "Lusaka",
+      "en": "Lusaka"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-14.661, 26.395],
+    "flag": "zm.svg",
+    "similarTo": [],
+    "neighbors": ["AO", "CD", "MW", "MZ", "NA", "TZ", "ZW"]
+  },
+  {
+    "id": "ZW",
+    "iso3": "ZWE",
+    "name": {
+      "tr": "Zimbabve",
+      "en": "Zimbabwe"
+    },
+    "capital": {
+      "tr": "Harare",
+      "en": "Harare"
+    },
+    "continent": "africa",
+    "status": "un_member",
+    "difficulty": 3,
+    "isTiny": false,
+    "centroid": [-18.912, 29.925],
+    "flag": "zw.svg",
+    "similarTo": [],
+    "neighbors": ["BW", "MZ", "ZA", "ZM"]
+  }
+]

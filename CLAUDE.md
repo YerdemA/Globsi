@@ -78,14 +78,19 @@ test/
 ## 4. Veri
 
 ### 4.1 Kaynaklar ve lisanslar
-- **Sınırlar:** Natural Earth Admin-0 Countries, **1:50m** ölçeği (kamu malı). 1:110m küçük ülkeleri içermediği için kullanılmaz.
-- **Bayraklar:** `lipis/flag-icons` SVG seti (MIT). Yalnızca ihtiyaç duyulan 4x3 SVG'ler kopyalanır.
+- **Sınırlar:** Natural Earth Admin-0, **1:50m** ölçeği (kamu malı). Geometri `map_subunits` katmanından, Golan/Abhazya/Güney Osetya iç hatları `breakaway_disputed_areas` katmanından, etiket noktaları `countries` katmanından alınır. 1:110m küçük ülkeleri içermediği için kullanılmaz.
+- **Bayraklar:** `lipis/flag-icons` SVG seti (MIT), v7.6.0. Yalnızca ihtiyaç duyulan 4x3 SVG'ler kopyalanır (`tool/copy_flags.dart`). Sette olmayan KKTC, Somaliland, Abhazya ve Güney Osetya bayrakları Wikimedia Commons'tan (kamu malı) alınıp `tool/flags_extra/` içinde tutulur.
 - Tüm kaynaklar `docs/ATTRIBUTIONS.md` dosyasında ve uygulamanın Ayarlar > Hakkında bölümünde belirtilir.
 
 ### 4.2 Ülke kapsamı
 - 193 BM üyesi + Vatikan + Filistin = **195**
-- **Tartışmalı/kısmen tanınan ülkeler de dahil:** Kosova, Tayvan, KKTC, Batı Sahra (SADR), Somaliland, Abhazya, Güney Osetya. Kesin liste `countries.json` içinde `status` alanıyla tutulur.
-- **Açık karar:** Kıbrıs/KKTC ve diğer tartışmalı sınırların çizimi. Natural Earth'ün varsayılan görüşü veya ülke görüşü (point-of-view) varyantlarından biri seçilecek. Karar verilmeden bu ülkelerin sınır verisi kesinleştirilmez. Karar verildiğinde bu satır güncellenmeli.
+- **Tartışmalı/kısmen tanınan ülkeler de dahil:** Kosova, Tayvan, KKTC, Batı Sahra (SADR), Somaliland, Abhazya, Güney Osetya. Toplam **202**. Kesin liste `countries.json` içinde `status` alanıyla tutulur. Özel kodlar: `XK` Kosova, `NCY` KKTC, `SML` Somaliland, `ABH` Abhazya, `OST` Güney Osetya.
+- **Sınır kararı (2026-10-28):** Natural Earth varsayılan görüşü temel alınır; fiili kontrolün BM görüşünden ayrıldığı yerlerde BM görüşü uygulanır. 1:50m ölçeğinde POV geometri varyantı olmadığı için düzeltmeler `tool/build_geo_data.dart` içinde yapılır:
+  - **Kıbrıs/KKTC:** NE varsayılanı. KKTC ayrı poligon, aralarında sınır çizgisi var.
+  - **Kırım → Ukrayna** (NE'de Rusya alt birimi `RUC`).
+  - **Golan Tepeleri → Suriye** (NE'de İsrail'e bağlı; İsrail ateşkes hattından bölünür).
+  - **Abhazya ve Güney Osetya** Gürcistan'dan ayrı ülke olarak bölünür.
+  - Diğer tüm sınırlar (Keşmir, Batı Sahra vb.) NE varsayılanıdır. Yeni bir istisna eklenmeden önce kullanıcıya sorulur.
 
 ### 4.3 `countries.json` şeması
 ```json
@@ -97,20 +102,23 @@ test/
   "continent": "europe",   // africa | asia | europe | north_america | south_america | oceania
   "status": "un_member",   // un_member | observer | partially_recognized
   "difficulty": 1,          // 1 kolay, 2 orta, 3 zor
-  "isTiny": false,          // küçük ülke işaretleme ve zorluk mantığı için
-  "centroid": [39.0, 35.0], // [lat, lon], kameranın döneceği ve dairenin çizileceği nokta
+  "isTiny": false,          // alan < 3000 km² (araç üretir); küçük ülke işaretleme ve zorluk mantığı için
+  "centroid": [39.0, 35.0], // [lat, lon], kameranın döneceği ve dairenin çizileceği nokta (araç üretir, her zaman ülkenin içinde)
   "flag": "tr.svg",
-  "similarTo": ["AZ", "TN"] // benzer bayrak/komşu ülkeler (şık üretimi için ipucu)
+  "similarTo": ["TN"],      // karıştırılabilir bayraklar (şık üretimi için ipucu, elle)
+  "neighbors": ["GE", "SY"] // kara sınırı komşuları (araç üretir)
 }
 ```
 
-Kıta ataması tutarlı olmalı. Türkiye ve Rusya gibi iki kıtalı ülkeler tek bir birincil kıtaya atanır (Türkiye → europe/asia kararı `countries.json` içinde sabitlenir). Zorluk etiketleri ilk aşamada nüfus, alan ve tanınırlığa göre elle/yarı otomatik belirlenir.
+Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya atanır: **Türkiye → europe**, Rusya → europe, Kıbrıs ve KKTC → europe, Kazakistan → asia, Gürcistan/Ermenistan/Azerbaycan/Abhazya/Güney Osetya → asia, Mısır → africa, Panama ve Karayipler → north_america. Zorluk etiketleri ilk aşamada nüfus, alan ve tanınırlığa göre elle/yarı otomatik belirlenir.
 
 ### 4.4 Geo veri hattı (`tool/build_geo_data.dart`)
-1. Ham Natural Earth GeoJSON'u oku.
-2. Mapshaper benzeri Douglas–Peucker sadeleştirmesi uygula. Hedef: tüm sınır verisi **< 1.5 MB**, görsel olarak düzgün.
-3. Koordinatları Float32 kodlu kompakt bir formata yaz. Her ülke için çoklu poligon ve önceden hesaplanmış bounding box tutulur.
-4. Çıktı `assets/geo/` altına yazılır. Ham veri repoya eklenmez (`.gitignore`).
+1. Ham Natural Earth GeoJSON'u oku (indirme talimatı `README.md`). Koordinatlar mikro-dereceye yuvarlanır, ~3 m'den yakın köşeler birleştirilir ki komşu sınırlar birebir eşleşsin.
+2. §4.2 sınır kararlarını uygula.
+3. Topolojiye duyarlı Douglas–Peucker sadeleştirmesi (mapshaper gibi): halkalar komşularla paylaşılan yaylara bölünür, her yay bir kez sadeleştirilir; böylece komşular arasında boşluk/örtüşme olmaz. Küçük halkalar çökmesin diye sadeleştirilmez. Varsayılan tolerans 0.01° (~1 km). Hedef: tüm sınır verisi **< 1.5 MB** (şu an ~1.0 MB).
+4. Float32 kodlu kompakt ikili formata yaz (`lib/core/geo/geo_codec.dart` formatı belgeler): ülkeler + seçilemeyen diğer karalar (Grönland, Antarktika vb., id `_` + NE kodu), poligon başına bounding box, ayrıca bir kez saklanan sınır çizgileri (kıyı/kara, sahip ülkeler). Aynı ülke içindeki hatlar (ör. Kırım) ve antimeridyen/kutup kesim çizgileri sınır olarak yazılmaz.
+5. `countries.json` içindeki üretilen alanlar (`centroid`, `isTiny`, `neighbors`) güncellenir.
+6. Çıktı `assets/geo/` altına yazılır. Ham veri repoya eklenmez (`.gitignore`).
 
 ---
 

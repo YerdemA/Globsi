@@ -18,13 +18,13 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 1 — Veri hattı
-- [ ] Natural Earth 1:50m Admin-0 indirme talimatı (README'ye)
-- [ ] `tool/build_geo_data.dart`: sadeleştirme + kompakt ikili format + bounding box
-- [ ] `assets/data/countries.json`: 195 + tartışmalı ülkeler, TR/EN ad ve başkent, kıta, durum, zorluk, `isTiny`, centroid, `similarTo`
-- [ ] Gerekli bayrak SVG'lerinin kopyalanması (flag-icons, MIT)
-- [ ] `docs/ATTRIBUTIONS.md`
-- [ ] Veri doğrulama testi: her ülkenin geo verisi, bayrağı ve her iki dilde adı var, kodlar benzersiz
-- [ ] Repository katmanı: `CountryRepository` (meta + geo yükleme, önbellek)
+- [x] Natural Earth 1:50m Admin-0 indirme talimatı (README'ye)
+- [x] `tool/build_geo_data.dart`: sadeleştirme + kompakt ikili format + bounding box
+- [x] `assets/data/countries.json`: 195 + tartışmalı ülkeler, TR/EN ad ve başkent, kıta, durum, zorluk, `isTiny`, centroid, `similarTo`
+- [x] Gerekli bayrak SVG'lerinin kopyalanması (flag-icons, MIT)
+- [x] `docs/ATTRIBUTIONS.md`
+- [x] Veri doğrulama testi: her ülkenin geo verisi, bayrağı ve her iki dilde adı var, kodlar benzersiz
+- [x] Repository katmanı: `CountryRepository` (meta + geo yükleme, önbellek)
 
 **Kabul:** Doğrulama testi geçiyor, geo varlığı 1.5 MB altında, KKTC/Kıbrıs sınır kararı `CLAUDE.md` içine yazılmış.
 
