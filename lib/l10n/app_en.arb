@@ -1,0 +1,16 @@
+{
+  "@@locale": "en",
+  "appTitle": "Globsi",
+  "menuExplore": "Explore",
+  "menuExploreSubtitle": "Spin the globe, discover countries",
+  "menuFlagsLearn": "Learn Flags",
+  "menuFlagsLearnSubtitle": "List and flashcards",
+  "menuMapPractice": "Map Practice",
+  "menuMapPracticeSubtitle": "Which country is highlighted?",
+  "menuFlagPractice": "Flag Practice",
+  "menuFlagPracticeSubtitle": "Whose flag is this?",
+  "settings": "Settings",
+  "settingsLanguage": "Language",
+  "languageSystem": "System language",
+  "comingSoon": "Coming soon"
+}

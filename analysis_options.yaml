@@ -1,0 +1,12 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/l10n/app_localizations*.dart
+    - build/**
+    - android/**
+
+linter:
+  rules:
+    # Application code, not a published package.
+    public_member_api_docs: false

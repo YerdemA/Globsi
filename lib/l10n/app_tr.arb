@@ -1,0 +1,16 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Globsi",
+  "menuExplore": "Keşfet",
+  "menuExploreSubtitle": "Küreyi döndür, ülkeleri tanı",
+  "menuFlagsLearn": "Bayrakları Öğren",
+  "menuFlagsLearnSubtitle": "Liste ve kart çevirme",
+  "menuMapPractice": "Harita Pratiği",
+  "menuMapPracticeSubtitle": "Vurgulanan ülke hangisi?",
+  "menuFlagPractice": "Bayrak Pratiği",
+  "menuFlagPracticeSubtitle": "Bu bayrak hangi ülkenin?",
+  "settings": "Ayarlar",
+  "settingsLanguage": "Dil",
+  "languageSystem": "Sistem dili",
+  "comingSoon": "Yakında"
+}
