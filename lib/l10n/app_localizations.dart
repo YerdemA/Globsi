@@ -175,6 +175,96 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Yakında'**
   String get comingSoon;
+
+  /// No description provided for @continentAfrica.
+  ///
+  /// In tr, this message translates to:
+  /// **'Afrika'**
+  String get continentAfrica;
+
+  /// No description provided for @continentAsia.
+  ///
+  /// In tr, this message translates to:
+  /// **'Asya'**
+  String get continentAsia;
+
+  /// No description provided for @continentEurope.
+  ///
+  /// In tr, this message translates to:
+  /// **'Avrupa'**
+  String get continentEurope;
+
+  /// No description provided for @continentNorthAmerica.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kuzey Amerika'**
+  String get continentNorthAmerica;
+
+  /// No description provided for @continentSouthAmerica.
+  ///
+  /// In tr, this message translates to:
+  /// **'Güney Amerika'**
+  String get continentSouthAmerica;
+
+  /// No description provided for @continentOceania.
+  ///
+  /// In tr, this message translates to:
+  /// **'Okyanusya'**
+  String get continentOceania;
+
+  /// No description provided for @statusObserver.
+  ///
+  /// In tr, this message translates to:
+  /// **'BM gözlemci devlet'**
+  String get statusObserver;
+
+  /// No description provided for @statusPartiallyRecognized.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kısmen tanınan devlet'**
+  String get statusPartiallyRecognized;
+
+  /// No description provided for @infoCapital.
+  ///
+  /// In tr, this message translates to:
+  /// **'Başkent'**
+  String get infoCapital;
+
+  /// No description provided for @infoContinent.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kıta'**
+  String get infoContinent;
+
+  /// No description provided for @close.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kapat'**
+  String get close;
+
+  /// No description provided for @zoomIn.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yakınlaştır'**
+  String get zoomIn;
+
+  /// No description provided for @zoomOut.
+  ///
+  /// In tr, this message translates to:
+  /// **'Uzaklaştır'**
+  String get zoomOut;
+
+  /// No description provided for @loadError.
+  ///
+  /// In tr, this message translates to:
+  /// **'Veriler yüklenemedi.'**
+  String get loadError;
+
+  /// No description provided for @retry.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tekrar dene'**
+  String get retry;
 }
 
 class _AppLocalizationsDelegate

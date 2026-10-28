@@ -94,7 +94,8 @@ Future<void> main(List<String> args) async {
     });
 
   final topology = Topology.build([for (final c in codes) groups[c]!])
-    ..simplify(tolerance);
+    ..simplify(tolerance)
+    ..densify(1);
 
   final features = <GeoFeature>[];
   for (final (i, code) in codes.indexed) {
@@ -207,10 +208,13 @@ Map<String, List<Polygon>> _buildGroups(
 /// Border polylines, with the artificial cut lines along the antimeridian
 /// and the south pole removed.
 List<GeoBorder> _buildBorders(Topology topology) {
+  // NE cut points are only approximately at ±180° (e.g. -179.99995).
   bool isCut(Pt a, Pt b) {
-    const lon180 = 180 * coordScale;
+    const nearAntimeridian = 179.999 * coordScale;
     const southPole = -89.99 * coordScale;
-    return (a.$1.abs() == lon180 && a.$1 == b.$1) ||
+    return (a.$1.abs() >= nearAntimeridian &&
+            b.$1.abs() >= nearAntimeridian &&
+            a.$1.sign == b.$1.sign) ||
         (a.$2 <= southPole && b.$2 <= southPole);
   }
 

@@ -102,6 +102,19 @@ class Topology {
     }
   }
 
+  /// Inserts points so no segment is longer than [maxStep] degrees.
+  /// Straight lon/lat segments (e.g. borders along a parallel) are curves on
+  /// the globe, so long segments would be drawn as visibly wrong chords.
+  void densify(double maxStep) {
+    for (final arc in arcs) {
+      arc.simplified = densifyLine(
+        arc.isLoop ? [...arc.simplified, arc.simplified.first] : arc.simplified,
+        maxStep,
+      );
+      if (arc.isLoop) arc.simplified.removeLast();
+    }
+  }
+
   List<Polygon> polygonsOf(int feature) => [
     for (final polygon in features[feature])
       [for (final ring in polygon) _assemble(ring, simplified: true)],

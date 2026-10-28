@@ -12,5 +12,20 @@
   "settings": "Settings",
   "settingsLanguage": "Language",
   "languageSystem": "System language",
-  "comingSoon": "Coming soon"
+  "comingSoon": "Coming soon",
+  "continentAfrica": "Africa",
+  "continentAsia": "Asia",
+  "continentEurope": "Europe",
+  "continentNorthAmerica": "North America",
+  "continentSouthAmerica": "South America",
+  "continentOceania": "Oceania",
+  "statusObserver": "UN observer state",
+  "statusPartiallyRecognized": "Partially recognized state",
+  "infoCapital": "Capital",
+  "infoContinent": "Continent",
+  "close": "Close",
+  "zoomIn": "Zoom in",
+  "zoomOut": "Zoom out",
+  "loadError": "Couldn't load the data.",
+  "retry": "Retry"
 }

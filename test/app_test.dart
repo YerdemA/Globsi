@@ -39,8 +39,14 @@ void main() {
       'Flag Practice',
     ]) {
       await tester.tap(find.text(label));
-      await tester.pumpAndSettle();
-      expect(find.text('Coming soon'), findsOneWidget);
+      // The globe screen keeps a progress indicator spinning while its data
+      // loads, so pump the route transition instead of settling.
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
+      expect(
+        find.descendant(of: find.byType(AppBar), matching: find.text(label)),
+        findsOneWidget,
+      );
       await tester.pageBack();
       await tester.pumpAndSettle();
     }

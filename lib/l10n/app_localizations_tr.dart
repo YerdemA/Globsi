@@ -47,4 +47,49 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get comingSoon => 'Yakında';
+
+  @override
+  String get continentAfrica => 'Afrika';
+
+  @override
+  String get continentAsia => 'Asya';
+
+  @override
+  String get continentEurope => 'Avrupa';
+
+  @override
+  String get continentNorthAmerica => 'Kuzey Amerika';
+
+  @override
+  String get continentSouthAmerica => 'Güney Amerika';
+
+  @override
+  String get continentOceania => 'Okyanusya';
+
+  @override
+  String get statusObserver => 'BM gözlemci devlet';
+
+  @override
+  String get statusPartiallyRecognized => 'Kısmen tanınan devlet';
+
+  @override
+  String get infoCapital => 'Başkent';
+
+  @override
+  String get infoContinent => 'Kıta';
+
+  @override
+  String get close => 'Kapat';
+
+  @override
+  String get zoomIn => 'Yakınlaştır';
+
+  @override
+  String get zoomOut => 'Uzaklaştır';
+
+  @override
+  String get loadError => 'Veriler yüklenemedi.';
+
+  @override
+  String get retry => 'Tekrar dene';
 }

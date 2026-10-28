@@ -47,4 +47,49 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get comingSoon => 'Coming soon';
+
+  @override
+  String get continentAfrica => 'Africa';
+
+  @override
+  String get continentAsia => 'Asia';
+
+  @override
+  String get continentEurope => 'Europe';
+
+  @override
+  String get continentNorthAmerica => 'North America';
+
+  @override
+  String get continentSouthAmerica => 'South America';
+
+  @override
+  String get continentOceania => 'Oceania';
+
+  @override
+  String get statusObserver => 'UN observer state';
+
+  @override
+  String get statusPartiallyRecognized => 'Partially recognized state';
+
+  @override
+  String get infoCapital => 'Capital';
+
+  @override
+  String get infoContinent => 'Continent';
+
+  @override
+  String get close => 'Close';
+
+  @override
+  String get zoomIn => 'Zoom in';
+
+  @override
+  String get zoomOut => 'Zoom out';
+
+  @override
+  String get loadError => 'Couldn\'t load the data.';
+
+  @override
+  String get retry => 'Retry';
 }

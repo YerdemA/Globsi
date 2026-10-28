@@ -31,14 +31,16 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 2 — Küre (Keşfet)
-- [ ] `core/geo`: ortografik projeksiyon, ters projeksiyon, ufuk kırpma, point-in-polygon (birim testli)
-- [ ] `GlobePainter`: okyanus, ülke dolguları, sınır çizgileri, vurgulanan ülke, küçük ülke dairesi
-- [ ] Sürükleyerek döndürme + atalet, pinch zoom, sınır değerleri
-- [ ] Dokunarak ülke seçme → bilgi kartı (ad, bayrak, başkent, kıta)
-- [ ] `focusOn(countryId)` animasyonu
-- [ ] Performans: bounding box eleme, Path önbelleği, RepaintBoundary
+- [x] `core/geo`: ortografik projeksiyon, ters projeksiyon, ufuk kırpma, point-in-polygon (birim testli)
+- [x] `GlobePainter`: okyanus, ülke dolguları, sınır çizgileri, vurgulanan ülke, küçük ülke dairesi
+- [x] Sürükleyerek döndürme + atalet, pinch zoom, sınır değerleri
+- [x] Dokunarak ülke seçme → bilgi kartı (ad, bayrak, başkent, kıta)
+- [x] `focusOn(countryId)` animasyonu
+- [x] Performans: bounding box eleme, Path önbelleği, RepaintBoundary
 
 **Kabul:** Gerçek bir orta segment Android cihazda sürükleme akıcı (profil modunda ölçülmüş). Vatikan ve Monako yakın zoomda seçilebiliyor. Arka yüzdeki ülkeler görünmüyor, ufukta kırpma düzgün.
+
+> Durum (2026-10-28): Vatikan/Monako seçimi, arka yüz ve ufuk kırpma emülatörde ve testlerde doğrulandı. **Gerçek cihazda profil modu ölçümü henüz yapılmadı** (bkz. `flutter run --profile`). Masaüstü ölçümünde kare başına yol üretimi tüm zoom aralığında ≤ 4 ms.
 
 ---
 

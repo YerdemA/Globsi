@@ -60,6 +60,23 @@ List<Pt> simplifyLoop(List<Pt> ring, double tolerance) {
   return [...first, ...second.sublist(1, second.length - 1)];
 }
 
+/// Inserts evenly spaced points so no segment is longer than [maxStep]
+/// degrees (Chebyshev distance in lon/lat).
+List<Pt> densifyLine(List<Pt> points, double maxStep) {
+  final step = maxStep * coordScale;
+  final out = <Pt>[points.first];
+  for (var i = 1; i < points.length; i++) {
+    final (x0, y0) = points[i - 1];
+    final (x1, y1) = points[i];
+    final n = (max((x1 - x0).abs(), (y1 - y0).abs()) / step).ceil();
+    for (var k = 1; k < n; k++) {
+      out.add((x0 + (x1 - x0) * k ~/ n, y0 + (y1 - y0) * k ~/ n));
+    }
+    out.add(points[i]);
+  }
+  return out;
+}
+
 double _segmentDistance2(Pt p, Pt a, Pt b, double k) {
   final ax = a.$1 * k;
   final ay = a.$2.toDouble();

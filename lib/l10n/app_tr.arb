@@ -12,5 +12,20 @@
   "settings": "Ayarlar",
   "settingsLanguage": "Dil",
   "languageSystem": "Sistem dili",
-  "comingSoon": "Yakında"
+  "comingSoon": "Yakında",
+  "continentAfrica": "Afrika",
+  "continentAsia": "Asya",
+  "continentEurope": "Avrupa",
+  "continentNorthAmerica": "Kuzey Amerika",
+  "continentSouthAmerica": "Güney Amerika",
+  "continentOceania": "Okyanusya",
+  "statusObserver": "BM gözlemci devlet",
+  "statusPartiallyRecognized": "Kısmen tanınan devlet",
+  "infoCapital": "Başkent",
+  "infoContinent": "Kıta",
+  "close": "Kapat",
+  "zoomIn": "Yakınlaştır",
+  "zoomOut": "Uzaklaştır",
+  "loadError": "Veriler yüklenemedi.",
+  "retry": "Tekrar dene"
 }

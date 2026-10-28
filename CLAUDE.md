@@ -129,13 +129,16 @@ Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya
 - **Zoom:** Pinch ile ölçek 1.0–~40x arası. Yakın zoomda Vatikan ve Monako gibi ülkeler seçilebilir olmalı.
 - **Görünürlük:** Arka yarıküredeki noktalar (merkez ile açısal mesafe > 90°) kırpılır. Ufuk çizgisinde poligonlar düzgün kesilmeli.
 - **Performans:**
-  - Görünmeyen ülkeleri önce bounding box testiyle ele.
-  - Projeksiyonu her karede tüm noktalar için yeniden hesaplama, sadece görünür ülkeler için yap.
-  - `Path` nesnelerini rotasyon değişmediği sürece önbelleğe al. `RepaintBoundary` kullan.
+  - Görünmeyen ülkeleri önce bounding box testiyle ele. Kürede bu, poligon başına önceden hesaplanmış **sınırlayıcı küresel başlık** (merkez vektör + açısal yarıçap) ile yapılır; antimeridyende de çalışır ve yakın zoomda ekran dışını da eler.
+  - Projeksiyonu her karede tüm noktalar için yeniden hesaplama, sadece görünür ülkeler için yap. Köşeler yüklemede bir kez birim vektöre çevrilir; karede yalnızca 3×3 rotasyon yapılır.
+  - **Ayrıntı seviyeleri (LOD):** Yüklemede her halka/sınır için 0.03°, 0.1°, 0.2° toleranslı kaba kopyalar üretilir (`level_of_detail.dart`); hatası ≤ 0.7 px olan en kaba seviye kullanılır. Ayrıca yarım pikselden yakın ardışık noktalar atlanır.
+  - Dolgular renk grubu başına tek even-odd `Path` olarak çizilir; komşular farklı renk alır (DSatur boyama).
+  - `Path` nesnelerini rotasyon değişmediği sürece önbelleğe al (`GlobePathCache`). `RepaintBoundary` kullan.
+  - Geometri hazırlığı (~100 ms) `Isolate.run` ile arka planda yapılır.
   - Hedef: orta segment Android cihazda sürükleme sırasında 60 fps.
-- **Hit-test:** Dokunulan ekran noktasını ters projeksiyonla enlem/boylama çevir, sonra point-in-polygon ile ülkeyi bul. Küçük ülkeler için centroid'e yakınlık toleransı uygula.
+- **Hit-test:** Dokunulan ekran noktasını ters projeksiyonla enlem/boylama çevir, sonra point-in-polygon ile ülkeyi bul. Küçük ülkeler için centroid'e yakınlık toleransı uygula: 24 dp; dokunuş başka bir ülkenin üstündeyse yarısı (Roma'ya dokunmak Vatikan'ı seçmesin).
 - **Küçük ülkeler:** `isTiny: true` olan ülkeler vurgulandığında etrafına renkli bir daire çizilir. Harita pratiğinde kamera ülkeye döner ve uygun seviyeye yakınlaşır.
-- **Animasyonlu odaklama:** `focusOn(countryId)` fonksiyonu küreyi centroid'e döndürür ve gerekirse yakınlaşır (harita pratiği ve bilgi kartı için ortak).
+- **Animasyonlu odaklama:** `focusOn(countryId)` fonksiyonu küreyi centroid'e döndürür ve gerekirse yakınlaşır (harita pratiği ve bilgi kartı için ortak). Varsayılan: ülke ekranın ~%10'undan küçük görünecekse yakınlaşır; `fit: true` ülkeyi ~%35 ile çerçeveler (harita pratiği için).
 
 ---
 
