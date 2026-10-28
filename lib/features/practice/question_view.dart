@@ -48,11 +48,15 @@ class QuestionView extends StatelessWidget {
       PracticeMode.flag => Center(
         child: Padding(
           padding: const EdgeInsets.all(24),
-          child: FlagImage(
-            country: answer,
-            width: 320,
-            height: 240,
-            semanticsLabel: l10n.flagQuestion,
+          // Shrinks the 4:3 box as a whole on short screens, so the outline
+          // keeps hugging the flag.
+          child: FittedBox(
+            child: FlagImage(
+              country: answer,
+              width: 320,
+              height: 240,
+              semanticsLabel: l10n.flagQuestion,
+            ),
           ),
         ),
       ),

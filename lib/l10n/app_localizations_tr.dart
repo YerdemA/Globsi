@@ -311,4 +311,18 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get settingsPrivacyHint =>
       'Reklam ve veri onayı tercihlerini değiştir';
+
+  @override
+  String get settingsAbout => 'Hakkında';
+
+  @override
+  String get privacyPolicy => 'Gizlilik politikası';
+
+  @override
+  String get aboutDescription =>
+      'Küreyi keşfet, bayrakları öğren ve kendini harita ve bayrak pratiğiyle sına. Globsi internet olmadan çalışır; reklamlar için bağlantı kullanılır.';
+
+  @override
+  String get aboutDataSources =>
+      'Harita verisi: Natural Earth (kamu malı). Bayraklar: flag-icons (MIT) ve Wikimedia Commons (kamu malı). Ayrıntılar lisanslar sayfasında.';
 }

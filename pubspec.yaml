@@ -65,6 +65,7 @@ flutter:
   assets:
     - assets/data/
     - assets/geo/
+    - assets/legal/
     # Flags are compiled to vector_graphics binaries at build time; load them
     # with AssetBytesLoader (see lib/core/ui/flag_image.dart).
     - path: assets/flags/

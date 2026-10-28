@@ -38,7 +38,8 @@ class FlagGridView extends StatelessWidget {
                   maxCrossAxisExtent: 120,
                   mainAxisSpacing: 4,
                   crossAxisSpacing: 4,
-                  childAspectRatio: 0.9,
+                  // Room for a 4:3 flag and a two-line name.
+                  childAspectRatio: 0.78,
                 ),
                 itemCount: members.length,
                 itemBuilder: (context, i) => _FlagTile(country: members[i]),

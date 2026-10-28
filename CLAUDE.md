@@ -4,7 +4,7 @@ Globsi, Android için çevrimdışı çalışan bir coğrafya öğrenme uygulama
 
 - **Geliştirici:** Yusuf Erdem Aykaç (GitHub: `YerdemA`)
 - **Paket adı:** `com.yerdema.globsi`
-- **Platform:** Yalnızca Android (ilk sürüm)
+- **Platform:** Yalnızca Android (ilk sürüm), minSdk 26 (Android 8.0; yalnızca vektör adaptif ikon)
 - **Diller:** Türkçe (varsayılan) + İngilizce
 - **Hedef:** Küçük APK boyutu, akıcı performans, sade ve anlaşılır arayüz, kullanıcıyı rahatsız etmeyen reklam
 
@@ -204,7 +204,15 @@ Amaç: gelir elde ederken kullanıcıyı kaçırmamak.
 - Commit mesajları İngilizce, Conventional Commits biçiminde (`feat:`, `fix:`, `refactor:` …).
 - Bir aşama bitmeden diğerine geçme. Her aşama sonunda ROADMAP'teki kabul kriterlerini kontrol et ve işaretle.
 
-## 11. Sık kullanılan komutlar
+## 11. Yayın
+
+- İkon: `android/app/src/main/res/drawable/ic_launcher_foreground.xml` (adaptif, 108 dp tuval) ve aynı geometriyle `lib/core/ui/app_logo.dart`. Mağaza görselleri: `flutter test tool/store/render_store_assets_test.dart` → `docs/store/`.
+- Release: R8 + kaynak küçültme açık; keep kuralları `android/app/proguard-rules.pro` (WorkManager/Room — olmadan açılışta çöker). İmzalama `android/key.properties` ile (yoksa debug anahtarı).
+- Sürüm: `pubspec.yaml` `version` ile `lib/app/app_info.dart` `appVersion` aynı olmalı (test kontrol eder).
+- Gizlilik politikası: `assets/legal/privacy_{tr,en}.md` tek kaynak; `dart run tool/build_privacy_page.dart` → `docs/privacy-policy/index.html` (GitHub Pages).
+- Elle yapılacaklar ve Play Console girişleri: `docs/RELEASE_CHECKLIST.md`.
+
+## 12. Sık kullanılan komutlar
 
 ```bash
 flutter pub get

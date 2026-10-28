@@ -328,4 +328,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsPrivacyHint => 'Change your ad and data consent choices';
+
+  @override
+  String get settingsAbout => 'About';
+
+  @override
+  String get privacyPolicy => 'Privacy policy';
+
+  @override
+  String get aboutDescription =>
+      'Explore the globe, learn flags and test yourself with map and flag practice. Globsi works offline; ads use a connection.';
+
+  @override
+  String get aboutDataSources =>
+      'Map data: Natural Earth (public domain). Flags: flag-icons (MIT) and Wikimedia Commons (public domain). Details on the licenses page.';
 }

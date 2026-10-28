@@ -4,6 +4,7 @@ import 'package:globsi/features/globe/globe_screen.dart';
 import 'package:globsi/features/home/home_screen.dart';
 import 'package:globsi/features/practice/flag_practice_screen.dart';
 import 'package:globsi/features/practice/map_practice_screen.dart';
+import 'package:globsi/features/settings/privacy_policy_screen.dart';
 import 'package:globsi/features/settings/settings_screen.dart';
 import 'package:globsi/features/stats/stats_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -16,6 +17,7 @@ abstract final class Routes {
   static const flagPractice = '/practice/flags';
   static const settings = '/settings';
   static const stats = '/stats';
+  static const privacy = '/settings/privacy';
 
   /// Explore, focused on country [id].
   static String exploreCountry(String id) =>
@@ -53,6 +55,12 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: 'settings',
             builder: (context, state) => const SettingsScreen(),
+            routes: [
+              GoRoute(
+                path: 'privacy',
+                builder: (context, state) => const PrivacyPolicyScreen(),
+              ),
+            ],
           ),
         ],
       ),

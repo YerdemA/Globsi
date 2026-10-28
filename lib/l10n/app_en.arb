@@ -91,5 +91,9 @@
   "resetStatsConfirm": "Reset",
   "statsResetDone": "Statistics reset.",
   "settingsPrivacy": "Privacy options",
-  "settingsPrivacyHint": "Change your ad and data consent choices"
+  "settingsPrivacyHint": "Change your ad and data consent choices",
+  "settingsAbout": "About",
+  "privacyPolicy": "Privacy policy",
+  "aboutDescription": "Explore the globe, learn flags and test yourself with map and flag practice. Globsi works offline; ads use a connection.",
+  "aboutDataSources": "Map data: Natural Earth (public domain). Flags: flag-icons (MIT) and Wikimedia Commons (public domain). Details on the licenses page."
 }

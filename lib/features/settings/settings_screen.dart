@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:globsi/app/app_info.dart';
+import 'package:globsi/app/router.dart';
 import 'package:globsi/core/ads/ad_service.dart';
 import 'package:globsi/core/stats/stats_service.dart';
+import 'package:globsi/core/ui/app_logo.dart';
 import 'package:globsi/features/settings/locale_provider.dart';
 import 'package:globsi/l10n/app_localizations.dart';
+import 'package:go_router/go_router.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const new({super.key});
@@ -57,6 +61,26 @@ class SettingsScreen extends ConsumerWidget {
             title: Text(l10n.settingsResetStats),
             subtitle: Text(l10n.settingsResetStatsHint),
             onTap: () => _confirmReset(context, ref),
+          ),
+          const Divider(),
+          ListTile(title: Text(l10n.settingsAbout)),
+          ListTile(
+            leading: const Icon(Icons.policy_outlined),
+            title: Text(l10n.privacyPolicy),
+            onTap: () => context.push(Routes.privacy),
+          ),
+          AboutListTile(
+            icon: const Icon(Icons.info_outline),
+            applicationName: l10n.appTitle,
+            applicationVersion: appVersion,
+            applicationIcon: const AppLogo(),
+            applicationLegalese: appLegalese,
+            aboutBoxChildren: [
+              const SizedBox(height: 16),
+              Text(l10n.aboutDescription),
+              const SizedBox(height: 12),
+              Text(l10n.aboutDataSources),
+            ],
           ),
         ],
       ),

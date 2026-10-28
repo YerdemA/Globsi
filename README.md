@@ -14,6 +14,12 @@ flutter test
 flutter run
 ```
 
+## Yayın
+
+Release derleme, imzalama, mağaza materyalleri ve elle yapılacak adımlar:
+[`docs/RELEASE_CHECKLIST.md`](docs/RELEASE_CHECKLIST.md). Mağaza metinleri ve
+görselleri `docs/store/` altında.
+
 ## Reklamlar
 
 Debug ve profile derlemeleri her zaman Google'ın test reklamlarını kullanır.

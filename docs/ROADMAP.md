@@ -89,11 +89,11 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 7 — Cilalama ve yayın hazırlığı
-- [ ] Uygulama ikonu ve açılış ekranı
-- [ ] Ayarlar > Hakkında: sürüm, lisanslar, gizlilik politikası bağlantısı
-- [ ] Gizlilik politikası sayfası (AdMob nedeniyle zorunlu)
-- [ ] `flutter build appbundle --release`, R8/küçültme açık, APK/AAB boyutu kontrolü
-- [ ] Play Console: mağaza açıklaması TR/EN, ekran görüntüleri, veri güvenliği formu (reklam kimliği), hedef kitle beyanı
+- [x] Uygulama ikonu ve açılış ekranı (adaptif + temalı ikon, Android 12 splash)
+- [x] Ayarlar > Hakkında: sürüm, lisanslar, gizlilik politikası (uygulama içi)
+- [x] Gizlilik politikası sayfası (AdMob nedeniyle zorunlu) — `docs/privacy-policy/`; iletişim e-postası ve GitHub Pages elle (`docs/RELEASE_CHECKLIST.md`)
+- [x] `flutter build appbundle --release`, R8/küçültme açık, APK/AAB boyutu kontrolü (arm64 APK 23 MB)
+- [ ] Play Console: mağaza açıklaması TR/EN, ekran görüntüleri, veri güvenliği formu (reklam kimliği), hedef kitle beyanı — materyaller hazır (`docs/store/`, `docs/RELEASE_CHECKLIST.md`), girişler elle
 - [ ] Kapalı test sürümü
 
 **Kabul:** Kapalı test kanalına yüklendi, gerçek cihazda baştan sona akış hatasız.

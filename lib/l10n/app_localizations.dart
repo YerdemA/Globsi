@@ -649,6 +649,30 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Reklam ve veri onayı tercihlerini değiştir'**
   String get settingsPrivacyHint;
+
+  /// No description provided for @settingsAbout.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hakkında'**
+  String get settingsAbout;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In tr, this message translates to:
+  /// **'Gizlilik politikası'**
+  String get privacyPolicy;
+
+  /// No description provided for @aboutDescription.
+  ///
+  /// In tr, this message translates to:
+  /// **'Küreyi keşfet, bayrakları öğren ve kendini harita ve bayrak pratiğiyle sına. Globsi internet olmadan çalışır; reklamlar için bağlantı kullanılır.'**
+  String get aboutDescription;
+
+  /// No description provided for @aboutDataSources.
+  ///
+  /// In tr, this message translates to:
+  /// **'Harita verisi: Natural Earth (kamu malı). Bayraklar: flag-icons (MIT) ve Wikimedia Commons (kamu malı). Ayrıntılar lisanslar sayfasında.'**
+  String get aboutDataSources;
 }
 
 class _AppLocalizationsDelegate

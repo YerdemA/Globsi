@@ -183,5 +183,9 @@
   "resetStatsConfirm": "Sıfırla",
   "statsResetDone": "İstatistikler sıfırlandı.",
   "settingsPrivacy": "Gizlilik seçenekleri",
-  "settingsPrivacyHint": "Reklam ve veri onayı tercihlerini değiştir"
+  "settingsPrivacyHint": "Reklam ve veri onayı tercihlerini değiştir",
+  "settingsAbout": "Hakkında",
+  "privacyPolicy": "Gizlilik politikası",
+  "aboutDescription": "Küreyi keşfet, bayrakları öğren ve kendini harita ve bayrak pratiğiyle sına. Globsi internet olmadan çalışır; reklamlar için bağlantı kullanılır.",
+  "aboutDataSources": "Harita verisi: Natural Earth (kamu malı). Bayraklar: flag-icons (MIT) ve Wikimedia Commons (kamu malı). Ayrıntılar lisanslar sayfasında."
 }

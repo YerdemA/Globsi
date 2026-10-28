@@ -37,7 +37,7 @@ class FlagDetailSheet extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           spacing: 8,
           children: [
-            Center(child: FlagImage(country: country, width: 240, height: 160)),
+            Center(child: FlagImage(country: country, width: 240, height: 180)),
             const SizedBox(height: 8),
             Text(
               country.name.resolve(language),
