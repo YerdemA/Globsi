@@ -101,8 +101,32 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Sonraki sürümler için fikir havuzu
-- Akıllı tekrar (sık yanlış yapılan ülkeleri daha sık sorma)
-- Başkent pratiği
-- Kürede ülke arama
-- Günlük meydan okuma
-- iOS
+
+### Uygulamanın geliştirilebilir yönleri
+1. **Gerçek cihazda performans:** Küredeki akıcılık yalnızca bilgisayarda ölçüldü (kare başına ≤ 4 ms). Orta segment bir telefonda ölçülmeli; yetmezse çizim yöntemi hızlandırılabilir.
+2. **Bayrak boyutu:** Bayraklar APK'da 1,3 MB, bunun 287 KB'ı yalnızca Sırbistan'ın arması. En büyük 10–15 bayrak sadeleştirilirse yarıya iner.
+3. **Tablet ve yatay ekran:** Arayüz dikey telefona göre tasarlandı. Geniş ekranda pratikte küre ve şıklar yan yana, bayrak listesi daha çok sütunlu olabilir.
+4. **Yakınlaştırma:** İki parmakla yakınlaştırma şu an ekranın merkezine göre çalışıyor. Parmakların arasındaki noktaya göre olması daha doğal hissettirir.
+5. **Erişilebilirlik:** Ekran okuyucuyla (TalkBack) küreden ülke seçilemiyor. Bir "listeden seç" alternatifi, büyük yazı boyutunda kontrol ve koyu tema kontrast kontrolü yapılmalı; koyu tema hiç test edilmedi.
+6. **Küçük kullanım iyileştirmeleri:**
+   - Pratik filtrelerinin hatırlanması
+   - Kart destesinin karışık başlaması (şu an hep Abhazya ile başlıyor)
+   - "Tekrar oyna"nın aynı yanlışlara ağırlık vermesi
+7. **Zorluk etiketleri:** İlk elden kabaca dağıtıldı. Kendi istatistiklerle ya da test kullanıcılarının sonuçlarıyla güncellenmeli.
+
+### Eklenebilir özellikler
+
+**Hızlı kazanımlar (veri ve altyapı hazır):**
+- **Başkent pratiği:** Başkentler `countries.json` içinde zaten var; mevcut motorda yeni bir mod olarak eklenir.
+- **"Haritada bul" modu:** Ülke adı verilir, kullanıcı küreye dokunur. Dokunma algılama hazır.
+- **Akıllı tekrar:** Sık yanlış yapılan ülkeleri daha sık sorma. İstatistikler zaten tutuluyor.
+- **Kürede ülke arama.**
+- **Günlük meydan okuma:** Tarihten türetilen sabit bir rastgelelik ile herkese aynı 10 soru, internet gerekmeden.
+
+**Orta vadeli:**
+- Yeni soru tipleri: addan bayrak seçme, "hangisi komşusu değil?", kıta sorusu.
+- Seri (streak) ve rozetler (cihazda).
+- Ülke kartına nüfus, yüzölçümü, para birimi ve dil eklenmesi.
+- Ana ekran widget'ı: "Günün bayrağı".
+
+**Uzun vadeli (v1 kapsamı dışı):** iOS, reklamsız sürüm için tek seferlik satın alma, ülke adlarının sesli telaffuzu.
