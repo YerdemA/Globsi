@@ -105,7 +105,7 @@ class _FeatureGraphic extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF0A5E8C), Color(0xFF0B3D63)],
+          colors: [Color(0xFF14194A), Color(0xFF0F2F4F)],
         ),
       ),
       child: Padding(
@@ -116,7 +116,7 @@ class _FeatureGraphic extends StatelessWidget {
             const SizedBox.square(
               dimension: 300,
               child: CustomPaint(
-                painter: AppLogoPainter(background: false, zoom: 2.2),
+                painter: AppLogoPainter(background: false, zoom: 1.6),
               ),
             ),
             Expanded(

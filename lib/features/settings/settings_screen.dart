@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:globsi/app/app_info.dart';
@@ -6,6 +8,7 @@ import 'package:globsi/core/ads/ad_service.dart';
 import 'package:globsi/core/stats/stats_service.dart';
 import 'package:globsi/core/ui/app_logo.dart';
 import 'package:globsi/features/settings/locale_provider.dart';
+import 'package:globsi/features/settings/theme_mode_provider.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 
@@ -20,6 +23,7 @@ class SettingsScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final current = ref.watch(localeProvider)?.languageCode;
     final notifier = ref.read(localeProvider.notifier);
+    final themeMode = ref.watch(themeModeProvider);
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.settings)),
@@ -38,6 +42,34 @@ class SettingsScreen extends ConsumerWidget {
                 ),
                 for (final MapEntry(:key, :value) in _languages.entries)
                   RadioListTile<String?>(value: key, title: Text(value)),
+              ],
+            ),
+          ),
+          const Divider(),
+          ListTile(title: Text(l10n.settingsTheme)),
+          RadioGroup<ThemeMode>(
+            groupValue: themeMode,
+            onChanged: (mode) {
+              if (mode != null) {
+                unawaited(
+                  ref.read(themeModeProvider.notifier).setThemeMode(mode),
+                );
+              }
+            },
+            child: Column(
+              children: [
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.system,
+                  title: Text(l10n.themeSystem),
+                ),
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.light,
+                  title: Text(l10n.themeLight),
+                ),
+                RadioListTile<ThemeMode>(
+                  value: ThemeMode.dark,
+                  title: Text(l10n.themeDark),
+                ),
               ],
             ),
           ),

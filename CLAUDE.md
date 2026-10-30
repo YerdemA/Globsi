@@ -139,6 +139,7 @@ Kıta ataması tutarlı olmalı. İki kıtalı ülkeler tek bir birincil kıtaya
   - Geometri hazırlığı (~100 ms) `Isolate.run` ile arka planda yapılır.
   - Hedef: orta segment Android cihazda sürükleme sırasında 60 fps.
 - **Hit-test:** Dokunulan ekran noktasını ters projeksiyonla enlem/boylama çevir, sonra point-in-polygon ile ülkeyi bul. Küçük ülkeler için centroid'e yakınlık toleransı uygula: 24 dp; dokunuş başka bir ülkenin üstündeyse yarısı (Roma'ya dokunmak Vatikan'ı seçmesin).
+- **Ülke isimleri:** Keşfet'te yakınlaşınca (zoom 1.5'tan itibaren) ekranın ortasındaki ülkelerin adları dokunmadan görünür; çakışmada merkeze yakın olan kalır (`core/geo/country_labels.dart`, `features/globe/globe_labels.dart`). Harita pratiğinde gösterilmez, cevabı ele verir.
 - **Küçük ülkeler:** `isTiny: true` olan ülkeler vurgulandığında etrafına renkli bir daire çizilir. Harita pratiğinde kamera ülkeye döner ve uygun seviyeye yakınlaşır.
 - **Animasyonlu odaklama:** `focusOn(countryId)` fonksiyonu küreyi centroid'e döndürür ve gerekirse yakınlaşır (harita pratiği ve bilgi kartı için ortak). Varsayılan: ülke ekranın ~%10'undan küçük görünecekse yakınlaşır; `fit: true` ülkeyi ~%35 ile çerçeveler (harita pratiği için).
 
@@ -188,8 +189,11 @@ Amaç: gelir elde ederken kullanıcıyı kaçırmamak.
 
 ## 9. Arayüz ve tasarım
 
-- Material 3, açık ve koyu tema. Ana renk okyanus mavisi tonlarında.
-- Ana menü: 4 büyük kart (Keşfet, Bayrakları Öğren, Harita Pratiği, Bayrak Pratiği) + ayarlar ikonu.
+- Material 3, açık ve koyu tema. Renkler ikondan gelir (`lib/app/theme.dart`): gece indigosu yüzeyler, ana renk turkuaz, ikinci renk kehribar.
+- Tema: Ayarlar'dan sistem/açık/koyu (`features/settings/theme_mode_provider.dart`).
+- Açılış: Android splash'ten devam eden kısa animasyon, dokununca geçilir, uygulama her başladığında oynar (`features/intro/intro_overlay.dart`). Sistem animasyonları kapalıysa atlanır.
+- Ad yazısı: `core/ui/globsi_wordmark.dart` (o harfi gezegen gibi yuvarlak, üstünde yıldız; ek yazı tipi yok).
+- Ana menü: iki bölüm, Öğren (Keşfet, Bayrakları Öğren) ve Pratik Yap (Harita Pratiği, Bayrak Pratiği) + ayarlar ikonu.
 - Tüm metinler ARB dosyalarından gelir. Koda sabit Türkçe/İngilizce metin yazılmaz.
 - Ülke adı sıralaması dile göre yapılır (Türkçe sıralamada Ç, Ğ, İ, Ö, Ş, Ü doğru konumda olmalı). Dart'ta yerel collation olmadığı için `core/data/name_collation.dart` kullanılır.
 - Erişilebilirlik: dokunma hedefleri en az 48dp. Doğru/yanlış sadece renkle değil ikonla da belirtilir.

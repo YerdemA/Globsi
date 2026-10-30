@@ -13,6 +13,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get appTitle => 'Globsi';
 
   @override
+  String get menuSectionLearn => 'Öğren';
+
+  @override
+  String get menuSectionPractice => 'Pratik Yap';
+
+  @override
   String get menuExplore => 'Keşfet';
 
   @override
@@ -44,6 +50,18 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get languageSystem => 'Sistem dili';
+
+  @override
+  String get settingsTheme => 'Tema';
+
+  @override
+  String get themeSystem => 'Sistem teması';
+
+  @override
+  String get themeLight => 'Açık';
+
+  @override
+  String get themeDark => 'Koyu';
 
   @override
   String get comingSoon => 'Yakında';

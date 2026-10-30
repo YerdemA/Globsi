@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
 import 'package:globsi/core/geo/globe_hit_test.dart';
 import 'package:globsi/features/globe/globe_controller.dart';
+import 'package:globsi/features/globe/globe_labels.dart';
 import 'package:globsi/features/globe/globe_painter.dart';
 import 'package:globsi/features/globe/globe_paths.dart';
 
@@ -14,6 +15,7 @@ class GlobeView extends StatefulWidget {
     this.tinyTargets = const [],
     this.selectedId,
     this.selectedMarker,
+    this.labels,
     this.onCountryTap,
     this.interactive = true,
     super.key,
@@ -26,6 +28,10 @@ class GlobeView extends StatefulWidget {
   final List<TinyTarget> tinyTargets;
   final String? selectedId;
   final ({double lat, double lon})? selectedMarker;
+
+  /// Country names; left out in map practice, where they would give away the
+  /// answer.
+  final GlobeLabels? labels;
 
   /// Called with the tapped country id, or `null` for sea and other land.
   final ValueChanged<String?>? onCountryTap;
@@ -99,6 +105,7 @@ class _GlobeViewState extends State<GlobeView> {
         cache: _cache,
         selectedId: widget.selectedId,
         selectedMarker: widget.selectedMarker,
+        labels: widget.labels,
       ),
     );
     return LayoutBuilder(

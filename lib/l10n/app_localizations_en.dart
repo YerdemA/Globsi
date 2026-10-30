@@ -13,6 +13,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appTitle => 'Globsi';
 
   @override
+  String get menuSectionLearn => 'Learn';
+
+  @override
+  String get menuSectionPractice => 'Practice';
+
+  @override
   String get menuExplore => 'Explore';
 
   @override
@@ -44,6 +50,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get languageSystem => 'System language';
+
+  @override
+  String get settingsTheme => 'Theme';
+
+  @override
+  String get themeSystem => 'System theme';
+
+  @override
+  String get themeLight => 'Light';
+
+  @override
+  String get themeDark => 'Dark';
 
   @override
   String get comingSoon => 'Coming soon';

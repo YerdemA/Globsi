@@ -72,6 +72,7 @@ void main() {
         ),
       ),
     );
+    await tester.scrollUntilVisible(find.text('About Globsi'), 200);
     expect(find.text('Privacy policy'), findsOneWidget);
 
     await tester.tap(find.text('About Globsi'));

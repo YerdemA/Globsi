@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:globsi/app/app.dart';
 import 'package:globsi/core/data/preferences.dart';
+import 'package:globsi/core/ui/globsi_wordmark.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future<void> pumpApp(WidgetTester tester, {String? locale}) async {
@@ -21,6 +22,8 @@ void main() {
   testWidgets('home menu shows four entries in Turkish', (tester) async {
     await pumpApp(tester, locale: 'tr');
     for (final label in [
+      'Öğren',
+      'Pratik Yap',
       'Keşfet',
       'Bayrakları Öğren',
       'Harita Pratiği',
@@ -63,5 +66,65 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Explore'), findsOneWidget);
     expect(find.text('Keşfet'), findsNothing);
+  });
+
+  testWidgets('choosing a theme applies and remembers it', (tester) async {
+    await pumpApp(tester, locale: 'en');
+    await tester.tap(find.byIcon(Icons.settings_outlined));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Dark'));
+    await tester.pumpAndSettle();
+
+    final context = tester.element(find.text('Settings'));
+    expect(Theme.of(context).brightness, Brightness.dark);
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.getString('themeMode'), 'dark');
+  });
+
+  testWidgets('the intro plays at start, then leaves the menu usable', (
+    tester,
+  ) async {
+    SharedPreferences.setMockInitialValues({'locale': 'en'});
+    final prefs = await SharedPreferences.getInstance();
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
+        child: const GlobsiApp(),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 500));
+    // One in the intro, one in the menu's app bar behind it.
+    expect(find.byType(GlobsiWordmark), findsNWidgets(2));
+
+    await tester.pumpAndSettle();
+    expect(find.byType(GlobsiWordmark), findsOneWidget);
+    await tester.tap(find.text('Learn Flags'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(
+      find.descendant(
+        of: find.byType(AppBar),
+        matching: find.text('Learn Flags'),
+      ),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('tapping skips the intro', (tester) async {
+    SharedPreferences.setMockInitialValues({'locale': 'en'});
+    final prefs = await SharedPreferences.getInstance();
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
+        child: const GlobsiApp(),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.tapAt(const Offset(200, 300));
+    // The fade out takes 264 ms, far less than the rest of the intro.
+    for (var i = 0; i < 7; i++) {
+      await tester.pump(const Duration(milliseconds: 50));
+    }
+    expect(find.byType(GlobsiWordmark), findsOneWidget);
   });
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
 import 'package:globsi/features/globe/globe_controller.dart';
+import 'package:globsi/features/globe/globe_labels.dart';
 import 'package:globsi/features/globe/globe_paths.dart';
 
 /// Map colors for light and dark themes.
@@ -14,6 +15,8 @@ class GlobeColors {
     required this.coast,
     required this.highlight,
     required this.highlightBorder,
+    required this.labelText,
+    required this.labelHalo,
   });
 
   factory of(Brightness brightness) =>
@@ -34,6 +37,8 @@ class GlobeColors {
     coast: Color(0xFF3F7DAE),
     highlight: Color(0xFFFFA726),
     highlightBorder: Color(0xFFB45309),
+    labelText: Color(0xFF141B33),
+    labelHalo: Color(0xD9FFFFFF),
   );
 
   static const _dark = GlobeColors(
@@ -51,6 +56,8 @@ class GlobeColors {
     coast: Color(0xFF7FB3DA),
     highlight: Color(0xFFFFB74D),
     highlightBorder: Color(0xFFFFE0B2),
+    labelText: Color(0xFFFFFFFF),
+    labelHalo: Color(0xB3000000),
   );
 
   final Color ocean;
@@ -63,6 +70,8 @@ class GlobeColors {
   final Color coast;
   final Color highlight;
   final Color highlightBorder;
+  final Color labelText;
+  final Color labelHalo;
 }
 
 /// Draws the globe for [controller]'s camera. Repaints whenever the camera
@@ -75,6 +84,7 @@ class GlobePainter extends CustomPainter {
     required this.cache,
     this.selectedId,
     this.selectedMarker,
+    this.labels,
   }) : super(repaint: controller);
 
   final GlobeController controller;
@@ -85,6 +95,7 @@ class GlobePainter extends CustomPainter {
 
   /// Lat/lon of the selected tiny country, circled so it can be found.
   final ({double lat, double lon})? selectedMarker;
+  final GlobeLabels? labels;
 
   static const double _markerRadius = 16;
 
@@ -157,20 +168,20 @@ class GlobePainter extends CustomPainter {
     }
 
     // Soft limb darkening for a 3D look.
-    canvas
-      ..drawOval(
-        rim,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              Colors.transparent,
-              Colors.transparent,
-              Colors.black.withValues(alpha: 0.18),
-            ],
-            stops: const [0, 0.82, 1],
-          ).createShader(rim),
-      )
-      ..restore();
+    canvas.drawOval(
+      rim,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [
+            Colors.transparent,
+            Colors.transparent,
+            Colors.black.withValues(alpha: 0.18),
+          ],
+          stops: const [0, 0.82, 1],
+        ).createShader(rim),
+    );
+    labels?.paint(canvas, geometry.data, camera, layout, size);
+    canvas.restore();
   }
 
   @override
@@ -179,5 +190,6 @@ class GlobePainter extends CustomPainter {
       old.colors != colors ||
       old.selectedId != selectedId ||
       old.selectedMarker != selectedMarker ||
+      old.labels != labels ||
       old.controller != controller;
 }

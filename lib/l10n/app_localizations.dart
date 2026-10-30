@@ -104,6 +104,18 @@ abstract class AppLocalizations {
   /// **'Globsi'**
   String get appTitle;
 
+  /// No description provided for @menuSectionLearn.
+  ///
+  /// In tr, this message translates to:
+  /// **'Öğren'**
+  String get menuSectionLearn;
+
+  /// No description provided for @menuSectionPractice.
+  ///
+  /// In tr, this message translates to:
+  /// **'Pratik Yap'**
+  String get menuSectionPractice;
+
   /// No description provided for @menuExplore.
   ///
   /// In tr, this message translates to:
@@ -169,6 +181,30 @@ abstract class AppLocalizations {
   /// In tr, this message translates to:
   /// **'Sistem dili'**
   String get languageSystem;
+
+  /// No description provided for @settingsTheme.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tema'**
+  String get settingsTheme;
+
+  /// No description provided for @themeSystem.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sistem teması'**
+  String get themeSystem;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In tr, this message translates to:
+  /// **'Açık'**
+  String get themeLight;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In tr, this message translates to:
+  /// **'Koyu'**
+  String get themeDark;
 
   /// No description provided for @comingSoon.
   ///

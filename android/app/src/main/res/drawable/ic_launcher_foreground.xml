@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Globsi icon: a globe with a flag planted on it. 108×108 adaptive icon
-     canvas; everything stays inside the 66 dp safe zone. Keep in sync with
-     tool/store/render_store_assets_test.dart. -->
+<!-- Globsi icon: a globe at the core of a spiral galaxy, with one star. 108×108
+     adaptive icon canvas; the group keeps everything inside the 66 dp safe zone.
+     Keep in sync with lib/core/ui/app_logo.dart. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path
-        android:fillColor="#1F86C4"
-        android:pathData="M31,58 a19,19 0 1,0 38,0 a19,19 0 1,0 -38,0" />
-    <path
-        android:strokeColor="#FFFFFF"
-        android:strokeWidth="2.4"
-        android:strokeLineCap="round"
-        android:pathData="M31,58 a19,19 0 1,0 38,0 a19,19 0 1,0 -38,0
-            M50,39 a8,19 0 1,0 0,38 a8,19 0 1,0 0,-38
-            M31,58 H69
-            M33.55,48.5 H66.45
-            M33.55,67.5 H66.45
-            M63.4,44.6 V29" />
-    <path
-        android:fillColor="#FFA726"
-        android:pathData="M63.4,29 L76,33.5 L63.4,38 Z" />
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="0.9" android:scaleY="0.9">
+        <path android:pathData="M41.88,61 L41.06,59.61 L40.26,58.18 L39.61,56.63 L39.12,54.99 L38.78,53.28 L38.6,51.49 L38.61,49.64 L38.82,47.75 L39.25,45.86 L39.92,43.97 L40.82,42.13 L41.97,40.38 L43.35,38.74 L44.96,37.26 L46.78,35.96 L48.78,34.88 L50.94,34.05 L53.22,33.48 L55.59,33.2 L58.01,33.18 L60.47,33.44 L62.92,33.97 L65.34,34.79 L67.69,35.89 L69.95,37.27 L72.08,38.93 L74.04,40.85 L75.81,43.02 L77.35,45.42 L78.64,48.02 L79.65,50.81 L80.34,53.75 L80.71,56.81 L80.73,59.95 L80.38,63.13 L79.66,66.31 L78.56,69.46 L77.09,72.51 L75.23,75.44 L73.02,78.18 L70.45,80.7 L67.56,82.95 L64.36,84.9 L60.9,86.47 L60.82,86.08 L64.16,84.3 L67.2,82.2 L69.91,79.83 L72.27,77.23 L74.26,74.45 L75.86,71.53 L77.09,68.53 L77.94,65.49 L78.42,62.45 L78.53,59.46 L78.31,56.56 L77.77,53.77 L76.93,51.15 L75.83,48.71 L74.48,46.47 L72.94,44.46 L71.22,42.7 L69.36,41.19 L67.4,39.94 L65.37,38.96 L63.3,38.23 L61.23,37.76 L59.17,37.54 L57.17,37.56 L55.24,37.79 L53.4,38.23 L51.67,38.82 L50.05,39.54 L48.55,40.38 L47.16,41.33 L45.89,42.37 L44.73,43.51 L43.69,44.72 L42.78,46.01 L42,47.37 L41.35,48.8 L40.85,50.27 L40.5,51.8 L40.31,53.35 L40.29,54.91 L40.46,56.48 L40.76,58.02 L41.2,59.56 L41.88,61Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="radial" android:centerX="54" android:centerY="54"
+                    android:gradientRadius="33">
+                    <item android:color="#BDF2EB" android:offset="0.42" />
+                    <item android:color="#35D0C4" android:offset="0.8" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M66.12,47 L66.94,48.39 L67.74,49.82 L68.39,51.37 L68.88,53.01 L69.22,54.72 L69.4,56.51 L69.39,58.36 L69.18,60.25 L68.75,62.14 L68.08,64.03 L67.18,65.87 L66.03,67.62 L64.65,69.26 L63.04,70.74 L61.22,72.04 L59.22,73.12 L57.06,73.95 L54.78,74.52 L52.41,74.8 L49.99,74.82 L47.53,74.56 L45.08,74.03 L42.66,73.21 L40.31,72.11 L38.05,70.73 L35.92,69.07 L33.96,67.15 L32.19,64.98 L30.65,62.58 L29.36,59.98 L28.35,57.19 L27.66,54.25 L27.29,51.19 L27.27,48.05 L27.62,44.87 L28.34,41.69 L29.44,38.54 L30.91,35.49 L32.77,32.56 L34.98,29.82 L37.55,27.3 L40.44,25.05 L43.64,23.1 L47.1,21.53 L47.18,21.92 L43.84,23.7 L40.8,25.8 L38.09,28.17 L35.73,30.77 L33.74,33.55 L32.14,36.47 L30.91,39.47 L30.06,42.51 L29.58,45.55 L29.47,48.54 L29.69,51.44 L30.23,54.23 L31.07,56.85 L32.17,59.29 L33.52,61.53 L35.06,63.54 L36.78,65.3 L38.64,66.81 L40.6,68.06 L42.63,69.04 L44.7,69.77 L46.77,70.24 L48.83,70.46 L50.83,70.44 L52.76,70.21 L54.6,69.77 L56.33,69.18 L57.95,68.46 L59.45,67.62 L60.84,66.67 L62.11,65.63 L63.27,64.49 L64.31,63.28 L65.22,61.99 L66,60.63 L66.65,59.2 L67.15,57.73 L67.5,56.2 L67.69,54.65 L67.71,53.09 L67.54,51.52 L67.24,49.98 L66.8,48.44 L66.12,47Z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="radial" android:centerX="54" android:centerY="54"
+                    android:gradientRadius="33">
+                    <item android:color="#BDF2EB" android:offset="0.42" />
+                    <item android:color="#35D0C4" android:offset="0.8" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path android:pathData="M40,54 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="radial" android:centerX="54" android:centerY="54"
+                    android:gradientRadius="14">
+                    <item android:color="#FFFFFF" android:offset="0.45" />
+                    <item android:color="#BDF2EB" android:offset="1" />
+                </gradient>
+            </aapt:attr>
+        </path>
+        <path
+            android:strokeColor="#14194A"
+            android:strokeWidth="1.5"
+            android:strokeLineCap="round"
+            android:pathData="M48.2,54 a5.8,13.25 0 1,0 11.6,0 a5.8,13.25 0 1,0 -11.6,0 M40.75,54 H67.25" />
+        <path android:fillColor="#FFC145" android:pathData="M79,22.5 L79.74,28.26 L85.5,29 L79.74,29.74 L79,35.5 L78.26,29.74 L72.5,29 L78.26,28.26Z" />
+    </group>
 </vector>

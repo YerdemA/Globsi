@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:globsi/app/router.dart';
 import 'package:globsi/core/ads/ad_banner.dart';
+import 'package:globsi/core/ui/globsi_wordmark.dart';
 import 'package:globsi/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 
@@ -10,10 +11,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final colors = Theme.of(context).colorScheme;
     return Scaffold(
       bottomNavigationBar: const AdBanner(),
       appBar: AppBar(
-        title: Text(l10n.appTitle),
+        title: const GlobsiWordmark(fontSize: 30),
         actions: [
           IconButton(
             icon: const Icon(Icons.bar_chart),
@@ -32,31 +34,47 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            spacing: 12,
+            spacing: 20,
             children: [
-              _MenuCard(
-                icon: Icons.public,
-                title: l10n.menuExplore,
-                subtitle: l10n.menuExploreSubtitle,
-                route: Routes.explore,
+              _MenuSection(
+                label: l10n.menuSectionLearn,
+                color: colors.primary,
+                cards: [
+                  _MenuCard(
+                    icon: Icons.public,
+                    iconColor: colors.primary,
+                    title: l10n.menuExplore,
+                    subtitle: l10n.menuExploreSubtitle,
+                    route: Routes.explore,
+                  ),
+                  _MenuCard(
+                    icon: Icons.flag_outlined,
+                    iconColor: colors.primary,
+                    title: l10n.menuFlagsLearn,
+                    subtitle: l10n.menuFlagsLearnSubtitle,
+                    route: Routes.flagsLearn,
+                  ),
+                ],
               ),
-              _MenuCard(
-                icon: Icons.flag_outlined,
-                title: l10n.menuFlagsLearn,
-                subtitle: l10n.menuFlagsLearnSubtitle,
-                route: Routes.flagsLearn,
-              ),
-              _MenuCard(
-                icon: Icons.travel_explore,
-                title: l10n.menuMapPractice,
-                subtitle: l10n.menuMapPracticeSubtitle,
-                route: Routes.mapPractice,
-              ),
-              _MenuCard(
-                icon: Icons.quiz_outlined,
-                title: l10n.menuFlagPractice,
-                subtitle: l10n.menuFlagPracticeSubtitle,
-                route: Routes.flagPractice,
+              _MenuSection(
+                label: l10n.menuSectionPractice,
+                color: colors.tertiary,
+                cards: [
+                  _MenuCard(
+                    icon: Icons.travel_explore,
+                    iconColor: colors.tertiary,
+                    title: l10n.menuMapPractice,
+                    subtitle: l10n.menuMapPracticeSubtitle,
+                    route: Routes.mapPractice,
+                  ),
+                  _MenuCard(
+                    icon: Icons.quiz_outlined,
+                    iconColor: colors.tertiary,
+                    title: l10n.menuFlagPractice,
+                    subtitle: l10n.menuFlagPracticeSubtitle,
+                    route: Routes.flagPractice,
+                  ),
+                ],
               ),
             ],
           ),
@@ -66,15 +84,49 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
+class _MenuSection extends StatelessWidget {
+  const new({required this.label, required this.color, required this.cards});
+
+  final String label;
+  final Color color;
+  final List<Widget> cards;
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        spacing: 8,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4),
+            child: Semantics(
+              header: true,
+              child: Text(
+                label,
+                style: Theme.of(context).textTheme.titleSmall
+                    ?.copyWith(color: color),
+              ),
+            ),
+          ),
+          ...cards,
+        ],
+      ),
+    );
+  }
+}
+
 class _MenuCard extends StatelessWidget {
   const new({
     required this.icon,
+    required this.iconColor,
     required this.title,
     required this.subtitle,
     required this.route,
   });
 
   final IconData icon;
+  final Color iconColor;
   final String title;
   final String subtitle;
   final String route;
@@ -93,7 +145,7 @@ class _MenuCard extends StatelessWidget {
             child: Row(
               spacing: 20,
               children: [
-                Icon(icon, size: 40, color: theme.colorScheme.primary),
+                Icon(icon, size: 40, color: iconColor),
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

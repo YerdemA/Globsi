@@ -6,6 +6,8 @@ import 'package:globsi/core/data/country_repository.dart';
 import 'package:globsi/core/geo/globe_geometry.dart';
 import 'package:globsi/features/globe/country_info_card.dart';
 import 'package:globsi/features/globe/globe_controller.dart';
+import 'package:globsi/features/globe/globe_labels.dart';
+import 'package:globsi/features/globe/globe_painter.dart';
 import 'package:globsi/features/globe/globe_providers.dart';
 import 'package:globsi/features/globe/globe_view.dart';
 import 'package:globsi/l10n/app_localizations.dart';
@@ -26,11 +28,49 @@ class _GlobeScreenState extends ConsumerState<GlobeScreen>
   late final GlobeController _controller = GlobeController(vsync: this);
   String? _selectedId;
   bool _focusedInitially = false;
+  GlobeLabels? _labels;
+  Object? _labelsKey;
 
   @override
   void dispose() {
     _controller.dispose();
+    _labels?.dispose();
     super.dispose();
+  }
+
+  /// Rebuilt only when the language, theme or text size changes.
+  GlobeLabels _labelsFor(CountryCatalog catalog, GlobeGeometry geometry) {
+    final theme = Theme.of(context);
+    final language = Localizations.localeOf(context).languageCode;
+    final textScaler = MediaQuery.textScalerOf(context)
+        .clamp(maxScaleFactor: 1.3);
+    final key = (language, theme.brightness, textScaler, catalog, geometry);
+    if (_labels != null && key == _labelsKey) return _labels!;
+
+    _labels?.dispose();
+    _labelsKey = key;
+    final colors = GlobeColors.of(theme.brightness);
+    return _labels = GlobeLabels(
+      targets: [
+        for (final c in catalog.countries)
+          (
+            id: c.id,
+            lat: c.centroidLat,
+            lon: c.centroidLon,
+            radius: geometry.featureById(c.id)?.mainRadius ?? 0,
+          ),
+      ],
+      names: {
+        for (final c in catalog.countries) c.id: c.name.resolve(language),
+      },
+      style: theme.textTheme.labelMedium!.copyWith(
+        fontWeight: FontWeight.w600,
+        height: 1.1,
+      ),
+      color: colors.labelText,
+      haloColor: colors.labelHalo,
+      textScaler: textScaler,
+    );
   }
 
   void _select(String? id, CountryCatalog catalog, GlobeGeometry geometry) {
@@ -86,6 +126,7 @@ class _GlobeScreenState extends ConsumerState<GlobeScreen>
           child: GlobeView(
             controller: _controller,
             geometry: geometry,
+            labels: _labelsFor(catalog, geometry),
             tinyTargets: [
               for (final c in catalog.countries)
                 if (c.isTiny)
