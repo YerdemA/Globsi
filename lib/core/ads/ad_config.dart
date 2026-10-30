@@ -16,6 +16,11 @@ abstract final class AdConfig {
   static const bool umpDebugEea =
       !kReleaseMode && bool.fromEnvironment('UMP_DEBUG_EEA');
 
+  /// `--dart-define=UMP_TEST_DEVICE=<hash>` registers a physical phone for the
+  /// EU test above (emulators need no hash). The UserMessagingPlatform log
+  /// prints the hash on each launch.
+  static const String umpTestDevice = String.fromEnvironment('UMP_TEST_DEVICE');
+
   /// `--dart-define=ADS_DEBUG_FREQUENT=true` drops the round and time limits
   /// of the full-screen ad (debug builds only) so it can be tested by hand.
   /// The first-session and once-per-session rules still apply.

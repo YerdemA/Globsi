@@ -33,6 +33,10 @@ elle yapılır. Sıra önemli: 1–6 Play Console'dan önce.
    ```bash
    flutter run --dart-define=UMP_DEBUG_EEA=true
    ```
+   Gerçek telefonda ayrıca `--dart-define=UMP_TEST_DEVICE=<hash>` gerekir (hash,
+   logcat'te `UserMessagingPlatform` satırında yazar). Kendi formunu görmek için
+   `-P ADMOB_APP_ID=ca-app-pub-...~...` da ver; yoksa Google'ın test uygulaması
+   kullanılır.
    (`docs/ADS_TEST_CHECKLIST.md` kural 6)
 6. **Release derlemesi** (README > Reklamlar):
    ```bash

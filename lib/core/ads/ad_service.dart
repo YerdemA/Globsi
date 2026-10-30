@@ -106,6 +106,9 @@ class GoogleAdService implements AdService {
         consentDebugSettings: AdConfig.umpDebugEea
             ? ConsentDebugSettings(
                 debugGeography: DebugGeography.debugGeographyEea,
+                testIdentifiers: [
+                  if (AdConfig.umpTestDevice.isNotEmpty) AdConfig.umpTestDevice,
+                ],
               )
             : null,
       );
