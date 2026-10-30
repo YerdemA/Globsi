@@ -40,7 +40,7 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 
 **Kabul:** Gerçek bir orta segment Android cihazda sürükleme akıcı (profil modunda ölçülmüş). Vatikan ve Monako yakın zoomda seçilebiliyor. Arka yüzdeki ülkeler görünmüyor, ufukta kırpma düzgün.
 
-> Durum (2026-10-28): Vatikan/Monako seçimi, arka yüz ve ufuk kırpma emülatörde ve testlerde doğrulandı. **Gerçek cihazda profil modu ölçümü henüz yapılmadı** (bkz. `flutter run --profile`). Masaüstü ölçümünde kare başına yol üretimi tüm zoom aralığında ≤ 4 ms.
+> Durum (2026-10-30): Vatikan/Monako seçimi, arka yüz ve ufuk kırpma emülatörde ve testlerde doğrulandı. Akıcılık gerçek telefonda elle denendi ve onaylandı. Masaüstü ölçümünde kare başına yol üretimi tüm zoom aralığında ≤ 4 ms.
 
 ---
 
@@ -78,7 +78,8 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ---
 
 ## Aşama 6 — Reklamlar
-- [ ] AdMob uygulama kaydı (Erdem yapacak) — kod tarafı hazır: ID'ler `--dart-define` ve `-PADMOB_APP_ID` ile veriliyor
+- [x] AdMob uygulama kaydı ve reklam birimleri — ID'ler `--dart-define` ve `-PADMOB_APP_ID` ile veriliyor
+- [ ] Gerçek ID'lerle ve AB onay formuyla son deneme (`docs/ADS_TEST_CHECKLIST.md`)
 - [x] UMP onay akışı + Ayarlar'da "Gizlilik seçenekleri"
 - [x] `AdService`: banner yerleşimleri ve interstitial sıklık kuralları (`CLAUDE.md` §8)
 - [x] Debug'da test ID'leri
@@ -103,16 +104,15 @@ Her aşama, bir öncekinin kabul kriterleri sağlandıktan sonra başlar. Tamaml
 ## Sonraki sürümler için fikir havuzu
 
 ### Uygulamanın geliştirilebilir yönleri
-1. **Gerçek cihazda performans:** Küredeki akıcılık yalnızca bilgisayarda ölçüldü (kare başına ≤ 4 ms). Orta segment bir telefonda ölçülmeli; yetmezse çizim yöntemi hızlandırılabilir.
-2. **Bayrak boyutu:** Bayraklar APK'da 1,3 MB, bunun 287 KB'ı yalnızca Sırbistan'ın arması. En büyük 10–15 bayrak sadeleştirilirse yarıya iner.
-3. **Tablet ve yatay ekran:** Arayüz dikey telefona göre tasarlandı. Geniş ekranda pratikte küre ve şıklar yan yana, bayrak listesi daha çok sütunlu olabilir.
-4. **Yakınlaştırma:** İki parmakla yakınlaştırma şu an ekranın merkezine göre çalışıyor. Parmakların arasındaki noktaya göre olması daha doğal hissettirir.
-5. **Erişilebilirlik:** Ekran okuyucuyla (TalkBack) küreden ülke seçilemiyor. Bir "listeden seç" alternatifi, büyük yazı boyutunda kontrol ve koyu tema kontrast kontrolü yapılmalı; koyu tema hiç test edilmedi.
-6. **Küçük kullanım iyileştirmeleri:**
+1. **Bayrak boyutu:** Bayraklar APK'da 1,3 MB, bunun 287 KB'ı yalnızca Sırbistan'ın arması. En büyük 10–15 bayrak sadeleştirilirse yarıya iner.
+2. **Tablet ve yatay ekran:** Arayüz dikey telefona göre tasarlandı. Geniş ekranda pratikte küre ve şıklar yan yana, bayrak listesi daha çok sütunlu olabilir.
+3. **Yakınlaştırma:** İki parmakla yakınlaştırma şu an ekranın merkezine göre çalışıyor. Parmakların arasındaki noktaya göre olması daha doğal hissettirir.
+4. **Erişilebilirlik:** Ekran okuyucuyla (TalkBack) küreden ülke seçilemiyor. Bir "listeden seç" alternatifi, büyük yazı boyutunda kontrol ve koyu tema kontrast kontrolü yapılmalı; koyu tema hiç test edilmedi.
+5. **Küçük kullanım iyileştirmeleri:**
    - Pratik filtrelerinin hatırlanması
    - Kart destesinin karışık başlaması (şu an hep Abhazya ile başlıyor)
    - "Tekrar oyna"nın aynı yanlışlara ağırlık vermesi
-7. **Zorluk etiketleri:** İlk elden kabaca dağıtıldı. Kendi istatistiklerle ya da test kullanıcılarının sonuçlarıyla güncellenmeli.
+6. **Zorluk etiketleri:** İlk elden kabaca dağıtıldı. Kendi istatistiklerle ya da test kullanıcılarının sonuçlarıyla güncellenmeli.
 
 ### Eklenebilir özellikler
 

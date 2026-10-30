@@ -1,8 +1,11 @@
 // Renders the Play Store graphics into docs/store/:
 //   icon-512.png             512×512 app icon (full square; Play masks it)
-//   feature-graphic.png      1024×500 feature graphic
+//   feature-graphic.png      1024×500 feature graphic (Turkish listing)
+//   feature-graphic-en.png   1024×500 feature graphic (English listing)
 //
 // Run with: flutter test tool/store/render_store_assets_test.dart
+// Then remove the alpha channel Play refuses on the feature graphics:
+//   dart run tool/store/strip_png_alpha.dart
 @Tags(['store'])
 library;
 
@@ -88,15 +91,26 @@ void main() {
   testWidgets('feature graphic 1024×500', (tester) async {
     await _render(
       tester,
-      const _FeatureGraphic(),
+      const _FeatureGraphic(tagline: 'Küreyi keşfet, bayrakları öğren'),
       const Size(1024, 500),
       'docs/store/feature-graphic.png',
+    );
+  });
+
+  testWidgets('feature graphic 1024×500 (English)', (tester) async {
+    await _render(
+      tester,
+      const _FeatureGraphic(tagline: 'Explore the globe, learn the flags'),
+      const Size(1024, 500),
+      'docs/store/feature-graphic-en.png',
     );
   });
 }
 
 class _FeatureGraphic extends StatelessWidget {
-  const new();
+  const new({required this.tagline});
+
+  final String tagline;
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +150,7 @@ class _FeatureGraphic extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Küreyi keşfet, bayrakları öğren',
+                    tagline,
                     style: TextStyle(
                       fontFamily: 'Roboto',
                       fontSize: 34,

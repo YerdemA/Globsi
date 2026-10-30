@@ -42,7 +42,7 @@ Dünyayı avucunun içinde keşfet! Globsi ile ülkelerin yerini döndürülebil
 • Doğruluk oranın, en çok karıştırdığın ülkeler ve en iyi skorların cihazında saklanır.
 
 ✈️ İNTERNETSİZ ÇALIŞIR
-Harita ve bayraklar uygulamanın içinde; uçakta, yolda, her yerde öğren. Hesap gerekmez, verilerin cihazından çıkmaz.
+Harita ve bayraklar uygulamanın içinde; uçakta, yolda, her yerde öğren. Hesap gerekmez, istatistiklerin yalnızca cihazında saklanır. Reklamlar için internet kullanılır.
 
 193 BM üyesi ülkenin yanı sıra Vatikan, Filistin ve Kosova, Tayvan, KKTC, Batı Sahra, Somaliland, Abhazya, Güney Osetya gibi kısmen tanınan ülkeler de dahildir.
 

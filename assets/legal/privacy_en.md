@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 29 October 2026
+Last updated: 30 October 2026
 
 Globsi is an offline geography learning app developed by Yusuf Erdem Aykaç. This policy explains what data is processed when you use the app.
 
@@ -8,7 +8,7 @@ Globsi is an offline geography learning app developed by Yusuf Erdem Aykaç. Thi
 
 Globsi does not ask you to create an account and does not collect personal information such as your name or email address.
 
-- Your practice statistics (correct and wrong answers per country, best scores, completed rounds) and your language choice are stored only on your device. They are never sent to a server.
+- Your practice statistics (correct and wrong answers per country, best scores, completed rounds), your language and theme choices and the counters that limit how often ads appear (number of sessions, time of the last full-screen ad) are stored only on your device. They are never sent to a server.
 - You can delete your statistics at any time in Settings > Reset statistics. Uninstalling the app removes all local data.
 - Map and flag data are bundled with the app; no internet connection is used for them.
 

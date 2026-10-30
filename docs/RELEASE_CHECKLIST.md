@@ -3,6 +3,9 @@
 Kod tarafı hazır. Aşağıdakiler hesap, anahtar ya da karar gerektirdiği için
 elle yapılır. Sıra önemli: 1–6 Play Console'dan önce.
 
+Durum (2026-10-30): 1–4 tamam (4'te reklam birimleri oluşturuldu). 6'da AAB
+gerçek kimliklerle derlendi, gerçek telefonda deneme açık. 5 ve B bölümü açık.
+
 ## A. Play Console'dan önce
 
 1. **Gizlilik politikasındaki iletişim e-postası**
@@ -46,14 +49,14 @@ elle yapılır. Sıra önemli: 1–6 Play Console'dan önce.
      --dart-define=ADMOB_INTERSTITIAL_ID=ca-app-pub-.../...
    ```
    Çıktı: `build/app/outputs/bundle/release/app-release.aab`.
-   Gerçek bir telefonda dene (`flutter run --profile` ile sürükleme akıcılığını
-   da ölç — ROADMAP Aşama 2'nin açık kabul maddesi).
+   Gerçek bir telefonda dene.
 
 ## B. Play Console
 
 7. **Uygulama oluştur**: ad "Globsi", varsayılan dil Türkçe, uygulama, ücretsiz.
 8. **Mağaza sayfası**: `docs/store/listing_tr.md`, İngilizce çeviri olarak
-   `listing_en.md`; simge, öne çıkan görsel ve ekran görüntüleri `docs/store/`.
+   `listing_en.md`; simge, öne çıkan görsel (TR: `feature-graphic.png`, EN:
+   `feature-graphic-en.png`) ve ekran görüntüleri `docs/store/`.
 9. **Uygulama içeriği**
    - Gizlilik politikası URL'si: adım 2'deki adres.
    - Reklamlar: **Evet, reklam içeriyor**.

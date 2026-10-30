@@ -210,7 +210,7 @@ Amaç: gelir elde ederken kullanıcıyı kaçırmamak.
 
 ## 11. Yayın
 
-- İkon: `android/app/src/main/res/drawable/ic_launcher_foreground.xml` (adaptif, 108 dp tuval) ve aynı geometriyle `lib/core/ui/app_logo.dart`. Mağaza görselleri: `flutter test tool/store/render_store_assets_test.dart` → `docs/store/`.
+- İkon: `android/app/src/main/res/drawable/ic_launcher_foreground.xml` (adaptif, 108 dp tuval) ve aynı geometriyle `lib/core/ui/app_logo.dart`. Mağaza görselleri: `flutter test tool/store/render_store_assets_test.dart` → `docs/store/`, ardından `dart run tool/store/strip_png_alpha.dart` (Play öne çıkan görsel ve ekran görüntülerinde alfa kanalı kabul etmez).
 - Release: R8 + kaynak küçültme açık; keep kuralları `android/app/proguard-rules.pro` (WorkManager/Room — olmadan açılışta çöker). İmzalama `android/key.properties` ile (yoksa debug anahtarı).
 - Sürüm: `pubspec.yaml` `version` ile `lib/app/app_info.dart` `appVersion` aynı olmalı (test kontrol eder).
 - Gizlilik politikası: `assets/legal/privacy_{tr,en}.md` tek kaynak; `dart run tool/build_privacy_page.dart` → `docs/privacy-policy/index.html` (GitHub Pages).

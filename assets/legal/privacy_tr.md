@@ -1,6 +1,6 @@
 # Gizlilik Politikası
 
-Son güncelleme: 29 Ekim 2026
+Son güncelleme: 30 Ekim 2026
 
 Globsi, Yusuf Erdem Aykaç tarafından geliştirilen ve çevrimdışı çalışan bir coğrafya öğrenme uygulamasıdır. Bu politika, uygulamayı kullanırken hangi verilerin işlendiğini açıklar.
 
@@ -8,7 +8,7 @@ Globsi, Yusuf Erdem Aykaç tarafından geliştirilen ve çevrimdışı çalışa
 
 Globsi hesap oluşturmanızı istemez ve sizden ad, e-posta gibi kişisel bilgiler toplamaz.
 
-- Pratik istatistikleriniz (ülke bazında doğru/yanlış sayıları, en iyi skorlar, tamamlanan tur sayısı) ve dil tercihiniz yalnızca cihazınızda saklanır. Bu veriler hiçbir sunucuya gönderilmez.
+- Pratik istatistikleriniz (ülke bazında doğru/yanlış sayıları, en iyi skorlar, tamamlanan tur sayısı), dil ve tema tercihleriniz ve reklam sıklığını sınırlayan sayaçlar (oturum sayısı, son tam ekran reklamın zamanı) yalnızca cihazınızda saklanır. Bu veriler hiçbir sunucuya gönderilmez.
 - İstatistiklerinizi Ayarlar > İstatistikleri sıfırla ile istediğiniz zaman silebilirsiniz. Uygulamayı kaldırdığınızda tüm yerel veriler silinir.
 - Harita ve bayrak verileri uygulamanın içindedir; bunlar için internet bağlantısı kullanılmaz.
 
