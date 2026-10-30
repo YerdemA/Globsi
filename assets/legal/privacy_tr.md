@@ -32,4 +32,4 @@ Bu politika güncellenirse yeni metin bu sayfada yayımlanır ve yukarıdaki tar
 
 ## İletişim
 
-Sorularınız için: [İLETİŞİM E-POSTASI]
+Sorularınız için: yerdemastudio@gmail.com

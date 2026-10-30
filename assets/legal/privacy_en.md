@@ -32,4 +32,4 @@ If this policy changes, the new text will be published on this page and the date
 
 ## Contact
 
-For questions: [CONTACT EMAIL]
+For questions: yerdemastudio@gmail.com
